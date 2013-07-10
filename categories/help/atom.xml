@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[help | ]]></title>
+  <link href="/categories/help/atom.xml" rel="self"/>
+  <link href="/"/>
+  <updated>2013-07-10T22:54:12+00:00</updated>
+  <id>/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="https://github.com/recurser/jekyll-plugins">Recurser</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Nitrous.IO support channels]]></title>
+    <link href="/support-channels"/>
+    <updated>2013-06-28T00:00:00+00:00</updated>
+    <id>/support-channels</id>
+    <content type="html"><![CDATA[<p>We provide a number of ways to get in touch with someone on the Nitrous.IO team. If you can&#8217;t find a live person in one of these channels, try another one! Our team is distributed around the globe, so odds are we&#8217;re awake somewhere. And in the rare case you can&#8217;t find anybody you can always just <a href='mailto:support@nitrous.io'>send us an email</a> and we&#8217;ll do our best to respond within 24 hrs.</p>
+
+<h3 id='nitrousio_community_qa'>Nitrous.IO Community Q&amp;A</h3>
+
+<p>We encourage you to utilize the amazing <a href='http://stackoverflow.com/'>Stack Overflow</a> community for answers to many Nitrous.IO questions. We also do our best to respond to any Q&amp;A on our help forums within 2-3 days.</p>
+
+<p>If you have an urgent question about stability or performance of your development box, please <a href='mailto:support@nitrous.io'>send us an email</a>.</p>
+
+<h3 id='chat_room'>Chat Room</h3>
+
+<p>We have a <a href='https://www.nitrous.io/chat'>public campfire chatroom</a> where many of the Nitrous.IO employees hang out. Our team is spread out around the world, so odds are there will be somebody here to answer your question. Please don&#8217;t troll the forums, that&#8217;s just not cool bro.</p>
+
+<h3 id='live_1on1_chat'>Live 1-on-1 Chat</h3>
+
+<p>We utilize the amazing <a href='https://www.olark.com'>Olark</a> service for 1-on-1 chat widget on our website. You can reach any of our personal employees by just clicking on the &#8220;Chat with us&#8221; tab on the bottom right-hand side of the screen.</p>
+
+<p>Olark will tell us basic information about you, like your email (if you came from an invite or are logged-in) or the last page you visited, so don&#8217;t freak out if we know some stuff about you, we&#8217;re not north korean spies (though one of us is from korea).</p>]]></content>
+  </entry>
+  
+</feed>

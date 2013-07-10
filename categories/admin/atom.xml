@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[admin | ]]></title>
+  <link href="/categories/admin/atom.xml" rel="self"/>
+  <link href="/"/>
+  <updated>2013-07-10T22:54:12+00:00</updated>
+  <id>/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="https://github.com/recurser/jekyll-plugins">Recurser</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Terms of use]]></title>
+    <link href="/admin-terms"/>
+    <updated>2013-06-28T00:00:00+00:00</updated>
+    <id>/admin-terms</id>
+    <content type="html"><![CDATA[<p><em>Effective April 1, 2013</em></p>
+
+<h3 id='1_your_agreement_with_nitrousio'>1. Your Agreement with Nitrous.IO</h3>
+
+<p><em>1.1</em> Your use of the Nitrous.IO service is governed by this agreement (the &#8220;Terms&#8221;). &#8220;Nitrous.IO&#8221; means Nitrous.IO Inc., located at 535 Middlefield Road, Menlo Park, CA, 94025, United States, and its subsidiaries or affiliates involved in providing the Nitrous.IO Service. The “Nitrous.IO Services” means the services Nitrous.IO makes available through this website, including this website, the Nitrous.IO cloud computing development platform, the Nitrous.IO API, Nitrous.IO Add-ons, and any other software or services offered by Nitrous.IO in connection to any of those.</p>
+
+<p><em>1.2</em> In order to use the Nitrous.IO Services, you must first agree to the Terms. You can agree to the Terms by actually using the Nitrous.IO Services. You understand and agree that Nitrous.IO will treat your use of the Nitrous.IO Services as acceptance of the Terms from that point onwards.</p>
+
+<p><em>1.3</em> You may not use the Nitrous.IO Services if you are a person barred from receiving the Nitrous.IO Services under the laws of the United States or other countries, including the country in which you are resident or from which you use the Nitrous.IO Services. You affirm that you are over the age of 13, as the Nitrous.IO Services are not intended for children under 13.</p>
+
+<p><em>1.4</em> You agree your purchases of Nitrous.IO Services are not contingent on the delivery of any future functionality or features or dependent on any oral or written public comments made by Nitrous.IO or any of its affiliates regarding future functionality or features.</p>
+
+<h3 id='2_your_account_and_use_of_the_nitrousio_services'>2. Your Account and Use of the Nitrous.IO Services</h3>
+
+<p><em>2.1</em> You must provide accurate and complete registration information any time you register to use the Nitrous.IO Services. You are responsible for the security of your passwords and for any use of your account. If you become aware of any unauthorized use of your password or of your account, you agree to notify Nitrous.IO immediately.</p>
+
+<p><em>2.2</em> Your use of the Nitrous.IO Services must comply with all applicable laws, regulations and ordinances, including any laws regarding the export of data or software.</p>
+
+<p><em>2.3</em> You agree not to (a) access (or attempt to access) the administrative interface of the Nitrous.IO Services by any means other than through the interface that is provided by Nitrous.IO in connection with the Nitrous.IO Services, unless you have been specifically allowed to do so in a separate agreement with Nitrous.IO, or (b) engage in any activity that interferes with or disrupts the Nitrous.IO Services (or the servers and networks which are connected to the Service).</p>
+
+<p><em>2.4</em> Your account has “hard” and “soft” usage limits, as further explained here (or such URL as Nitrous.IO may provide). The Nitrous.IO Services does not permit you to exceed the hard usage limits. Nitrous.IO reserves the right to enforce soft usage limits in its sole discretion, which may result in Nitrous.IO serving a “quota exceeded” page to you or users to whom you serve web pages via the Nitrous.IO Services (“End Users”). Repeated exceeding of the hard or soft usage limits may lead to termination of your account.</p>
+
+<p><em>2.5</em> You may use the Nitrous.IO Services only to develop and run applications on the Nitrous.IO infrastructure. You may not access the Nitrous.IO Services for the purpose of bringing an intellectual property infringement claim against Nitrous.IO or for the purpose of creating a product or service competitive with the Nitrous.IO Services.</p>
+
+<h3 id='3_service_policies_and_privacy'>3. Service Policies and Privacy</h3>
+
+<p><em>3.1</em> You agree to comply with the Nitrous.IO Acceptable Use Policy available at acceptable use policy (the &#8220;Acceptable Use Policy&#8221;) which is incorporated herein by this reference and which may be updated from time to time.</p>
+
+<p><em>3.2</em> The Nitrous.IO Services shall be subject to the privacy policy for the Nitrous.IO Services available at privacy policy. You agree to the use of your data in accordance with Nitrous.IO&#8217;s privacy policies.</p>
+
+<p><em>3.3</em> You agree that you will protect the privacy and legal rights of the End Users of any application you develop on the Nitrous.IO platform. You must provide legally adequate privacy notice and protection for End Users. If End Users provide you with user names, passwords, or other login information or personal information, you must make the users aware that the information will be available to your application and to Nitrous.IO.</p>
+
+<h3 id='4_fees_for_use_of_the_nitrousio_services'>4. Fees for Use of the Nitrous.IO Services</h3>
+
+<p><em>4.1</em> Subject to the Terms, the Nitrous.IO Services is provided to you without charge up to certain limits. Usage over this limit requires your purchase of additional resources or services. The pricing for additional resources and services can be found at http://nitrous.io/pricing (or such updated URL as Nitrous.IO may provide).</p>
+
+<p><em>4.2</em> For all purchased resources and services, we will charge your credit card on a monthly basis or at the interval indicated in Nitrous.IO fees and payment policies, if different. Late payments may bear interest at the rate of 1.5% per month (or the highest rate permitted by law, if less). Charges are exclusive of taxes. You are responsible for paying all taxes and government charges, and all reasonable expenses and attorneys fees Nitrous.IO incurs collecting late amounts. To the fullest extent permitted by law, you waive all claims relating to charges unless claimed within 60 days after the charge (this does not affect your credit card issuer rights). Charges are solely based on Nitrous.IO&#8217;s measurements of your use of the Nitrous.IO Services, unless otherwise agreed to in writing. To the fullest extent permitted by law, refunds (if any) are at the discretion of Nitrous.IO and only in the form of credit for the Nitrous.IO Services. Nothing in these Terms obligates Nitrous.IO to extend credit to any party. You acknowledge and agree that any credit card and related billing and payment information that you provide to Nitrous.IO may be shared by Nitrous.IO with companies who work on Nitrous.IO&#8217;s behalf, such as payment processors and/or credit agencies, solely for the purposes of checking credit, effecting payment to Nitrous.IO and servicing your account. Nitrous.IO may also provide information in response to valid legal process, such as subpoenas, search warrants and court orders, or to establish or exercise its legal rights or defend against legal claims. Nitrous.IO shall not be liable for any use or disclosure of such information by such third parties. Nitrous.IO reserves the right to discontinue the provision of the Nitrous.IO Services to you for any late payments.</p>
+
+<p><em>4.3</em> Nitrous.IO may change its fees and payment policies for the Nitrous.IO Services by notifying you at least fifteen (15) days before the beginning of the billing cycle in which such change will take effect. Changes to the fees or payment policies will be posted on the website (or such other URL Nitrous.IO may provide from time to time). Any outstanding balance becomes immediately due and payable upon termination of the Terms for any reason.</p>
+
+<p><em>4.4</em> You may not develop multiple Applications to simulate or act as a single Application or otherwise access the Nitrous.IO Services in a manner intended to avoid incurring fees.</p>
+
+<h3 id='5_content_on_the_nitrousio_services_and_take_down_obligations'>5. Content on the Nitrous.IO Services and Take Down Obligations</h3>
+
+<p><em>5.1</em> You understand that all information (such as data files, written text, computer software, music, audio files or other sounds, photographs, videos or other images) to which you may have access as part of, or through your use of, the Nitrous.IO Services are the sole responsibility of the person from which such content originated. All such information is referred to below as the &#8220;Content.&#8221; The term Content shall specifically exclude the web application that you create using the Nitrous.IO Services and any source code written by you to be used with the Nitrous.IO Services (collectively, &#8220;Applications&#8221;).</p>
+
+<p><em>5.2</em> Nitrous.IO reserves the right (but shall have no obligation) to remove any or all Content from the Nitrous.IO Services. You agree to immediately take down any Content that violates the Acceptable Use Policy, including pursuant to a take down request from Nitrous.IO. In the event that you elect not to comply with a request from Nitrous.IO to take down certain Content, Nitrous.IO reserves the right to directly take down such Content or to disable Applications.</p>
+
+<p><em>5.3</em> In the event that you become aware of any violation of the Acceptable Use Policy by an End User of Applications, you shall immediately terminate such end user&#8217;s account on your Application. Nitrous.IO reserves the right to disable Applications in response to a violation or suspected violation of the Acceptable Use Policy.</p>
+
+<p><em>5.4</em> You agree that you are solely responsible for (and that Nitrous.IO has no responsibility to you or to any third party for) the Application or any Content that you create, transmit or display while using the Nitrous.IO Services and for the consequences of your actions (including any loss or damage which Nitrous.IO may suffer) by doing so.</p>
+
+<p><em>5.5</em> You agree that Nitrous.IO has no responsibility or liability for the deletion or failure to store any Content and other communications maintained or transmitted through use of the Service. You further acknowledge that you are solely responsible for securing and backing up your Applications and any Content.</p>
+
+<h3 id='6_proprietary_rights'>6. Proprietary Rights</h3>
+
+<p><em>6.1</em> You acknowledge and agree that Nitrous.IO (or Nitrous.IO&#8217;s licensors) own all legal right, title and interest in and to the Nitrous.IO Services, including any intellectual property rights which subsist in the Nitrous.IO Services (whether those rights happen to be registered or not, and wherever in the world those rights may exist).</p>
+
+<p><em>6.2</em> Except as provided in Section 8, Nitrous.IO acknowledges and agrees that it obtains no right, title or interest from you (or your licensors) under these Terms in or to any Content or Applications that you create, submit, post, transmit or display on, or through, the Nitrous.IO Services, including any intellectual property rights which subsist in that Content and the Application (whether those rights happen to be registered or not, and wherever in the world those rights may exist). Unless you have agreed otherwise in writing with Nitrous.IO, you agree that you are responsible for protecting and enforcing those rights and that Nitrous.IO has no obligation to do so on your behalf.</p>
+
+<h3 id='7_license_from_nitrousio_and_restrictions'>7. License from Nitrous.IO and Restrictions</h3>
+
+<p><em>7.1</em> Nitrous.IO gives you a personal, worldwide, royalty-free, non-assignable and non-exclusive license to use the software provided to you by Nitrous.IO as part of the Nitrous.IO Services as provided to you by Nitrous.IO. This license is for the sole purpose of enabling you to use and enjoy the benefit of the Nitrous.IO Services as provided by Nitrous.IO, in the manner permitted by the Terms.</p>
+
+<p><em>7.2</em> You may not (and you may not permit anyone else to):</p>
+
+<p><em>(a) copy, modify, create a derivative work of, reverse engineer, decompile or otherwise attempt to extract the source code of the Nitrous.IO Services or any part thereof, unless this is expressly permitted or required by law, or unless you have been specifically told that you may do so by Nitrous.IO, in writing (e.g., through an open source software license); or</em>(b) attempt to disable or circumvent any security mechanisms used by the Nitrous.IO Services or any applications running on the Nitrous.IO Services.</p>
+
+<p><em>7.3</em> Open source software licenses for components of the Nitrous.IO Services released under an open source license constitute separate written agreements. To the limited extent that the open source software licenses expressly supersede these Terms, the open source licenses govern your agreement with Nitrous.IO for the use of the components of the Nitrous.IO Services released under an open source license.</p>
+
+<p><em>7.4</em> Nitrous.IO hereby grants you a limited, non-exclusive, royalty-free, non-transferable license, with no right to sub-license, to display the Nitrous.IO trademarks and/or logos as provided here (“Marks”) for the sole purpose of promoting or advertising that you use the Nitrous.IO Services and solely in accordance with Nitrous.IO’s then current Trademark Usage Guidelines, which may be found at http://help.Action.io/trademark (or such other URL Nitrous.IO may provide from time to time). You agree that all goodwill generated through your use of the Nitrous.IO Marks shall inure to the benefit of Nitrous.IO.</p>
+
+<h3 id='8_license_from_you'>8. License from You</h3>
+
+<p><em>8.1</em> Nitrous.IO claims no ownership or control over any Content or Application. You retain copyright and any other rights you already hold in the Content and/or Application, and you are responsible for protecting those rights, as appropriate. By submitting, posting or displaying the Content on or through the Nitrous.IO Services you give Nitrous.IO a worldwide, royalty-free, and non-exclusive license to reproduce, adapt, modify, translate, publish, publicly perform, publicly display and distribute such Content for the sole purpose of enabling Nitrous.IO to provide you with the Nitrous.IO Services. Furthermore, by creating an Application through use of the Nitrous.IO Services, you give Nitrous.IO a worldwide, royalty-free, and non-exclusive license to reproduce, adapt, modify, translate, publish, publicly perform, publicly display and distribute such Application for the sole purpose of enabling Nitrous.IO to provide you with the Nitrous.IO Services.</p>
+
+<p><em>8.2</em> By adding a collaborator to your Application, you hereby grant to that user a non-exclusive, royalty-free, non-transferable license, with no right to sub-license, to use, display, perform, reproduce, modify, publish, distribute, list information regarding, edit, translate and analyze such Application(s) and Content as permitted by the relevant Nitrous.IO Services functionality or features for the sole purpose of collaborating on development of the Application(s).</p>
+
+<p><em>8.3</em> You may choose to or we may invite you to submit comments or ideas about the Nitrous.IO Services, including without limitation about how to improve the Nitrous.IO Services or our products (“Ideas”). By submitting any Idea, you agree that your disclosure is gratuitous, unsolicited and without restriction and will not place Nitrous.IO under any fiduciary or other obligation, and that we are free to use the Idea without any additional compensation to you, and/or to disclose the Idea on a non-confidential basis or otherwise to anyone.</p>
+
+<p><em>8.4</em> You agree that Nitrous.IO, in its sole discretion, may use your trade names, trademarks, service marks, logos, domain names and other distinctive brand features in presentations, marketing materials, customer lists, financial reports and Web site listings (including links to your website) for the purpose of advertising or publicizing your use of the Nitrous.IO Services.</p>
+
+<h3 id='9_addons'>9. Add-ons</h3>
+
+<p><em>9.1</em> Nitrous.IO may make available through the Nitrous.IO Services additional features, functionality, and services offered by third-party partners (“Add-ons”). Your use of Add-ons is subject to these Terms and to the applicable fees. You acknowledge for each Add-on you subscribe to or purchase through the Nitrous.IO Services, these Terms constitute a binding agreement between you and the third party licensor of that Add-on (“the Add-on Provider”) only. The Add-on Provider of each Add-on is solely responsible for that Add-on, the content therein, and any claims that you or any other party may have relating to that Add-on or your use of that Add-on. You acknowledge that you are purchasing the license to each Add-on from the Add-on Provider of that Add-on; Nitrous.IO is acting as agent for the Add-on Provider in providing each such Add-on to you; Nitrous.IO is not a party to the license between you and the Add-on Provider with respect to that Add-on; and Nitrous.IO is not responsible for that Add-on, the content therein, or any claims that you or any other party may have relating to that Add-on or your use of that Add-on. You acknowledge and agree that Nitrous.IO, and Nitrous.IO’s subsidiaries, are third party beneficiaries of the agreement between you and the Add-on Provider for each Add-on, and that Nitrous.IO will have the right (and will be deemed to have accepted the right) to enforce such license against you as a third party beneficiary thereof.</p>
+
+<p><em>9.2</em> By subscribing to or purchasing an Add-on, you grant Nitrous.IO permission to share your Application, Content, and user information with the Add-on Provider as necessary in order to provide you the Add-on.</p>
+
+<p><em>9.3</em> The license granted to you to use any Add-on is personal to you, and is not sublicensable to your End Users. You may not provide or resell Add-ons to others.</p>
+
+<h3 id='10_recommendations'>10. Recommendations</h3>
+
+<p><em>10.1</em> Nitrous.IO may, and you grant us permission to, make recommendations via the Nitrous.IO Services for products or services we think may be of interest to you based on your Application(s), Content, and/or use of the Nitrous.IO Services. We will never make recommendations directly to your End Users.</p>
+
+<h3 id='11_modification_and_termination_of_the_nitrousio_services'>11. Modification and Termination of the Nitrous.IO Services</h3>
+
+<p><em>11.1</em> Nitrous.IO is constantly innovating in order to provide the best possible experience for its users. You acknowledge and agree that the form and nature of the Nitrous.IO Services which Nitrous.IO provides may change from time to time without prior notice to you, subject to the terms in Section 4.3. Changes to the form and nature of the Nitrous.IO Services will be effective with respect to all versions of the Nitrous.IO Services; examples of changes to the form and nature of the Nitrous.IO Services include without limitation changes to fee and payment policies, security patches, added functionality, and other enhancements.</p>
+
+<p><em>11.2</em> You may terminate these Terms at any time by canceling your account on the Nitrous.IO Services. You will not receive any refunds if you cancel your account.</p>
+
+<p><em>11.3</em> You agree that Nitrous.IO, in its sole discretion and for any or no reason, may terminate your account or any part thereof. You agree that any termination of your access to the Nitrous.IO Services may be without prior notice, and you agree that Nitrous.IO will not be liable to you or any third party for such termination.</p>
+
+<p><em>11.4</em> You are solely responsible for exporting your Content and Application(s) from the Nitrous.IO Services prior to termination of your account for any reason, provided that if we terminate your account, we will provide you a reasonable opportunity to retrieve your Content and Application(s).</p>
+
+<p><em>11.5</em> Upon any termination of the Nitrous.IO Services or your account these Terms will also terminate, but Sections 6.1, 11, 12, 13, 14, and 18 shall continue to be effective after these Terms are terminated.</p>
+
+<h3 id='12_exclusion_of_warranties'>12. EXCLUSION OF WARRANTIES</h3>
+
+<p><em>12.1</em> NOTHING IN THESE TERMS, INCLUDING SECTIONS 12 AND 13, SHALL EXCLUDE OR LIMIT Nitrous.IO&#8217;S WARRANTY OR LIABILITY FOR LOSSES WHICH MAY NOT BE LAWFULLY EXCLUDED OR LIMITED BY APPLICABLE LAW.</p>
+
+<p><em>12.2</em> YOU EXPRESSLY UNDERSTAND AND AGREE THAT YOUR USE OF THE Nitrous.IO SERVICE IS AT YOUR SOLE RISK AND THAT THE Nitrous.IO SERVICES ARE PROVIDED &#8220;AS IS&#8221; AND &#8220;AS AVAILABLE.&#8221;</p>
+
+<p><em>12.3</em> Nitrous.IO, ITS SUBSIDIARIES AND AFFILIATES, AND ITS LICENSORS MAKE NO EXPRESS WARRANTIES AND DISCLAIM ALL IMPLIED WARRANTIES REGARDING THE Nitrous.IO SERVICES, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, Nitrous.IO, ITS SUBSIDIARIES AND AFFILIATES, AND ITS LICENSORS DO NOT REPRESENT OR WARRANT TO YOU THAT: (A) YOUR USE OF THE Nitrous.IO SERVICES WILL MEET YOUR REQUIREMENTS, (B) YOUR USE OF THE Nitrous.IO SERVICES WILL BE UNINTERRUPTED, TIMELY, SECURE OR FREE FROM ERROR, AND (C) USAGE DATA PROVIDED THROUGH THE Nitrous.IO SERVICES WILL BE ACCURATE.</p>
+
+<h3 id='13_limitation_of_liability'>13. LIMITATION OF LIABILITY</h3>
+
+<p><em>13.1</em> SUBJECT TO SECTION 12.1 ABOVE, YOU EXPRESSLY UNDERSTAND AND AGREE THAT Nitrous.IO, ITS SUBSIDIARIES AND AFFILIATES, AND ITS LICENSORS SHALL NOT BE LIABLE TO YOU FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL CONSEQUENTIAL OR EXEMPLARY DAMAGES WHICH MAY BE INCURRED BY YOU, HOWEVER CAUSED AND UNDER ANY THEORY OF LIABILITY. THIS SHALL INCLUDE, BUT NOT BE LIMITED TO, ANY LOSS OF PROFIT (WHETHER INCURRED DIRECTLY OR INDIRECTLY), ANY LOSS OF GOODWILL OR BUSINESS REPUTATION, ANY LOSS OF DATA SUFFERED, COST OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, OR OTHER INTANGIBLE LOSS.</p>
+
+<p><em>13.2</em> THE LIMITATIONS ON Nitrous.IO&#8217;S LIABILITY TO YOU IN PARAGRAPH 13.1 ABOVE SHALL APPLY WHETHER OR NOT Nitrous.IO HAS BEEN ADVISED OF OR SHOULD HAVE BEEN AWARE OF THE POSSIBILITY OF ANY SUCH LOSSES ARISING.</p>
+
+<h3 id='14_indemnification'>14. Indemnification</h3>
+
+<p><em>14.1</em> You agree to hold harmless and indemnify Nitrous.IO, and its subsidiaries, affiliates, officers, agents, employees, advertisers, licensors, suppliers or partners (collectively &#8220;Nitrous.IO and Partners&#8221;) from and against any third party claim arising from or in any way related to (a) your breach of the Terms, (b) your use of the Nitrous.IO Services, (c) your violation of applicable laws, rules or regulations in connection with the Nitrous.IO Services, or (d) your Content or your Application, including any liability or expense arising from all claims, losses, damages (actual and consequential), suits, judgments, litigation costs and attorneys&#8217; fees, of every kind and nature. In such a case, Nitrous.IO will provide you with written notice of such claim, suit or action.</p>
+
+<h3 id='15_copyright_policy'>15. Copyright Policy</h3>
+
+<p><em>15.1</em> You agree to set up a process to respond to notices of alleged infringement that comply with the United States&#8217; Digital Millennium Copyright Act (&#8220;DMCA notices&#8221;). It is Nitrous.IO&#8217;s policy to respond to DMCA notices or other applicable copyright laws and to terminate the accounts of repeat infringers. We reserve the right to take down content in your Application or, if necessary, the Application itself upon receipt of a valid DMCA notice. For more information, please go to http://legal.Nitrous.IO/dmca.</p>
+
+<h3 id='16_other_content'>16. Other Content</h3>
+
+<p><em>16.1</em> The Nitrous.IO Services may include hyperlinks to other web sites or content or resources or email content. Nitrous.IO may have no control over any web sites or resources which are provided by companies or persons other than Nitrous.IO.</p>
+
+<p><em>16.2</em> You acknowledge and agree that Nitrous.IO is not responsible for the availability of any such external sites or resources, and does not endorse any advertising, products or other materials on or available from such web sites or resources.</p>
+
+<p><em>16.3</em> You acknowledge and agree that Nitrous.IO is not liable for any loss or damage which may be incurred by you or your End Users as a result of the availability of those external sites or resources, or as a result of any reliance placed by you on the completeness, accuracy or existence of any advertising, products or other materials on, or available from, such web sites or resources.</p>
+
+<h3 id='17_changes_to_the_terms'>17. Changes to the Terms</h3>
+
+<p><em>17.1</em> Nitrous.IO may make changes to the Terms from time to time. If we change the Terms in any substantive way, we will give you at least seven (7) days notice before the changes take effect, during which period of time you may reject the changes by terminating your account.</p>
+
+<p><em>17.2</em> You understand and agree that if you use the Nitrous.IO Services after the date on which the Terms have changed, Nitrous.IO will treat your use as acceptance of the updated Terms.</p>
+
+<h3 id='18_general_legal_terms'>18. General Legal Terms</h3>
+
+<p><em>18.1</em> The Terms constitute the whole legal agreement between you and Nitrous.IO and govern your use of the Nitrous.IO Services (but excluding any services which Nitrous.IO may provide to you under a separate written agreement), and completely replace any prior agreements between you and Nitrous.IO in relation to the Nitrous.IO Services.</p>
+
+<p><em>18.2</em> There are no third party beneficiaries to these Terms. The parties are independent contractors, and nothing in these Terms creates an agency, partnership or joint venture.</p>
+
+<p><em>18.3</em> If Nitrous.IO provides you with a translation of the English language version of these Terms, the English language version of these Terms will control if there is any conflict.</p>
+
+<p><em>18.4</em> You agree that Nitrous.IO may provide you with notices, including those regarding changes to the Terms, by email, regular mail, or postings on the Nitrous.IO Services. By providing Nitrous.IO your email address, you consent to our using the email address to send you any notices required by law in lieu of communication by postal mail.</p>
+
+<p><em>18.5</em> You agree that if Nitrous.IO does not exercise or enforce any legal right or remedy which is contained in the Terms (or which Nitrous.IO has the benefit of under any applicable law), this will not be taken to be a formal waiver of Nitrous.IO&#8217;s rights and that those rights or remedies will still be available to Nitrous.IO.</p>
+
+<p><em>18.6</em> Nitrous.IO shall not be liable for failing or delaying performance of its obligations resulting from any condition beyond its reasonable control, including but not limited to, governmental action, acts of terrorism, earthquake, fire, flood or other acts of God, labor conditions, power failures, and Internet disturbances.</p>
+
+<p><em>18.7</em> The Terms, and your relationship with Nitrous.IO under the Terms, shall be governed by the laws of the State of California without regard to its conflict of laws provisions. You and Nitrous.IO agree to submit to the exclusive jurisdiction of the courts located within the county of Santa Clara, California to resolve any legal matter arising from the Terms.</p>
+
+<p><em>18.8</em> Neither party may assign any of its rights or obligations under these Terms, whether by operation of law or otherwise, without the prior written consent of the other party (not to be unreasonably withheld). Notwithstanding the foregoing, either party may assign the entirety of its rights and obligations under these Terms, without consent of the other party, to its affiliate or in connection with a merger, acquisition, corporate reorganization, or sale of all or substantially all of its assets not involving a direct competitor of the other party. A party’s sole remedy for any purported assignment by the other party in breach of this paragraph shall be, at the non-assigning party’s election, termination of your use of the Nitrous.IO Services upon written notice to the assigning party.</p>
+
+<p>This document is an adaptation of the Google App Engine Terms of Service. The original work has been modified. Google, Inc. is not connected with and does not sponsor or endorse Nitrous.IO or its use of the work.</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Security on Nitrous.IO]]></title>
+    <link href="/admin-security"/>
+    <updated>2013-06-28T00:00:00+00:00</updated>
+    <id>/admin-security</id>
+    <content type="html"><![CDATA[<h3 id='nitrousio_the_platform__web_service'>Nitrous.IO The Platform &amp; Web Service</h3>
+
+<p>Nitrous.IO is a cloud application platform used by software developers and software companies of all sizes to optimize development workflow. Our platform allows developers to focus on development while Nitrous.IO focuses on infrastructure management, development box setup and configuration and stack dissemination amongst teams.</p>
+
+<p>We are dedicated to protecting the security of the development resources that we provide, and protecting the trust of our customers is paramount to our definition of success. We build Nitrous.IO on top of the Nitrous.IO platform, so we are fully aware.</p>
+
+<h3 id='reporting_a_security_vulnerability'>Reporting a Security Vulnerability</h3>
+
+<p>If you discovered a security vulnerability with the system, please <a href='mailto:security@nitrous.io'>email us immediately</a>. We will diligently investigate the details of the issue and will work with you to understand the scope of the issue presented. Security is one of our highest priorities and we will always immediately address any security concerns <a href='mailto:security@nitrous.io'>sent to us</a>.</p>
+
+<p>Because the security vulernability may affect other users, we ask that you please do not share the issue publicly. We will avoid taking legal action against you or action against your account if you act in the benefit of the privacy of our community. We appreciate your research for the improvement of the system.</p>
+
+<h3 id='security_assessments_and_compliance'>Security Assessments and Compliance</h3>
+
+<h4 id='data_centers__infrastructure'>Data Centers / Infrastructure</h4>
+
+<p>Nitrous.IO’s physical infrastructure is hosted and managed within Amazon’s secure data centers and utilize the Amazon Web Service (AWS) technology. Amazon continually manages risk and undergoes recurring assessments to ensure compliance with industry standards. Amazon’s data center operations have been accredited under:</p>
+
+<ul>
+<li>ISO 27001</li>
+
+<li>SOC 1/SSAE 16/ISAE 3402 (Previously SAS 70 Type II)</li>
+
+<li>PCI Level 1</li>
+
+<li>FISMA Moderate</li>
+
+<li>Sarbanes-Oxley (SOX)</li>
+
+<li>PCI</li>
+</ul>
+
+<p>We use PCI compliant payment processor Stripe for encrypting and processing credit card payments. Nitrous.IO’s infrastructure provider is PCI Level 1 compliant.</p>
+
+<h3 id='physical_security'>Physical Security</h3>
+
+<p>Nitrous.IO utilizes ISO 27001 and FISMA certified data centers managed by Amazon. Amazon has many years of experience in designing, constructing, and operating large-scale data centers. This experience has been applied to the AWS platform and infrastructure. AWS data centers are housed in nondescript facilities, and critical facilities have extensive setback and military grade perimeter control berms as well as other natural boundary protection. Physical access is strictly controlled both at the perimeter and at building ingress points by professional security staff utilizing video surveillance, state of the art intrusion detection systems, and other electronic means. Authorized staff must pass two-factor authentication no fewer than three times to access data center floors. All visitors and contractors are required to present identification and are signed in and continually escorted by authorized staff.</p>
+
+<p>Amazon only provides data center access and information to employees who have a legitimate business need for such privileges. When an employee no longer has a business need for these privileges, his or her access is immediately revoked, even if they continue to be an employee of Amazon or Amazon Web Services. All physical and electronic access to data centers by Amazon employees is logged and audited routinely.</p>
+
+<p>For additional information see: https://aws.amazon.com/security</p>
+
+<h3 id='environmental_safeguards'>Environmental Safeguards</h3>
+
+<h4 id='fire_detection_and_suppression'>Fire Detection and Suppression</h4>
+
+<p>Automatic fire detection and suppression equipment has been installed to reduce risk. The fire detection system utilizes smoke detection sensors in all data center environments, mechanical and electrical infrastructure spaces, chiller rooms and generator equipment rooms. These areas are protected by either wet-pipe, double-interlocked pre-action, or gaseous sprinkler systems.</p>
+
+<h4 id='power'>Power</h4>
+
+<p>The data center electrical power systems are designed to be fully redundant and maintainable without impact to operations, 24 hours a day, and seven days a week. Uninterruptible Power Supply (UPS) units provide back-up power in the event of an electrical failure for critical and essential loads in the facility. Data centers use generators to provide backup power for the entire facility.</p>
+
+<h4 id='climate_and_temperature_control'>Climate and Temperature Control</h4>
+
+<p>Climate control is required to maintain a constant operating temperature for servers and other hardware, which prevents overheating and reduces the possibility of service outages. Data centers are conditioned to maintain atmospheric conditions at optimal levels. Monitoring systems and data center personnel ensure temperature and humidity are at the appropriate levels.</p>
+
+<h4 id='management'>Management</h4>
+
+<p>Data center staff monitor electrical, mechanical and life support systems and equipment so issues are immediately identified. Preventative maintenance is performed to maintain the continued operability of equipment.</p>
+
+<p>For additional information see: https://aws.amazon.com/security</p>
+
+<h3 id='network_security'>Network Security</h3>
+
+<h4 id='firewalls'>Firewalls</h4>
+
+<p>Firewalls are utilized to restrict access to systems from external networks and between systems internally. By default all access is denied and only explicitly allowed ports and protocols are allowed based on business need. Each system is assigned to a firewall security group based on the system’s function. Security groups restrict access to only the ports and protocols required for a system’s specific function to mitigate risk.</p>
+
+<p>Host-based firewalls restrict customer applications from establishing localhost connections over the loopback network interface to further isolate customer applications. Host-based firewalls also provide the ability to further limit inbound and outbound connections as needed.</p>
+
+<h4 id='ddos_mitigation'>DDoS Mitigation</h4>
+
+<p>Our infrastructure provides DDoS mitigation techniques including TCP Syn cookies and connection rate limiting in addition to maintaining multiple backbone connections and internal bandwidth capacity that exceeds the Internet carrier supplied bandwidth. We work closely with our providers to quickly respond to events and enable advanced DDoS mitigation controls when needed.</p>
+
+<h4 id='spoofing_and_sniffing_protections'>Spoofing and Sniffing Protections</h4>
+
+<p>Managed firewalls prevent IP, MAC, and ARP spoofing on the network and between virtual hosts to ensure spoofing is not possible. Packet sniffing is prevented by infrastructure including the hypervisor which will not deliver traffic to an interface which it is not addressed to. Nitrous.IO utilizes box isolation, operating system restrictions, and encrypted connections to further ensure risk is mitigated at all levels.</p>
+
+<h4 id='port_scanning'>Port Scanning</h4>
+
+<p>Port scanning is prohibited and every reported instance is investigated by our infrastructure provider. When port scans are detected, they are stopped and access is blocked.</p>
+
+<h3 id='data_security'>Data Security</h3>
+
+<h4 id='customer_applications'>Customer Applications</h4>
+
+<p>Each development box on Nitrous.IO runs within its own isolated environment and cannot interact with other applications or areas of the system. This restrictive operating environment is designed to prevent security and stability issues. These self-contained environments isolate processes, memory, and the file system using LXC while host-based firewalls restrict applications from establishing local network connections.</p>
+
+<h3 id='addons'>Add-ons</h3>
+
+<p>Customers can extend the functionality of applications by using Nitrous.IO add-ons. Add-ons are offered and managed by 3rd party companies and implement their own security controls and processes.</p>
+
+<p>For additional information see: https://addons.nitrous.io</p>
+
+<h3 id='system_security'>System Security</h3>
+
+<h4 id='system_configuration'>System Configuration</h4>
+
+<p>System configuration and consistency is maintained through standard, up-to-date images, configuration management software, and by replacing systems with updated deployments. Systems are deployed using up-to-date images that are updated with configuration changes and security updates before deployment. Once deployed, existing systems are decommissioned and replaced with up-to-date systems.</p>
+
+<h4 id='customer_application_isolation'>Customer Application Isolation</h4>
+
+<p>Applications on the Nitrous.IO platform run within their own isolated environment and cannot interact with other applications or areas of the system to prevent security and stability issues. These self-contained environments isolate processes, memory, and the file system while host-based firewalls restrict applications from establishing local network connections.</p>
+
+<h4 id='system_authentication'>System Authentication</h4>
+
+<p>Operating system access is limited to Nitrous.IO staff and requires username and key authentication. Operating systems do not allow password authentication to prevent password brute force attacks, theft, and sharing.</p>
+
+<h4 id='vulnerability_management'>Vulnerability Management</h4>
+
+<p>Our vulnerability management process is designed to remediate risks without customer interaction or impact. Nitrous.IO is notified of vulnerabilities through internal and external assessments, system patch monitoring, and third party mailing lists and services. Each vulnerability is reviewed to determine if it is applicable to Nitrous.IO’s environment, ranked based on risk, and assigned to the appropriate team for resolution.</p>
+
+<p>New systems are deployed with the latest updates, security fixes, and Nitrous.IO configurations and existing systems are decommissioned as customers are migrated to the new instances. This process allows Nitrous.IO to keep the environment up-to-date. Since customer applications run in isolated environments, they are unaffected by these core system updates.</p>
+
+<p>To further mitigate risk, each component type is assigned to a unique network security group. These security groups are designed to only allow access to the ports and protocols required for the specific component type. For example, user applications running within an isolated dyno are denied access to the Nitrous.IO management infrastructure as each is within its own network security group and access is not allowed between the two.</p>
+
+<h4 id='nitrousio_application_security'>Nitrous.IO Application Security</h4>
+
+<p>We undergo penetration tests, vulnerability assessments, and source code reviews to assess the security of our application, architecture, and implementation. Our third party security assessments cover all areas of our platform including testing for OWASP Top 10 web application vulnerabilities and customer application isolation. Nitrous.IO works closely with external security assessors to review the security of the Nitrous.IO platform and applications and apply best practices.</p>
+
+<p>Issues found in Nitrous.IO applications are risk ranked, prioritized, assigned to the responsible team for remediation, and Nitrous.IO’s security team reviews each remediation plan to ensure proper resolution.</p>
+
+<h3 id='backups'>Backups</h3>
+
+<h4 id='development_boxes'>Development Boxes</h4>
+
+<p>Development boxes on the Nitrous.IO platform are automatically backed up as part of the deployment process on secure, access controlled, and redundant storage. We use these backups to activate your box on our platform and to automatically bring your development box back online in the event of an outage.</p>
+
+<h4 id='customer_configuration_and_metainformation'>Customer Configuration and Meta-information</h4>
+
+<p>Your configuration and meta-information is backed up every minute to the same high-durability, redundant infrastructure used to store your database information. These frequent backups allow capturing changes made to the running application configuration added after the initial deployment.</p>
+
+<h4 id='nitrousio_platform'>Nitrous.IO Platform</h4>
+
+<p>From our instance images to our databases, each component is backed up to secure, access-controlled, and redundant storage. Our platform allows for recovering databases to within seconds of the last known state, restoring system instances from standard templates, and deploying customer applications and data. In addition to standard backup practices, Nitrous.IO’s infrastructure is designed to scale and be fault tolerant by automatically replacing failed instances and reducing the likelihood of needing to restore from backup.</p>
+
+<h3 id='disaster_recovery'>Disaster Recovery</h3>
+
+<h4 id='customer_applications_and_databases'>Customer Applications and Databases</h4>
+
+<p>Our platform automatically restores customer applications and Nitrous.IO Postgres databases in the case of an outage. The Nitrous.IO platform is designed to dynamically instantiate development boxes within the Nitrous.IO cloud, monitor for failures, and recover failed components including development boxes.</p>
+
+<h4 id='nitrousio_platform'>Nitrous.IO Platform</h4>
+
+<p>The Nitrous.IO platform is designed for stability, performance and inherently mitigates common issues that lead to outages while maintaining recovery capabilities. Our platform maintains redundancy to prevent single points of failure, is able to replace failed components, and utilizes multiple data centers designed for resiliency. In the case of an outage, the platform is deployed across multiple data centers using current system images and data is restored from backups. Nitrous.IO reviews platform issues to understand the root cause, impact to customers, and improve the platform and processes.</p>
+
+<h4 id='customer_data_retention_and_destruction'>Customer Data Retention and Destruction</h4>
+
+<p>You have the freedom to define what data your applications store and the ability to purge data from your databases to comply with your data retention requirements. If you deprovision a development box and associated services, we maintain snapshots of the development box and manifests of 3rd party services for one week after which time its automatically destroyed rendering the data unrecoverable.</p>
+
+<p>Decommissioning hardware is managed by our infrastructure provider using a process designed to prevent customer data exposure. AWS uses techniques outlined in DoD 5220.22-M (“National Industrial Security Program Operating Manual “) or NIST 800-88 (“Guidelines for Media Sanitization”) to destroy data.</p>
+
+<p>For additional information see: https://aws.amazon.com/security</p>
+
+<h3 id='privacy'>Privacy</h3>
+
+<p>Nitrous.IO has a published privacy policy that clearly defines what data is collected and how it is used. Nitrous.IO is committed to customer privacy and transparency.</p>
+
+<p>We takes steps to protect the privacy of our customers and protect data stored within the platform. Some of the protections inherent to Nitrous.IO’s products include authentication, access controls, data transport encryption, HTTPS support for customer applications, and the ability for customers to encrypt stored data.</p>
+
+<h3 id='access_to_customer_data'>Access to Customer Data</h3>
+
+<p>The Nitrous.IO staff does not access or interact with customer data or applications as part of normal operations. There may be cases where Nitrous.IO is requested to interact with customer data or applications at the request of the customer for support purposes or where required by law. Customer data is access controlled and all access by Nitrous.IO staff is accompanied by customer approval or government mandate, reason for access, actions taken by staff, and support start and end time.</p>
+
+<h3 id='customer_security_best_practices'>Customer Security Best Practices</h3>
+
+<h4 id='encrypt_data_in_transit'>Encrypt Data in Transit</h4>
+
+<p>Enable HTTPS for applications and SSL database connections to protect sensitive data transmitted to and from applications.</p>
+
+<h4 id='encrypt_sensitive_data_at_rest'>Encrypt Sensitive Data at Rest</h4>
+
+<p>Customers with sensitive data can encrypt stored files and data within databases to meet their data security requirements. Data encryption can be deployed using industry standard encryption and the best practices for your language or framework.</p>
+
+<h4 id='secure_development_practices'>Secure Development Practices</h4>
+
+<p>Apply development best practices for your chosen development language and framework to mitigate known vulnerability types such as those on the OWASP Top 10 Web Application Security Risks.</p>
+
+<h4 id='authentication'>Authentication</h4>
+
+<p>To prevent unauthorized account access use a strong passphrase for both your Nitrous.IO user account and SSH keys, store SSH keys securely to prevent disclosure, replace keys if lost or disclosed, and use Nitrous.IO’s RBAC model to invite contributors rather than sharing user accounts.</p>
+
+<h4 id='use_of_thirdparty_solutions'>Use of Third-Party Solutions</h4>
+
+<p>In developing your application on Nitrous.IO you may choose to use third party services for added functionality such as Amazon S3, an email service provider, or one of our add-on partners. Be mindful of the data shared with these providers and their security practices just as you would be with Nitrous.IO.</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Privacy policy]]></title>
+    <link href="/admin-privacy"/>
+    <updated>2013-06-28T00:00:00+00:00</updated>
+    <id>/admin-privacy</id>
+    <content type="html"><![CDATA[<p><em>This Privacy Policy is effective April 1, 2013.</em></p>
+
+<p>Irrational Industries, Inc. the makers and owners of Nitrous.IO (&#8220;Nitrous.IO” or the “Company”) is committed to protecting the privacy of your information. This Privacy Statement describes Nitrous.IO Web site and platform privacy practices.</p>
+
+<h3 id='1_web_site_covered'>1. Web Site Covered</h3>
+
+<p>This Privacy Statement covers the information and practices of http://nitrous.io.</p>
+
+<h3 id='2_information_collected'>2. Information Collected</h3>
+
+<p>Nitrous.IO offers a variety of services that are collectively referred to as the “Services.” Nitrous.IO collects information from individuals who visit the Company’s Web site (“Visitors”) and individuals who register to use the Services (“Customers”).</p>
+
+<p>When expressing an interest in obtaining additional information about the Services or registering to use the Services, Nitrous.IO requires you to provide the Company with personal contact information, such as name, company name, address, phone number, and email address (“Required Contact Information”). When purchasing the Services, Nitrous.IO requires you to provide the Company with financial qualification and billing information, such as billing name and address, credit card number, and the number of employees within the organization that will be using the Services (“Billing Information”). Nitrous.IO may also ask you to provide additional information, such as company annual revenues, number of employees, or industry (“Optional Information”). Required Contact Information, Billing Information, and Optional Information are referred to collectively as “Data About Nitrous.IO Customers.”</p>
+
+<p>As you navigate the Company’s Web site, Nitrous.IO may also collect information through the use of commonly-used information-gathering tools, such as cookies and Web beacons (“Web Site Navigational Information”). Web Site Navigational Information includes standard information from your Web browser (such as browser type and browser language), your Internet Protocol (“IP”) address, and the actions you take on the Company’s Web site (such as the Web pages viewed and the links clicked).</p>
+
+<h3 id='3_use_of_information_collected'>3. Use of Information Collected</h3>
+
+<p>The Company uses Data About Nitrous.IO Customers to perform the services requested. For example, if you fill out a “Contact Me” Web form, the Company will use the information provided to contact you about your interest in the Services.</p>
+
+<p>The Company may also use Data About Nitrous.IO Customers for marketing purposes. For example, the Company may use information you provide to contact you to further discuss your interest in the Services and to send you information regarding the Company and its partners, such as information about promotions or events.</p>
+
+<p>Nitrous.IO uses credit card information solely to check the financial qualifications of prospective Customers and to collect payment for the Services.</p>
+
+<p>Nitrous.IO uses Web Site Navigational Information to operate and improve the Company’s Web site. The Company may also use Web Site Navigational Information alone or in combination with Data About Nitrous.IO Customers to provide personalized information about the Company.</p>
+
+<h3 id='4_web_site_navigational_information'>4. Web Site Navigational Information</h3>
+
+<p>Nitrous.IO uses commonly-used information-gathering tools, such as cookies and Web beacons, to collect information as you navigate the Company’s Web site (“Web Site Navigational Information”). This section describes the types of Web Site Navigational Information that may be collected on the Company’s Web site and how this information may be used.</p>
+
+<h4 id='41_cookies'>4.1 Cookies</h4>
+
+<p>Nitrous.IO uses cookies to make interactions with the Company’s Web site easy and meaningful. When you visit the Company’s Web site, Nitrous.IO’s servers send a cookie to your computer. Standing alone, cookies do not personally identify you. They merely recognize your Web browser. Unless you choose to identify yourself to Nitrous.IO, either by responding to a promotional offer, opening an account, or filling out a Web form (such as a “Contact Me” or a “30 Day Free Trial” Web form), you remain anonymous to the Company. Nitrous.IO uses cookies that are session-based and persistent-based. Session cookies exist only during one session. They disappear from your computer when you close your browser software or turn off your computer. Persistent cookies remain on your computer after you close your browser or turn off your computer.</p>
+
+<p>If you have chosen to identify yourself to Nitrous.IO, the Company uses session cookies containing encrypted information to allow the Company to uniquely identify you. Each time you log into the Services, a session cookie containing an encrypted, unique identifier that is tied to your account is placed your browser. These session cookies allow the Company to uniquely identify you when you are logged into the Services and to process your online transactions and requests. Session cookies are required to use the Services.</p>
+
+<p>Nitrous.IO uses persistent cookies that only the Company can read and use to identify browsers that have previously visited the Company’s Web site. When you purchase the Services or provide the Company with personal information, a unique identifier is assigned you. This unique identifier is associated with a persistent cookie that the Company places on your Web browser. The Company is especially careful about the security and confidentiality of the information stored in persistent cookies. For example, the Company does not store account numbers or passwords in persistent cookies. If you disable your Web browser’s ability to accept cookies, you will be able to navigate the Company’s Web site, but you will not be able to successfully use the Services.</p>
+
+<p>Nitrous.IO may use information from session and persistent cookies in combination with Data About Nitrous.IO Customers to provide you with information about the Company and the Services.</p>
+
+<h4 id='42_web_beacons'>4.2 Web Beacons</h4>
+
+<p>Nitrous.IO uses Web beacons alone or in conjunction with cookies to compile information about Customers and Visitors’ usage of the Company’s Web site and interaction with emails from the Company. Web beacons are clear electronic images that can recognize certain types of information on your computer, such as cookies, when you viewed a particular Web site tied to the Web beacon, and a description of a Web site tied to the Web beacon. For example, Nitrous.IO may place Web beacons in marketing emails that notify the Company when you click on a link in the email that directs you to one of the Company’s Web site. Nitrous.IO uses Web beacons to operate and improve the Company’s Web site and email communications.</p>
+
+<p>Nitrous.IO may use information from Web beacons in combination with Data About Nitrous.IO Customers to provide you with information about the Company and the Services.</p>
+
+<h4 id='43_flash_cookies'>4.3 Flash Cookies</h4>
+
+<p>Nitrous.IO may use local shared objects, also known as Flash cookies, to store your preferences or display content based upon what you view on our site to personalize your visit. Third parties, with whom the Company partners to provide certain features on our site or to display advertising based upon your Web browsing activity, use Flash cookies to collect and store information.</p>
+
+<p>Flash cookies are different from browser cookies because of the amount of, type of, and how data is stored. Cookie management tools provided by your browser will not remove Flash cookies. To learn how to manage privacy and storage settings for Flash cookies click here.</p>
+
+<h4 id='44_ip_addresses'>4.4 IP Addresses</h4>
+
+<p>When you visit Nitrous.IO’s Web site, the Company collects your Internet Protocol (“IP”) addresses to track and aggregate non-personal information. For example, Nitrous.IO uses IP addresses to monitor the regions from which Customers and Visitors navigate the Company’s Web site.</p>
+
+<h4 id='45_third_party_cookies'>4.5 Third Party Cookies</h4>
+
+<p>From time-to-time, Nitrous.IO engages third parties to track and analyze usage and volume statistical information from individuals who visit the Company’s Web site. Nitrous.IO may also use other third-party cookies to track the performance of Company advertisements. The information provided to third parties does not include personal information, but this information may be re-associated with personal information after the Company receives it.</p>
+
+<p>Nitrous.IO may also contract with third-party advertising networks that collect IP addresses and other Web Site Navigational Information on the Company’s Web site and emails and on third-party Web sites. Ad networks follow your online activities over time by collecting Web Site Navigational Information through automated means, including through the use of cookies. They use this information to provide advertisements about products and services tailored to your interests. You may see these advertisements on other Web sites. This process also helps us manage and track the effectiveness of our marketing efforts. To learn more about these and other advertising networks and their opt-out instructions, click here.</p>
+
+<h3 id='5_public_forums_refer_a_friend_and_customer_testimonials'>5. Public Forums, Refer a Friend, and Customer Testimonials</h3>
+
+<p>Nitrous.IO may provide bulletin boards, blogs, or chat rooms on the Company’s Web site. Any personal information you choose to submit in such a forum may be read, collected, or used by others who visit these forums, and may be used to send you unsolicited messages. Nitrous.IO is not responsible for the personal information you choose to submit in these forums.</p>
+
+<p>Customers and Visitors may elect to use the Company’s referral program to inform friends about the Company’s Web site. When using the referral program, the Company requests the friend’s name and email address. Nitrous.IO will automatically send the friend a one-time email inviting him or her to visit the Company’s Web site. Nitrous.IO does not store this information.</p>
+
+<p>Nitrous.IO may post a list of Customers and testimonials on the Company’s Web site that contain information such as Customer names and titles. Nitrous.IO obtains the consent of each Customer prior to posting any information on such a list or posting testimonials.</p>
+
+<h3 id='6_sharing_of_information_collected'>6. Sharing of Information Collected</h3>
+
+<p>Nitrous.IO may share Data About Nitrous.IO Customers with the Company’s service providers so that these service providers can contact Customers and Visitors who have provided contact information on our behalf. Nitrous.IO may also share Data About Nitrous.IO Customers with the Company’s service providers to ensure the quality of information provided. Unless described in this privacy statement, Nitrous.IO does not share, sell, rent, or trade any information provided with third parties for their promotional purposes.</p>
+
+<p>From time to time, Nitrous.IO may partner with other companies to jointly offer products or services. If you purchase or specifically express interest in a jointly-offered product or service from Nitrous.IO, the Company may share Data About Nitrous.IO Customers collected in connection with your purchase or expression of interest with our joint promotion partner(s). Nitrous.IO does not control our business partners’ use of the Data About Nitrous.IO Customers we collect, and their use of the information will be in accordance with their own privacy policies. If you do not wish for your information to be shared in this manner, you may opt not to purchase or specifically express interest in a jointly offered product or service.</p>
+
+<p>Nitrous.IO uses a third-party service provider to manage credit card processing. This service provider is not permitted to store, retain, or use Billing Information except for the sole purpose of credit card processing on the Company’s behalf.</p>
+
+<p>Nitrous.IO reserves the right to use or disclose information provided if required by law or if the Company reasonably believes that use or disclosure is necessary to protect the Company’s rights and/or to comply with a judicial proceeding, court order, or legal process.</p>
+
+<h3 id='7_international_transfer_of_information_collected'>7. International Transfer of Information Collected</h3>
+
+<p>To facilitate Nitrous.IO’s global operations, the Company may transfer and access Data About Nitrous.IO Customers from around the world, including the United States. This Privacy Statement shall apply even if Nitrous.IO transfers Data About Nitrous.IO Customers to other countries.</p>
+
+<h3 id='8_communications_preferences'>8. Communications Preferences</h3>
+
+<p>Nitrous.IO offers Customers and Visitors who provide contact information a means to choose how the Company uses the information provided. You may manage your receipt of marketing and non-transactional communications by clicking on the “unsubscribe” link located on the bottom of the Company’s marketing emails. Additionally, you may send a request specifying your communications preferences to support@nitrous.io. Customers cannot opt out of receiving transactional emails related to their account with Nitrous.IO or the Services.</p>
+
+<h3 id='9_correcting_and_updating_your_information'>9. Correcting and Updating Your Information</h3>
+
+<p>Customers may update or change their registration information by logging in to their accounts at http://nitrous.io. Requests to access, change, or delete your information will be handled within 30 days.</p>
+
+<h3 id='10_security'>10. Security</h3>
+
+<p>Nitrous.IO uses appropriate administrative, technical, and physical security measures to protect Data About Nitrous.IO Customers.</p>
+
+<h3 id='11_changes_to_this_privacy_statement'>11. Changes to this Privacy Statement</h3>
+
+<p>Nitrous.IO reserves the right to change this Privacy Statement. Nitrous.IO will provide notification of the material changes to this Privacy Statement through the Company’s Web site at least thirty (30) business days prior to the change taking effect.</p>
+
+<h3 id='12_contact_us'>12. Contact Us</h3>
+
+<p>Questions regarding this Privacy Statement or the information practices of the Company’s Web site should be directed to privacy@nitrous.io or by mailing Nitrous.IO Privacy, 535 Middlefield Rd. Suite 245, Menlo Park, CA 94025.</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Beta agreement]]></title>
+    <link href="/admin-beta"/>
+    <updated>2013-06-28T00:00:00+00:00</updated>
+    <id>/admin-beta</id>
+    <content type="html"><![CDATA[<p>This Beta Agreement (the &#8220;Agreement&#8221;) contains the exclusive terms and conditions between Irrational Industries, Inc., a Delaware corporation (“Company”) and you (and the organization you represent) (&#8220;You&#8221;) and it governs Your testing, evaluation and use of the beta version of the Services, any related software and website to which Company gives You access (&#8220;Services&#8221;). By accessing the Services for the evaluation purposes described herein You are consenting to be bound by and are becoming a party to the terms and conditions of this Agreement. If You do not agree to all of the terms of this Agreement, You must not access the Services.</p>
+
+<h3 id='1_evaluation'>1. Evaluation.</h3>
+
+<p>During the time period permitted by Company (the “Term”) You may access the Services and test the functionality and other features of the Services, but only to evaluate the Services for their intended purpose. From time to time as requested by Company You agree to participate in the feedback programs administered by Company.</p>
+
+<p>This Agreement does not entitle You to any technical support with respect to the Services, but any such support provided by Company in its sole discretion shall be subject to this Agreement. If You are under the age of 18, You shall not access, browse or use the Services, and by using the Services, You represent and warrant that You are at least 18 years of age.</p>
+
+<h3 id='2_third_party_services'>2. Third Party Services.</h3>
+
+<p>The Services may also allow You to access services provided by third parties or you may use third party services to access the Services. You acknowledge that Company is not responsible nor liable for such services, and that Your use of such services may be subject to separate terms between You and the company providing those services.</p>
+
+<h3 id='3_restrictions_ownership'>3. Restrictions; Ownership.</h3>
+
+<p>You may not, directly or indirectly: copy, distribute, rent, lease, timeshare, operate a service bureau with, use for the benefit of a third party, reverse engineer, disassemble, decompile, attempt to discover the source code or structure, sequence and organization of, or remove any proprietary notices from, the Services. You shall not:</p>
+
+<p><em>(a) use the Services to abuse, harass, threaten, intimidate or otherwise violate the legal rights (including intellectual property rights or rights of privacy and publicity) of others;</em>(b) use the Services for any unauthorized purpose or in violation of any applicable laws; <em>(c) transmit any content that You do not have a right to transmit under any law or under contractual or fiduciary relationships;</em>(d) interfere with or disrupt the Services. As between the parties, title, ownership rights, and intellectual property rights in and to the Services, and any copies or portions thereof, shall remain in Company and its suppliers or licensors.</p>
+
+<h3 id='4_confidentiality_feedback'>4. Confidentiality; Feedback.</h3>
+
+<p>Your acknowledge that, in the course of evaluating the Services, You will obtain information relating to the Company and the Services which is confidential in nature (“Confidential Information”). You agree that You will not use or disclose Confidential Information without the prior written consent of Company unless such Confidential Information becomes part of the public domain. Further, if You provide Company any feedback, ideas, concepts or suggestions about the Company’s Services, business, technology or Confidential Information (“Feedback”), You grant Company, without charge, the fully paid-up, irrevocable right and license to use, share, commercialize and otherwise fully exercise and exploit Your Feedback and all related rights (and to allow others to do so) in any way and for any purpose. These rights survive termination of this agreement in perpetuity.</p>
+
+<h3 id='5_termtermination'>5. Term/Termination.</h3>
+
+<p>This Agreement will commence on the date that You first accept the terms of this Agreement by clicking “yes” below (or otherwise create an account) and shall continue for the Term. Sections 2-9 of this Agreement will survive any expiration or termination of this Agreement. All rights You are granted herein shall immediately terminate upon expiration or termination of this Agreement and You shall immediately return to Company or destroy all Confidential Information (including all Software). In addition to any other rights set forth herein, Company may in its sole discretion restrict, suspend or terminate Your access to the Services, in whole or in part and without notice.</p>
+
+<h3 id='6_disclaimer'>6. Disclaimer.</h3>
+
+<p>The parties acknowledge that the Services are experimental in nature and that the Services are provided “AS IS.” COMPANY DISCLAIMS ALL WARRANTIES RELATING TO THE SUBJECT MATTER HEREOF, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+
+<h3 id='7_limitation_of_remedies_and_damages_company_shall_not_be_responsible_or_liable_with_respect_to_any_subject_matter_of_this_agreement_or_terms_and_conditions_related_thereto_under_any_contract_negligence_strict_liability_or_other_theory_a_for_loss_or_inaccuracy_of_data_or_cost_of_procurement_of_substitute_goods_services_or_technology_b_for_any_indirect_incidental_or_consequential_damages_including_but_not_limited_to_loss_of_revenues_and_loss_of_profits_or_c_any_amount_in_the_aggregate_in_excess_of_the_amounts_you_have_paid_company_in_the_last_six_6_months_or_if_greater_fifty_dollars_50_company_shall_not_be_responsible_for_any_matter_beyond_its_reasonable_control'>7. Limitation of Remedies and Damages. COMPANY SHALL NOT BE RESPONSIBLE OR LIABLE WITH RESPECT TO ANY SUBJECT MATTER OF THIS AGREEMENT OR TERMS AND CONDITIONS RELATED THERETO UNDER ANY CONTRACT, NEGLIGENCE, STRICT LIABILITY OR OTHER THEORY (A) FOR LOSS OR INACCURACY OF DATA OR, COST OF PROCUREMENT OF SUBSTITUTE GOODS, SERVICES OR TECHNOLOGY, (B) FOR ANY INDIRECT, INCIDENTAL OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED TO LOSS OF REVENUES AND LOSS OF PROFITS, OR (C) ANY AMOUNT IN THE AGGREGATE IN EXCESS OF THE AMOUNTS YOU HAVE PAID COMPANY IN THE LAST SIX (6) MONTHS, OR, IF GREATER, FIFTY DOLLARS ($50). COMPANY SHALL NOT BE RESPONSIBLE FOR ANY MATTER BEYOND ITS REASONABLE CONTROL.</h3>
+
+<h3 id='8_equitable_relief'>8. Equitable Relief.</h3>
+
+<p>You acknowledge and agree that due to the unique nature of Company’s Confidential Information, there can be no adequate remedy at law for any breach of Your obligations hereunder, that any such breach may allow You or third parties to unfairly compete with Company resulting in irreparable harm to Company, and therefore, that upon any such breach or threat thereof, Company shall be entitled to injunctions and other appropriate equitable relief in addition to whatever remedies it may have at law.</p>
+
+<h3 id='9_miscellaneous'>9. Miscellaneous.</h3>
+
+<p>In the event that any of the provisions of this Agreement shall be held by a court or other tribunal of competent jurisdiction to be unenforceable, such provisions shall be limited or eliminated to the minimum extent necessary so that this Agreement shall otherwise remain in full force and effect and enforceable. This Agreement constitutes the entire agreement between the parties pertaining to the subject matter hereof, and any and all written or oral agreements previously existing between the parties are expressly cancelled. Neither the rights nor the obligations arising under this Agreement are assignable or transferable by You, and any such attempted assignment or transfer shall be void and without effect. This Agreement shall be governed by and construed in accordance with the laws of the State of California without regard to the conflicts of laws provisions therein.</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Acceptible use policy]]></title>
+    <link href="/admin-aup"/>
+    <updated>2013-06-28T00:00:00+00:00</updated>
+    <id>/admin-aup</id>
+    <content type="html"><![CDATA[<p>Your use of Nitrous.IO (the &#8220;Service&#8221;) is subject to the following Acceptable Use Policy. If you are found to be in violation of our policies at any time, as determined by Nitrous.IO in its sole discretion, we may warn you or suspend or terminate your account. Please note that we may change our Acceptable Use Policy at any time, and pursuant to the Nitrous.IO Terms, it is your responsibility to keep up-to-date with and adhere to the policies posted here. All capitalized terms used herein have the meanings stated in the Terms, unless stated otherwise.</p>
+
+<h2 id='prohibited_content'>Prohibited Content</h2>
+
+<p>The Content displayed and/or processed through your Application or other web site utilizing the Service shall not contain any of the following types of content:</p>
+
+<ul>
+<li>Content that infringes a third party&#8217;s rights (e.g., copyright) according to applicable law</li>
+
+<li>Excessively profane content</li>
+
+<li>Hate-related or violent content</li>
+
+<li>Content advocating racial or ethnic intolerance</li>
+
+<li>Content intended to advocate or advance computer hacking or cracking</li>
+
+<li>Gambling</li>
+
+<li>Other illegal activity, including without limitation illegal export of controlled substances or illegal software</li>
+
+<li>Drug paraphernalia</li>
+
+<li>Phishing</li>
+
+<li>Malicious content</li>
+
+<li>Other material, products or services that violate or encourage conduct that would violate any criminal laws, any other applicable laws, or any third-party rights.</li>
+
+<li>Prohibited Actions</li>
+</ul>
+
+<p>In addition to (and/or as some examples of) the violations described in the Terms, you may not and may not allow any third party, including your End Users, to:</p>
+
+<ul>
+<li>
+<p>Generate or facilitate unsolicited commercial email (&#8220;spam&#8221;). Such activity includes, but is not limited to:</p>
+
+<ul>
+<li>sending email in violation of the CAN-SPAM Act or any other applicable anti-spam law</li>
+
+<li>imitating or impersonating another person or his, her or its email address, or creating false accounts for the purpose of sending spam</li>
+
+<li>data mining any web property (including Nitrous.IO) to find email addresses or other user account information</li>
+
+<li>sending unauthorized mail via open, third-party servers</li>
+
+<li>sending emails to users who have requested to be removed from a mailing list</li>
+
+<li>selling, exchanging or distributing to a third party the email addresses of any person without such person&#8217;s knowing and continued consent to such disclosure and</li>
+
+<li>sending unsolicited emails to significant numbers of email addresses belonging to individuals and/or entities with whom you have no preexisting relationship.</li>
+</ul>
+</li>
+
+<li>
+<p>Send, upload, distribute or disseminate or offer to do the same with respect to any unlawful, defamatory, harassing, abusive, fraudulent, infringing, obscene, or otherwise objectionable content</p>
+</li>
+
+<li>
+<p>Intentionally distribute viruses, worms, defects, Trojan horses, corrupted files, hoaxes, or any other items of a destructive or deceptive nature</p>
+</li>
+
+<li>
+<p>Conduct or forward pyramid schemes and the like</p>
+</li>
+
+<li>
+<p>Transmit content that may be harmful to minors</p>
+</li>
+
+<li>
+<p>Impersonate another person (via the use of an email address or otherwise) or otherwise misrepresent yourself or the source of any email</p>
+</li>
+
+<li>
+<p>Illegally transmit another&#8217;s intellectual property or other proprietary information without such owner&#8217;s or licensor&#8217;s permission</p>
+</li>
+
+<li>
+<p>Use the Service to violate the legal rights (such as rights of privacy and publicity) of others</p>
+</li>
+
+<li>
+<p>Promote or encourage illegal activity</p>
+</li>
+
+<li>
+<p>Interfere with other users&#8217; enjoyment of the Service</p>
+</li>
+
+<li>
+<p>Sell, trade, resell or otherwise exploit the Service for any unauthorized commercial purpose</p>
+</li>
+
+<li>
+<p>Modify, adapt, translate, or reverse engineer any portion of the Service</p>
+</li>
+
+<li>
+<p>Remove any copyright, trademark or other proprietary rights notices contained in or on the Service</p>
+</li>
+
+<li>
+<p>Reformat or frame any portion of the web pages that are part of the Service&#8217;s administration display</p>
+</li>
+
+<li>
+<p>Use the Service in connection with illegal peer-to-peer file sharing</p>
+</li>
+
+<li>
+<p>Display any content on the Service that contains any hate-related or violent content or contains any other material, products or services that violate or encourage conduct that would violate any criminal laws, any other applicable laws, or any third party rights</p>
+</li>
+
+<li>
+<p>Modify the Nitrous.IO logo or any other Nitrous.IO Marks or</p>
+</li>
+
+<li>
+<p>Use the Service, or any interfaces provided with the Service, to access any Nitrous.IO product or service in a manner that violates the Terms or other terms and conditions for use of such Nitrous.IO product or service.</p>
+</li>
+</ul>
+
+<h2 id='quota__limits'>Quota &amp; Limits</h2>
+
+<p>Nitrous.IO has certain soft and hard limits in using its service. Hard limits are automatically enforced by the Service. Soft limits are consumable resources that you agree not to exceed.</p>
+
+<ul>
+<li>Network Bandwidth: 1TB/month - Soft</li>
+
+<li>Shared DB processing: Max 200msec per second CPU time - Soft</li>
+
+<li>Box RAM usage: 512MB - Hard</li>
+
+<li>Box Disk Size: 1GB - Hard</li>
+
+<li>Request Length: 30 seconds - Hard</li>
+</ul>
+
+<p>This document is an adaptation of the Google App Engine Program Policies. The original work has been modified. Google, Inc. is not connected with and does not sponsor or endorse Nitrous.IO or its use of the work.</p>]]></content>
+  </entry>
+  
+</feed>

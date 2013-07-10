@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[node | ]]></title>
+  <link href="/categories/node/atom.xml" rel="self"/>
+  <link href="/"/>
+  <updated>2013-07-10T22:54:12+00:00</updated>
+  <id>/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="https://github.com/recurser/jekyll-plugins">Recurser</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Run a static site with NodeJS]]></title>
+    <link href="/node-connect-server"/>
+    <updated>2013-06-28T00:00:00+00:00</updated>
+    <id>/node-connect-server</id>
+    <content type="html"><![CDATA[<p>Using the &#8220;connect&#8221; npm package, you can serve static files easily with node. Make sure the &#8220;connect&#8221; npm package is installed first by running:</p>
+
+<pre><code>npm install connect</code></pre>
+
+<p>and then use the following code:</p>
+
+<pre><code>var connect = require(&#39;connect&#39;);
+connect.createServer(connect.static(__dirname)).listen(3000);</code></pre>
+
+<p>You can then run it by doing <code>node server.js</code> and your static files should be available at port 3000.</p>
+
+<p>You can find shortcuts to your preview urls in the &#8220;Preview&#8221; menu at the top of the web IDE:</p>
+
+<p><img alt='Preview Menu' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/preview-menu.png' /></p>
+
+<p>Or if you&#8217;re not using the Web IDE, you can find it in your Box details:</p>
+
+<p><img alt='Preview URL' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/box-preview-url.png' /></p>
+
+<p>Of course, if you&#8217;re having trouble, you can always <a href='mailto:support@nitrous.io?subject=Node%20Server%20Issues'>talk to a real human</a>.</p>]]></content>
+  </entry>
+  
+</feed>

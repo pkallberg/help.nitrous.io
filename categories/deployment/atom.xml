@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[deployment | ]]></title>
+  <link href="/categories/deployment/atom.xml" rel="self"/>
+  <link href="/"/>
+  <updated>2013-07-10T22:54:12+00:00</updated>
+  <id>/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="https://github.com/recurser/jekyll-plugins">Recurser</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Deploying to Heroku]]></title>
+    <link href="/heroku-rails"/>
+    <updated>2013-06-28T00:00:00+00:00</updated>
+    <id>/heroku-rails</id>
+    <content type="html"><![CDATA[<p>These instructions will help you deploy your <a href='http://guides.rubyonrails.org/3_2_release_notes.html'>Rails 3.2</a> application to <a href='https://heroku.com'>Heroku</a>.</p>
+
+<h3 id='things_you_should_know'>Things you should know</h3>
+
+<ul>
+<li>Ruby/Rails basic concepts. Your Nitrous.IO box will come preinstalled with Rails 3.2 and Ruby 1.9.2.</li>
+
+<li>Basic knowledge of Rubygems, <a href='http://gembundler.com/'>Bundler</a>.</li>
+
+<li>Basic knowledge of <a href='http://git-scm.com/'>Git</a>.</li>
+</ul>
+
+<h3 id='prerequisites'>Prerequisites</h3>
+
+<ul>
+<li>An <a href='https://www.nitrous.io'>Nitrous.IO Account</a></li>
+
+<li>A <a href='https://www.heroku.com'>Heroku Account</a></li>
+
+<li>A <a href='/box-new'>Ruby on Rails box</a> on Nitrous.IO</li>
+</ul>
+
+<h3 id='authenticate_your_heroku_account'>Authenticate your Heroku Account</h3>
+
+<p>All boxes on Nitrous.IO come pre-installed with the <a href='https://toolbelt.heroku.com/'>Heroku Toolbelt</a>. So let&#8217;s go ahead and login to your Heroku Account:</p>
+
+<pre><code>$ heroku login
+Enter your Heroku credentials.
+Email: aj@domain.com
+Password:</code></pre>
+<p class='alert'>If you aren't prompted to upload your SSH key or you decide not to upload it now, you'll need to upload it manually.</p>
+<p>Since we already generate your public SSH keys on your Nitrous.IO box, you just need to run:</p>
+
+<pre><code>$ heroku keys:add ~/.ssh/id_rsa.pub</code></pre>
+
+<h3 id='create_an_application'>Create an application</h3>
+
+<p>If you&#8217;re importing an existing application, you can <a href='/github-add-key'>connect your Github account</a> to easily clone projects. For this example, let&#8217;s create a simple hello application:</p>
+
+<pre><code>$ rails new hello-app --database=postgresql
+$ cd hello-app</code></pre>
+
+<p><strong>Database Support</strong></p>
+
+<p>Nitrous.IO boxes come with Sqlite3 support by default. However, for more complex applications, you might want to use Postgres, MySQL, MongoDB, etc…</p>
+<p class='note'>Heroku highly recommends using PostgreSQL during development to maintain parity between development and production environments.</p>
+<p>Since we&#8217;re deploying the application to Heroku, let&#8217;s use Postgres.</p>
+
+<p>Appending the <strong>&#8211;database</strong> flag when creating the app will create the appropriate postgres variables in database.yml and will include the pg gem in your Gemfile.</p>
+
+<p>Next, we need to create a development database on <a href='https://postgres.heroku.com'>Heroku Postgres</a>. This way you don&#8217;t need to install Postgres and worry about any issues between your development database and production database. Follow the steps from <a href='/postgres'>this article</a>.</p>
+
+<h3 id='setup_git'>Setup Git</h3>
+
+<p>Since we use git to package and push your application to Heroku, lets go ahead and setup git for this application:</p>
+
+<pre><code>$ git init
+$ git add .
+$ git commit -m &quot;initializing git&quot;</code></pre>
+
+<h3 id='deploy_to_heroku'>Deploy to Heroku</h3>
+
+<p>First, you&#8217;ll need to create the app namespace and initialize the app on heroku:</p>
+
+<pre><code>$ heroku create
+Creating vast-brushlands-7106... done, stack is cedar
+http://vast-brushlands-7106.herokuapp.com git@heroku.com:vast-brushlands-7106.git</code></pre>
+
+<p>Then deploy your code:</p>
+
+<pre><code>$ git push heroku master
+Counting objects: 63, done.
+Compressing objects: 100% (49/49), done.
+Writing objects: 100% (63/63), 26.35 KiB, done.
+Total 63 (delta 2), reused 0 (delta 0)
+-----&gt; Ruby/Rails app detected
+-----&gt; Installing dependencies using Bundler version 1.3.0.pre.5
+Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin --deployment
+Fetching gem metadata from https://rubygems.org/.....
+Installing builder (3.0.4)
+Installing activemodel (3.2.11)
+Installing rails (3.2.11)
+Your bundle is complete! It was installed into ./vendor/bundle
+-----&gt; Writing config/database.yml to read from DATABASE_URL
+-----&gt; Preparing app for Rails asset pipeline
+Running: rake assets:precompile
+Asset precompilation completed (15.19s)
+-----&gt; Discovering process types
+-----&gt; Compiled slug size: 9.0MB
+-----&gt; Launching... done, v6
+http://vast-brushlands-7106.herokuapp.com deployed to Heroku
+To git@heroku.com:vast-brushlands-7106.git
+* [new branch]      master -&gt; master</code></pre>
+
+<p>Congratulations &#8211; You&#8217;ve deployed your application to Heroku. We encourage you to read up on <a href='https://devcenter.heroku.com/'>Heroku&#8217;s documentation</a> to handle resource scaling, check processes, logs, etc…</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Heroku integration]]></title>
+    <link href="/heroku"/>
+    <updated>2013-06-28T00:00:00+00:00</updated>
+    <id>/heroku</id>
+    <content type="html"><![CDATA[<p>Nitrous.IO integrates with Heroku for convenient and easy application deployment. Connecting your Nitrous.IO box to Heroku is easy:</p>
+
+<h3 id='1_login_to_your_nitrousio_account'>1. <a href='https://www.nitrous.io/login'>Login</a> to your Nitrous.IO account</h3>
+
+<p>If you don&#8217;t already have an account, <a href='https://www.nitrous.io'>sign up for an invite</a></p>
+
+<h3 id='2_create_a_development_box'>2. Create a Development Box</h3>
+
+<p>If you don&#8217;t already have a box created, you&#8217;ll need to create one on a platform that runs on Heroku. Luckily, Heroku supports most environments.</p>
+
+<p>You can read about <a href='/box-new'>creating development boxes here</a></p>
+
+<p><img alt='New Box Button' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/new-box-button.png' /></p>
+
+<h3 id='3_connect_your_box_to_github'>3. Connect your Box to Github</h3>
+
+<p>If you haven&#8217;t already connected to Github, <a href='/github-add-key'>Generate a public key for your newly created development box and add it to Github</a></p>
+
+<p><img alt='Reveal Public Key' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/reveal-public-key.png' /></p>
+
+<h3 id='4_authenticate_with_heroku'>4. Authenticate with Heroku</h3>
+
+<pre><code> heroku login
+ username: aj@nitrous.io
+ password: ********</code></pre>
+
+<h3 id='5_add_your_ssh_key_to_heroku'>5. Add your ssh key to heroku</h3>
+
+<pre><code> heroku keys:add</code></pre>
+
+<h3 id='6_configure_git'>6. Configure git</h3>
+
+<pre><code> git config --global user.email “(your git email)”
+ git config --global user.name “(your git username)”</code></pre>
+
+<h3 id='7_clone_a_project'>7. Clone a Project</h3>
+
+<p>Since we&#8217;ve authenticated with Github, lets clone a git project that we&#8217;ll be deploying to Heroku</p>
+
+<pre><code> git clone git@gitbub.com:(username)/(reponame).git
+ cd (repository name)
+ (repository name)$: bundle install</code></pre>
+
+<h3 id='8_add_the_heroku_remote_url'>8. Add the Heroku remote url</h3>
+
+<pre><code> (reponame)$: git remote add heroku git@heroku.com:(heroku-app-name).git</code></pre>
+
+<h3 id='9_update_the_upstream_git_branches'>9. Update the upstream git branches</h3>
+
+<pre><code> (reponame)$: git branch --set-upstream master origin/master
+ (reponame)$: git branch --set-upstream master heroku/master</code></pre>
+
+<p>And that&#8217;s it! Your development box will now be connected to your Heroku account and you can deploy as you would on your local machine.</p>
+
+<p>Of course, if you&#8217;re having trouble, you can always <a href='mailto:support@nitrous.io?subject=Heroku%20Authenticaion%20Issues'>talk to a real human</a>.</p>]]></content>
+  </entry>
+  
+</feed>
