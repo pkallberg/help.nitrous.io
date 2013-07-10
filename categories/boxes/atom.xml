@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[boxes | ]]></title>
+  <link href="/categories/boxes/atom.xml" rel="self"/>
+  <link href="/"/>
+  <updated>2013-07-10T04:27:33+00:00</updated>
+  <id>/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="https://github.com/recurser/jekyll-plugins">Recurser</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Box templates]]></title>
+    <link href="/box-templates"/>
+    <updated>2013-06-28T00:00:00+00:00</updated>
+    <id>/box-templates</id>
+    <content type="html"><![CDATA[<p>A <strong><a href='https://www.nitrous.io/app#/boxes/new'>Box Template</a></strong> is a pre-configured development environment. Box templates usually have one primary language / framework installed and occasionally a few supporting languages installed. We recommend when customizing your templates that you only install what is necessary for your application to run appropriately to reduce the chance of runtime or configuration errors.</p>
+
+<p><a href='https://www.nitrous.io'>Nitrous.IO</a> provides some common box templates for you to get started quickly and easily. You can ignore the &#8220;download&#8221; or &#8220;installation&#8221; instructions on all of the Getting Started sections of these languages and platforms, we&#8217;ve already set everything up for you!</p>
+
+<p><img alt='Box Templates' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/box-templates.png' /></p>
+
+<h3 id='ruby__rails'>Ruby / Rails</h3>
+
+<p><img alt='Ruby on Rails Homepage' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/rails-hp.png' /></p>
+
+<p><a href='http://rubyonrails.org/'>Ruby on Rails</a> is an open-source web framework that&#8217;s optimized for programmer happiness and sustainable productivity. It lets you write beautiful code by favoring convention over configuration.</p>
+
+<ul>
+<li><a href='http://rubyonrails.org/screencasts'>Watch Screencasts</a></li>
+
+<li><a href='http://guides.rubyonrails.org/'>Rails Guides</a></li>
+</ul>
+
+<h3 id='python__django'>Python / Django</h3>
+
+<p><img alt='Django Homepage' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/django-hp.png' /></p>
+
+<p><a href='https://www.djangoproject.com/'>Django</a> is a high-level <a href='http://www.python.org/'>Python</a> Web framework that encourages rapid development and clean, pragmatic design.</p>
+
+<p>Developed by a fast-moving online-news operation, Django was designed to handle two challenges: the intensive deadlines of a newsroom and the stringent requirements of the experienced Web developers who wrote it. It lets you build high-performing, elegant Web applications quickly.</p>
+
+<p>Django focuses on automating as much as possible and adhering to the DRY principle.</p>
+
+<ul>
+<li><a href='https://docs.djangoproject.com/en/1.4/'>Getting started with Python/Django</a></li>
+</ul>
+
+<h3 id='nodejs'>Node.js</h3>
+
+<p><img alt='Node.js Homepage' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/node-hp.png' /></p>
+
+<p><a href='http://nodejs.org/'>Node.js</a> is a platform built on Chrome&#8217;s JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.</p>
+
+<p>Node is a relatively new platform, and the tutorials and posts tend to be slightly more advanced then Rails or Django.</p>
+
+<ul>
+<li><a href='http://nodejs.org/api/all.html'>API Docs for Node</a></li>
+
+<li><a href='http://nodetuts.com/'>Node Video Tutorials</a></li>
+</ul>
+
+<h3 id='go'>Go</h3>
+
+<p><img alt='Golang Homepage' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/go-hp.png' /></p>
+
+<p><a href='http://golang.org/'>Go</a> is an open source programming environment that makes it easy to build simple, reliable, and efficient software.</p>
+
+<p>Go is expressive, concise, clean, and efficient. Its concurrency mechanisms make it easy to write programs that get the most out of multicore and networked machines, while its novel type system enables flexible and modular program construction. Go compiles quickly to machine code yet has the convenience of garbage collection and the power of run-time reflection. It&#8217;s a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language.</p>
+
+<ul>
+<li><a href='http://tour.golang.org/#1'>Golang Tour</a></li>
+
+<li><a href='http://golang.org/doc/code.html'>Golang Docs</a></li>
+</ul>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Create a Box]]></title>
+    <link href="/box-new"/>
+    <updated>2013-06-28T00:00:00+00:00</updated>
+    <id>/box-new</id>
+    <content type="html"><![CDATA[<p>Development Boxes or &#8220;boxes&#8221; are the heart and soul of the Nitrous.IO experience. Many of you will only have one box, though the more mature polyglot programmer might have 10 or even 20 different boxes for each of their projects.</p>
+
+<p>Basic, free boxes come with stock setups: Rails, Python, Node.js, and Go. We include most everything else you need to start developing, like imagemagick and more.</p>
+
+<h2 id='free_boxes'>Free boxes</h2>
+
+<p>To create a new free box, just click the &#8220;New Box&#8221; button on your dashboard after signing in.</p>
+
+<p><img alt='New Box Button' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/new-box-button.png' /></p>
+
+<h3 id='1_pick_a_box_template'>1. Pick a box template</h3>
+
+<p>Select which default stock development environments you prefer to start coding on. We support Ruby/Rails &amp; Node.js, but are adding boxes quickly. <a href='mailto:support@nitrous.io?subject=Box%20Template%20Suggestion'>Shoot us an email</a> if you want us to support a different stack.</p>
+
+<p><img alt='Box Templates' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/box-templates.png' /></p>
+
+<h3 id='2_enter_a_unique_name'>2. Enter a unique name</h3>
+
+<p>Pick a descriptive box name, the best practice here is to describe the stack or the project (if you&#8217;re only going to keep one project on each box, that&#8217;s up to you).</p>
+
+<h3 id='3_pick_a_region'>3. Pick a region</h3>
+
+<p>We will default the region to whichever is closest to your current IP address, though if you&#8217;re travelling and want the box closer to your hometown, then just pick the region closest to you.</p>
+
+<p><em>Why do I need to pick a region?</em></p>
+
+<p>One of the reasons typing on an Nitrous.IO box is lightning fast, is because we utilize AWS Global Availability zones to setup boxes all around the globe. So, instead of every character you type travelling round trip all the way around the world, your fingers and the commands you&#8217;re sending are just going to your local neighborhood, saving priceless milliseconds on response time and convincing your eyes that the server is responding as if the code were executed locally.</p>
+
+<h3 id='provisioning'>Provisioning</h3>
+
+<p>Once you&#8217;ve clicked &#8220;Create Box&#8221;, you&#8217;ll need to wait a few seconds while we provision the box. This is typically pretty speedy, but might take up to a minute.</p>
+
+<p>After the box is provisioned, you&#8217;ll be kicked into the box information page. To start coding, simple click the &#8220;IDE&#8221; button and you&#8217;re ready to code!</p>
+
+<p><img alt='Box Templates' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/ide-button.png' /></p>]]></content>
+  </entry>
+  
+</feed>

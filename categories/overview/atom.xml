@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[overview | ]]></title>
+  <link href="/categories/overview/atom.xml" rel="self"/>
+  <link href="/"/>
+  <updated>2013-07-10T04:27:33+00:00</updated>
+  <id>/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="https://github.com/recurser/jekyll-plugins">Recurser</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Nitrous.IO support channels]]></title>
+    <link href="/support-channels"/>
+    <updated>2013-06-28T00:00:00+00:00</updated>
+    <id>/support-channels</id>
+    <content type="html"><![CDATA[<p>We provide a number of ways to get in touch with someone on the Nitrous.IO team. If you can&#8217;t find a live person in one of these channels, try another one! Our team is distributed around the globe, so odds are we&#8217;re awake somewhere. And in the rare case you can&#8217;t find anybody you can always just <a href='mailto:support@nitrous.io'>send us an email</a> and we&#8217;ll do our best to respond within 24 hrs.</p>
+
+<h3 id='nitrousio_community_qa'>Nitrous.IO Community Q&amp;A</h3>
+
+<p>We encourage you to utilize the amazing <a href='http://stackoverflow.com/'>Stack Overflow</a> community for answers to many Nitrous.IO questions. We also do our best to respond to any Q&amp;A on our help forums within 2-3 days.</p>
+
+<p>If you have an urgent question about stability or performance of your development box, please <a href='mailto:support@nitrous.io'>send us an email</a>.</p>
+
+<h3 id='chat_room'>Chat Room</h3>
+
+<p>We have a <a href='https://www.nitrous.io/chat'>public campfire chatroom</a> where many of the Nitrous.IO employees hang out. Our team is spread out around the world, so odds are there will be somebody here to answer your question. Please don&#8217;t troll the forums, that&#8217;s just not cool bro.</p>
+
+<h3 id='live_1on1_chat'>Live 1-on-1 Chat</h3>
+
+<p>We utilize the amazing <a href='https://www.olark.com'>Olark</a> service for 1-on-1 chat widget on our website. You can reach any of our personal employees by just clicking on the &#8220;Chat with us&#8221; tab on the bottom right-hand side of the screen.</p>
+
+<p>Olark will tell us basic information about you, like your email (if you came from an invite or are logged-in) or the last page you visited, so don&#8217;t freak out if we know some stuff about you, we&#8217;re not north korean spies (though one of us is from korea).</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Previewing your application]]></title>
+    <link href="/preview"/>
+    <updated>2013-06-28T00:00:00+00:00</updated>
+    <id>/preview</id>
+    <content type="html"><![CDATA[<p>Nitrous.IO provides a range of ports <span>1024 - 9999</span> for you to run services on your development box.</p>
+
+<p>Previewing your application simply involves taking an automatically generated preview url, pasting it into your browser, and appending the appropriate port where your service is running.</p>
+
+<p>You can find the preview url from the following two locations:</p>
+
+<ul>
+<li><a href='#preview-webide'>Getting the Preview URL from the Web IDE</a></li>
+
+<li><a href='#preview-boxindex'>Getting the Preview URL from the Boxes Dashboard</a></li>
+</ul>
+
+<h3 id='from_the_web_ide'>From the Web IDE</h3>
+
+<p>The &#8220;Preview&#8221; menu in the <a href='/categories/web-ide'>Action Web IDE</a> displays links to some common default ports, which you can click to open a new window in your browser.</p>
+
+<p><img alt='Preview Menu' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/preview-menu.png' /></p>
+
+<p>You can easily edit the urls from any of those links to preview other services you&#8217;re running by substituting your desired port.</p>
+
+<h3 id='from_the_boxes_dashboard'>From the Boxes Dashboard</h3>
+
+<p>You&#8217;ll also find your preview url in your boxes dashboard in the box-details.</p>
+
+<p><img alt='Box Dashboard Preview URL' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/box-preview-url.png' /></p>
+
+<p>If you&#8217;re really smart, you&#8217;ll notice we use some sensible naming conventions for your box preview url. The box regions are probably tough to memorize, but regular users will remember it.</p>
+
+<pre><code>https://*[box-name]*.*[box-region]*.nitrous.io:*[port]*</code></pre>
+
+<h3 id='ruby_on_rails_example'>Ruby On Rails Example</h3>
+
+<p>If you&#8217;re developing a Ruby on Rails project and using the default WEBrick web server, simply move into the Rails project directory in your console and run:</p>
+
+<pre><code>rails server</code></pre>
+
+<p>This will fire up an instance of the WEBrick web server by default (Rails can also use several other web servers). To see your application in action, click the &#8220;Preview&#8221; menu and select &#8220;Port 3000&#8221;. You should see your Rails development project in the new window that is opened.</p>
+
+<h3 id='other_frameworks'>Other Frameworks</h3>
+
+<p>For help on previewing applications written in other languages and frameworks, check the following <a href='/faq-localhost'>support article</a>.</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Getting started]]></title>
+    <link href="/getting-started"/>
+    <updated>2013-06-28T00:00:00+00:00</updated>
+    <id>/getting-started</id>
+    <content type="html"><![CDATA[<p>Our goal is to provide you with a streamlined, beautiful and, enjoyable programming experience.</p>
+
+<p>If you have any problems setting things up, check out <a href='http://help.nitrous.io'>help.nitrous.io</a> or send us an email at support at action dot io.</p>
+
+<h3 id='1_sign_up_for_an_account'>1. Sign Up for an Account</h3>
+
+<p>Our beta period is invite-only, so if you haven&#8217;t received an invite, you can signup for our beta list on our <a href='https://nitrous.io'>homepage</a>.</p>
+
+<p>If you&#8217;ve received the beta invite email, just click the link in the email and fill out a username and password. We&#8217;ll use the username around the site and to identify your boxes so pick something you like.</p>
+
+<h3 id='2_create_a_box'>2. Create a box</h3>
+
+<p>Once you&#8217;ve signed in to the site, you&#8217;ll see your dashboard. You won&#8217;t have any boxes created yet, so go ahead and click &#8220;New Box&#8221;. If you need help creating a box, you can follow <a href='/box-new'>these instructions</a>.</p>
+
+<h3 id='3_adding_ssh_keys_to_your_action_box'>3. Adding SSH Keys to your Action Box</h3>
+
+<p>Adding your local SSH keys to your remote Action box will allow you to SSH into your box from Terminal / PuTTY etc…. This is great for developers who use Vim or Emacs.</p>
+
+<p>If you&#8217;re not already using SSH, this article can walk you through the steps required:</p>
+
+<p><a href='/ssh-add'>Adding SSH Keys to your Nitrous.IO Account</a></p>
+
+<p>To test out whether you&#8217;ve added your keys directly, click your box in the dashboard to toggle its details and click the SSH URI link:</p>
+
+<p><img alt='Box Details' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/box-details.png' /></p>
+
+<p>Your browser will attempt to open a local terminal session. If there&#8217;s a prompt like this, just click &#8220;Allow&#8221;:</p>
+
+<p><img alt='SSH Prompt' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/ssh-confirm-prompt.png' /></p>
+
+<p>In your terminal, you should see something like this:</p>
+<pre class=''>
+  The authenticity of host '[apse1.actionbox.io]:10253 ([54.251.42.128]:10253)' cant be established.
+  RSA key fingerprint is 57:b7:dd:50:04:09:e8:f8:e5:93:e1:2d:2f:46:a5:f5.
+  Are you sure you want to continue connecting (yes/no)? yes
+</pre>
+<p>Type &#8220;yes&#8221;, which will add your Action box to your known_hosts ssh file.</p>
+<pre class=''>
+Warning: Permanently added '[apse1.actionbox.io]:10253, [54.251.42.128]:10253' (RSA) to the list of known hosts. Welcome to Nitrous.IO (GNU/Linux 3.2.0-31-virtual x86_64)
+</pre>
+<p>Now go ahead and poke around&#8211; you should be in your remote box on Nitrous.IO!</p>
+
+<h3 id='4_add_action_box_ssh_keys_to_github'>4. Add Action Box SSH Keys to Github</h3>
+
+<p>So we&#8217;ve got our development box built, but what if we want to get a project we&#8217;ve been working on into our box on Action?</p>
+
+<p>Adding SSH Keys to Github is super easy, just check out the steps in the following article:</p>
+
+<p><a href='/github-add-key'>Adding SSH Keys to Github</a></p>
+
+<p>Now, you can go back to your Nitrous.IO box in your local terminal or in the Nitrous.IO Web IDE and can clone any of your Github repos.</p>
+
+<p><a href='http://www.youtube.com/watch?v=CtwJvgPJ9xw&amp;t=0m14s'>Now you rollin&#8217;</a>.</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Create a Box]]></title>
+    <link href="/box-new"/>
+    <updated>2013-06-28T00:00:00+00:00</updated>
+    <id>/box-new</id>
+    <content type="html"><![CDATA[<p>Development Boxes or &#8220;boxes&#8221; are the heart and soul of the Nitrous.IO experience. Many of you will only have one box, though the more mature polyglot programmer might have 10 or even 20 different boxes for each of their projects.</p>
+
+<p>Basic, free boxes come with stock setups: Rails, Python, Node.js, and Go. We include most everything else you need to start developing, like imagemagick and more.</p>
+
+<h2 id='free_boxes'>Free boxes</h2>
+
+<p>To create a new free box, just click the &#8220;New Box&#8221; button on your dashboard after signing in.</p>
+
+<p><img alt='New Box Button' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/new-box-button.png' /></p>
+
+<h3 id='1_pick_a_box_template'>1. Pick a box template</h3>
+
+<p>Select which default stock development environments you prefer to start coding on. We support Ruby/Rails &amp; Node.js, but are adding boxes quickly. <a href='mailto:support@nitrous.io?subject=Box%20Template%20Suggestion'>Shoot us an email</a> if you want us to support a different stack.</p>
+
+<p><img alt='Box Templates' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/box-templates.png' /></p>
+
+<h3 id='2_enter_a_unique_name'>2. Enter a unique name</h3>
+
+<p>Pick a descriptive box name, the best practice here is to describe the stack or the project (if you&#8217;re only going to keep one project on each box, that&#8217;s up to you).</p>
+
+<h3 id='3_pick_a_region'>3. Pick a region</h3>
+
+<p>We will default the region to whichever is closest to your current IP address, though if you&#8217;re travelling and want the box closer to your hometown, then just pick the region closest to you.</p>
+
+<p><em>Why do I need to pick a region?</em></p>
+
+<p>One of the reasons typing on an Nitrous.IO box is lightning fast, is because we utilize AWS Global Availability zones to setup boxes all around the globe. So, instead of every character you type travelling round trip all the way around the world, your fingers and the commands you&#8217;re sending are just going to your local neighborhood, saving priceless milliseconds on response time and convincing your eyes that the server is responding as if the code were executed locally.</p>
+
+<h3 id='provisioning'>Provisioning</h3>
+
+<p>Once you&#8217;ve clicked &#8220;Create Box&#8221;, you&#8217;ll need to wait a few seconds while we provision the box. This is typically pretty speedy, but might take up to a minute.</p>
+
+<p>After the box is provisioned, you&#8217;ll be kicked into the box information page. To start coding, simple click the &#8220;IDE&#8221; button and you&#8217;re ready to code!</p>
+
+<p><img alt='Box Templates' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/ide-button.png' /></p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Create an account]]></title>
+    <link href="/account-new"/>
+    <updated>2013-06-28T00:00:00+00:00</updated>
+    <id>/account-new</id>
+    <content type="html"><![CDATA[<p>Nitrous.IO offers free accounts with basic functionality. Code on Nitrous.IO for as long as you want, and if you feel the need for more speed and a faster box with additional features, you can upgrade to take things to the next level.</p>
+
+<ol>
+<li>Select &#8220;Signup&#8221; from the top menu or just <a href='https://nitrous.io/users/sign_up'>click this link</a>.</li>
+
+<li>Enter your email address, username and password. We utilize your username in various places around the platform, so pick something memorable, simple and meaningful.</li>
+
+<li>If you already know you want MOAR SPEED then you can opt for a dedicated box. All the pricing can be found on the <a href='https://nitrous.io/pricing'>pricing page</a></li>
+</ol>
+
+<p>That&#8217;s it!</p>]]></content>
+  </entry>
+  
+</feed>

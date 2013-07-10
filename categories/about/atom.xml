@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[about | ]]></title>
+  <link href="/categories/about/atom.xml" rel="self"/>
+  <link href="/"/>
+  <updated>2013-07-10T04:27:33+00:00</updated>
+  <id>/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="https://github.com/recurser/jekyll-plugins">Recurser</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Contact us]]></title>
+    <link href="/contact-us"/>
+    <updated>2013-06-28T00:00:00+00:00</updated>
+    <id>/contact-us</id>
+    <content type="html"><![CDATA[<p>If you&#8217;d like to get in touch:</p>
+
+<p>Support inquiries: <a href='mailto:support@nitrous.io'>support@nitrous.io</a></p>
+
+<p>By mail:</p>
+
+<p>Singapore: 30 Raffles Place Level 17 Singapore 048622</p>
+
+<p>United States:</p>
+
+<p>535 Middlefield Road Menlo Park, CA 94025 USA</p>]]></content>
+  </entry>
+  
+</feed>
