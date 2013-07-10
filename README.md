@@ -14,7 +14,9 @@ Clone the master branch of the repo, and from there run bundler.
 
 Create or edit a post within the _posts folder. If you add a Category tag then the document you create will display within the help site's main page under that category.
 
-Once finished, switch to (create) the gh-pages branch. This is the branch used for Github Pages:
+Once finished, push your changes back to master to keep this branch up to date. 
+
+Next, switch to (create) the gh-pages branch. This is the branch used for Github Pages:
 
     $ git checkout -b gh-pages master
 
