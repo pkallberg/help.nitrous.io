@@ -7,21 +7,21 @@ This is a proposed Support Site for Nitrous.IO. It is similar to the other site 
 
 ### Getting Started
 
-Clone the master branch of the repo, and from there run bundler.
++ Clone the master branch of the repo, and from there run bundler.
 
     $ git clone REPO_ADDRESS
     $ bundle
 
-Create or edit a post within the _posts folder. If you add a Category tag then the document you create will display within the help site's main page under that category.
++ Create or edit a post within the _posts folder. If you add a Category tag then the document you create will display within the help site's main page under that category.
 
-Once finished, push your changes back to master to keep this branch up to date. 
+> Note: You can preview your site by running 'jekyll serve'. You could also use 'jekyll serve --watch' if you are still editing and want to see the changes by refreshing the page.
 
-Next, switch to (create) the gh-pages branch. This is the branch used for Github Pages:
++ Once finished, push your changes back to the master branch
 
-    $ git checkout -b gh-pages master
+    $ git add .
+    $ git commit -m "blah"
+    $ git push origin master
 
-Now you will want to generate the static site as Github Pages doesn't allow the plugins being used.
++ From there you will simply need to run Rake in order to publish the static site to the gh-pages branch. There is no need for you to switch to this branch on your own.
 
-    $ rake site:publish
-    
-Once this has been successfully done it will automatically force push to the gh-pages branch.
+    $ rake
