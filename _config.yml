@@ -3,4 +3,4 @@ pygments: true
 permalink: /:title
 #category_links: change the category directory
 category_title_prefix: ''
-exclude: [Gemfile, Gemfile.lock, Rakefile, README.md]
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
