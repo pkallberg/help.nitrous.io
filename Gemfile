@@ -1,4 +1,3 @@
-gem 'rubygems'
-gem 'rake'
-gem 'yaml'
-gem 'jekyll'
+source 'https://rubygems.org'
+
+gem 'jekyll', '~> 1.0.3'

@@ -6,7 +6,6 @@ GEM
     colorator (0.1)
     commander (4.1.3)
       highline (~> 1.6.11)
-    commonjs (0.2.6)
     directory_watcher (1.4.1)
     fast-stemmer (1.0.2)
     highline (1.6.19)
@@ -20,12 +19,7 @@ GEM
       maruku (~> 0.5)
       pygments.rb (~> 0.5.0)
       safe_yaml (~> 0.7.0)
-    jekyll-less (0.0.4)
-      jekyll (>= 0.10.0)
-      less (>= 2.0.5)
     kramdown (1.0.2)
-    less (2.3.2)
-      commonjs (~> 0.2.6)
     liquid (2.5.0)
     maruku (0.6.1)
       syntax (>= 1.0.0)
@@ -41,4 +35,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll-less
+  jekyll (~> 1.0.3)
