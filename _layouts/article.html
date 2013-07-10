@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html class="home index">
+{% include header.html %}
+<div class="white-bg">
+  <div class="container">
+    <h2> {{ page.title | capitalize }} </h2>
+    <div class='articles'>
+
+      {{ content }}
+
+          </div><!--
+          <div class="sidebar">
+            <div class="box">
+                Related Articles
+              </div>
+            </div>-->
+          </div>
+        </div>
+        {% include footer.html %}
+      </body>
+      </html>

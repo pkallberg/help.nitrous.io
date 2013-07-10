@@ -1,0 +1,5 @@
+name: Nitrous.IO Support
+pygments: true
+permalink: /:title
+#category_links: change the category directory
+category_title_prefix: '' 

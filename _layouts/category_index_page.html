@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<div class="categories clearfix">
+<ul id="getting-started" class="clearfix">
+    <li class="module gs">
+      <a href="getting-started/">
+        <i class="icon-signin"></i>
+        <h5>Getting Started</h5>
+      </a>
+    </li>
+    <li class="module ssh">
+      <a href="ssh-add/">
+        <i class="icon-key"></i>
+        <h5>Adding SSH Keys</h5>
+      </a>
+    </li>
+    <li class="module ide">
+      <a href="ide-general/">
+        <i class="icon-list-alt"></i>
+        <h5>Nitrous.IO Web IDE</h5>
+      </a>
+    </li>
+    <li class="module github">
+      <a href="github-add-key/">
+        <i class="icon-github"></i>
+        <h5>Connecting Github</h5>
+      </a>
+    </li>
+  </ul>
+
+<div class="category-list" style="margin:auto auto;">
+	{% for key in page.keys %}
+	<div id="category_{{key}}" class="span">
+		<h3>{{ key | capitalize }}</h3>
+	<ul>
+		{% for post in site.categories[key] limit:5 %}
+		<li><i class="icon-file"></i><a href="{{ post.url }}">{{ post.title}}</a></li>
+		{% endfor %}
+  </ul>
+  <a class="view-all btn" href="/categories/{{ key }}">View all »</a>
+	</div>
+	{% endfor %}
+	<div style="clear:both;"></div>
+</div>
+</div>
