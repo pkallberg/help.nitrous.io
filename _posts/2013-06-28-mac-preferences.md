@@ -1,7 +1,7 @@
 ---
 layout: article
-title: Mac preferences
-published: false
+title: Mac App Preferences
+published: true
 categories: [faq, mac]
 ---
 
@@ -11,7 +11,7 @@ Your Nitrous.IO for Mac preferences allow you to configure the connection betwee
 
 1. Click on the Nitrous.IO icon in your menu bar
 
-![Mac Menu](https://raw.github.com/action-io/action-assets/master/support/screenshots/mac/mac-menu.png)
+![Mac Menu](/images/articles/mac-menu.png)
 
 2. Select *Preferences…* from the menu
 
@@ -29,7 +29,7 @@ You can also sign out of the currently associated account. Note that this will f
 
 The application will automatically detect your SSH keys on your local computer. You will see the path to your private and public keys.
 
-![Mac SSH Keys](https://raw.github.com/action-io/action-assets/master/support/screenshots/mac/mac-sshkeys.png)
+![Mac SSH Keys](/images/articles/mac-sshkeys.png)
 
 *Generating a new Key*
 
@@ -46,7 +46,7 @@ You can also tell the application to look for your key or get a new key if you'v
 
 Tunneling allows you to forward ports to your
 
-![Mac Tunneling](https://raw.github.com/action-io/action-assets/master/support/screenshots/mac/mac-tunneling.png)
+![Mac Tunneling](/images/articles/mac-tunneling.png)
 
 To be able to tunnel to your Nitrous.IO box, you must first select the box from the list on the left of the preference pane, and check the **Enable Tunneling** checkbox.
 
@@ -60,7 +60,7 @@ File sync is the magic that allows you to edit code locally using Sublime Text, 
 
 On your Nitrous.IO boxes, we automatically create a folder in your home directory called *workspace*. Anything in this folder will be earmarked to sync with your *Nitrous.IO* folder on your local machine.
 
-![Mac Menu](https://raw.github.com/action-io/action-assets/master/support/screenshots/mac/mac-actionfolder.png)
+![Mac Menu](/images/articles/mac-nitrous-folder.png)
 
 Within your Nitrous.IO folder, you'll see folders that sync the contents in *workspace* for any boxes that have File Synchronization enabled.
 
@@ -70,4 +70,4 @@ In the File Sync preference pane, click the box name that you'd like to start sy
 
 Repeat this for each of your Nitrous.IO boxes that you'd like to sync.
 
-![Mac Menu](https://raw.github.com/action-io/action-assets/master/support/screenshots/mac/mac-file-sync.png)
+![Mac Menu](/images/articles/mac-file-sync.png)
