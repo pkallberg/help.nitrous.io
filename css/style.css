@@ -385,6 +385,7 @@ a:hover, a:focus {
     float: right;
 }
 .container {
+    line-height: 2;
     margin-right: auto;
     margin-left: auto;
     *zoom: 1;
@@ -10564,7 +10565,8 @@ margin: 10px 0;
 padding: 1em;
 float: left;
 width: 345px;
-min-height: 200px;
+min-height: 240px;
+line-height: 1.7;
 }
 
 [class*="span"] {
