@@ -10,7 +10,6 @@ We get a lot of emails asking how to upload applications to an Nitrous.IO box. T
 * [SFTP](#sftp)
 * [Git](#git)
 
-<a href="#" id="sftp"></a>
 ### Uploading your project via SFTP
 
 Uploading via SFTP requires that you have set up your public / private keypair on your machine and added your public key to Nitrous.IO. To do this, we recommend that you use PuttyGen. Visit this link and look for the PuttyGen download:
@@ -98,8 +97,6 @@ You'll see the connection details streaming in the filezilla status menu and the
 
 ![filezilla connected](https://raw.github.com/action-io/action-assets/master/support/screenshots/sftp/filezilla-connected.png)
 
-
-<a href="#" id="git"></a>
 ### Uploading your project via Git
 
 If you have git installed on your machine, you can easily push a code repository to github (or another repository hosting service), then clone the repository on your Nitrous.IO box.
