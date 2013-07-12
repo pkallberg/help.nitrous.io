@@ -8,7 +8,7 @@ categories: [ssh, public-keys, windows]
 SSH Keys enable you to manage your Action boxes directly from your computer via your favorite SSH client.  The keypair is used to identify you when interacting with your box from outside of [our website](https://www.nitrous.io).
 
 <ul class="inline choices">
-  <li><a href="/ssh/mac/public-keys/ssh-add.html">Mac</a></li>
+  <li><a href="/ssh-add/">Mac</a></li>
   <li class="selected">Windows</li>
 </ul>
 
