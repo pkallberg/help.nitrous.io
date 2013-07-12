@@ -9,7 +9,7 @@ Uploading files to Nitrous.IO is quick and easy. There's no need to FTP or SCP f
 
 <p class="alert">This article describes how to upload individual files. If you need to upload an entire project / complex directory structure, please read [this article]()</p>
 
-In the file browser, right-click the destination directory where you'd like to upload the image and click "Upload files to [your folder name]".
+In the file browser, right-click the destination directory where you'd like to upload the image and click "Upload files to \[your folder name\]".
 
 ![Directory Menu](https://raw.github.com/action-io/action-assets/master/support/screenshots/file-uploads-1.png)
 

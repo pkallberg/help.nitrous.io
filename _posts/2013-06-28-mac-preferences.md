@@ -66,7 +66,7 @@ Within your Nitrous.IO folder, you'll see folders that sync the contents in *wor
 
 *Enabling File Synchronization*
 
-In the File Sync preference pane, click the box name that you'd like to start syncing. Then click the **Enable File Synchronization* checkbox.
+In the File Sync preference pane, click the box name that you'd like to start syncing. Then click the *Enable File Synchronization* checkbox.
 
 Repeat this for each of your Nitrous.IO boxes that you'd like to sync.
 

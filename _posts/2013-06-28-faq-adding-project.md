@@ -5,10 +5,7 @@ published: true
 categories: [faq, getting-started]
 ---
 
-We get a lot of emails asking how to upload applications to an Nitrous.IO box. There are a few ways you can do this:
-
-* [SFTP](#sftp)
-* [Git](#git)
+We get a lot of emails asking how to upload applications to an Nitrous.IO box. There are many ways to do this; using SCP, installing the [Mac App](https://www.nitrous.io/mac), and in this guide SFTP and Git.
 
 ### Uploading your project via SFTP
 
@@ -36,7 +33,7 @@ PuTTY will automatically save the private key as a .ppk file, which is a putty p
 
 Name the public key something like **public_key.pub** and the private key **private_key.ppk** and save them someplace safe.
 
-<p class="note">You want to save these keys someplace safe because if someone were to find your private key, they could authenticate with any services where you utilize public key authentication.</p>
+>You want to save these keys someplace safe because if someone were to find your private key, they could authenticate with any services where you utilize public key authentication.
 
 Okay, so now we have our keypairs set up, let's go ahead and add our public keys to Nitrous.IO.
 
@@ -86,8 +83,8 @@ Ok, now that we've added the key to Filezilla, lets go ahead and add the connect
 * Protocol: SFTP - SSH File Transfer Protocol
 * Logon Type:  Normal
 * User: action
-* Password: [leave blank]
-* Account: [leave blank]
+* Password: \[leave blank\]
+* Account: \[leave blank\]
 
 Then click the **Connect** button. You might see an alert box telling you the host is unknown. Click the checkbox to let filezilla know this is a trusted host, and click OK.
 

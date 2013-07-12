@@ -35,7 +35,7 @@ Click any of your boxes to toggle it's details and click the "Reveal Public Key"
 
 Once your public key is revealed, you simply need to click the "Add to Github" link to the right of the key.  After a few seconds, you should see the link be replaced with a status message that reads "Added to Github!"
 
-And that's it! Keys on Github will be named "actionio-[boxname]".
+And that's it! Keys on Github will be named "actionio-\[boxname\]".
 
 ### 3. Confirming Key is Added (Optional)
 
