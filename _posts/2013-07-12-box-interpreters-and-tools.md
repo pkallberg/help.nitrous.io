@@ -9,92 +9,92 @@ In each of our box templates we provide, extra interpreters and tools are availa
 
 We have included a list of these for each box template, and also some examples of other interpreters you could install yourself without root access.
 
-## Ruby/Rails
+# Ruby/Rails
 
-#### Installed Interpreters
-+ C
-+ C++
-+ Java SE
-+ Node.js
-+ Perl
-+ Python
-+ Ruby
+### Installed Interpreters
+* C
+* C++
+* Java SE
+* Node.js
+* Perl
+* Python
+* Ruby
 
-#### Installed Tools
-+ RVM
-+ NVM
-+ ImageMagick
+### Installed Tools
+* RVM
+* NVM
+* ImageMagick
 
-#### Possible to Install Yourself (Just examples, you can do more)
-+ Clojure
-+ Dart
-+ Haskell
-+ Erlang
-+ Scala
+### Possible to Install Yourself (Just examples, you can do more)
+* Clojure
+* Dart
+* Haskell
+* Erlang
+* Scala
 
-## Node.js
+# Node.js
 
-#### Installed Interpreters
-+ C
-+ C++
-+ Java SE
-+ Node.js
-+ Perl
-+ Python
-+ Ruby
+### Installed Interpreters
+* C
+* C++
+* Java SE
+* Node.js
+* Perl
+* Python
+* Ruby
 
-#### Installed Tools
-+ RVM
-+ NVM
-+ ImageMagick
+### Installed Tools
+* RVM
+* NVM
+* ImageMagick
 
-#### Possible to Install Yourself (Just examples, you can do more)
-+ Clojure
-+ Dart
-+ Haskell
-+ Erlang
-+ Scala
+### Possible to Install Yourself (Just examples, you can do more)
+* Clojure
+* Dart
+* Haskell
+* Erlang
+* Scala
 
-## Python/Django
+# Python/Django
 
-#### Installed Interpreters
-+ C
-+ C++
-+ Java SE
-+ Perl
-+ Python
-+ Ruby
+### Installed Interpreters
+* C
+* C++
+* Java SE
+* Perl
+* Python
+* Ruby
 
-#### Installed Tools
-+ RVM
-+ ImageMagick
+### Installed Tools
+* RVM
+* ImageMagick
 
-#### Possible to Install Yourself (Just examples, you can do more)
-+ Clojure
-+ Dart
-+ Haskell
-+ Erlang
-+ Scala
+### Possible to Install Yourself (Just examples, you can do more)
+* Clojure
+* Dart
+* Haskell
+* Erlang
+* Scala
 
-## Go
+# Go
 
-#### Installed Interpreters
-+ C
-+ C++
-+ Go
-+ Java SE
-+ Perl
-+ Python
-+ Ruby
+### Installed Interpreters
+* C
+* C++
+* Go
+* Java SE
+* Perl
+* Python
+* Ruby
 
-#### Installed Tools
-+ RVM
-+ NVM
-+ ImageMagick
+### Installed Tools
+* RVM
+* NVM
+* ImageMagick
 
-#### Possible to Install Yourself (Just examples, you can do more)
-+ Clojure
-+ Dart
-+ Haskell
-+ Erlang
-+ Scala
+### Possible to Install Yourself (Just examples, you can do more)
+* Clojure
+* Dart
+* Haskell
+* Erlang
+* Scala
