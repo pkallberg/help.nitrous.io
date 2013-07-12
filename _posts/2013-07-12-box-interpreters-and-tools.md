@@ -5,25 +5,22 @@ published: true
 categories: [faq, boxes]
 ---
 
-In each of our box templates we provide, extra interpreters and tools are available to help you get hacking right away. 
+We provide extra interpreters and tools in your Nitrous boxes to help you get hacking away instantly. Here is a list of the tools we provide as well as some examples of other tools you could install yourself (without needing root access):
 
-We have included a list of these for each box template, and also some examples of other interpreters you could install yourself without root access.
+# Tools Available on All Nitrous Boxes
 
-# Ruby/Rails
+### Development Tools
 
-### Installed Interpreters
 * C
 * C++
 * Java SE
-* Node.js
 * Perl
+* PhantomJS
 * Python
-* Ruby
-
-### Installed Tools
-* RVM
-* NVM
-* ImageMagick
+* Ruby (version control with RVM)
+* Golang
+* automake
+* Heroku Toolbelt
 
 ### Possible to Install Yourself (Just examples, you can do more)
 * Clojure
@@ -32,69 +29,64 @@ We have included a list of these for each box template, and also some examples o
 * Erlang
 * Scala
 
-# Node.js
+### System Tools
 
-### Installed Interpreters
-* C
-* C++
-* Java SE
-* Node.js
-* Perl
-* Python
-* Ruby
+* build-essential
+* wget
+* curl
+* base-files
+* base-passwd
+* binutils
+* bzip2
+* file
+* gnupg
+* whiptail
+* util-linux
+* tsconf
+* unzip
+* unison
+* ack-grep
+* traceroute
+* psmisc
+* openssl
+* update-motd
+* man-db
+* getopt
 
-### Installed Tools
-* RVM
-* NVM
+### Image Manipulation Tools
+
 * ImageMagick
 
-### Possible to Install Yourself (Just examples, you can do more)
-* Clojure
-* Dart
-* Haskell
-* Erlang
-* Scala
+### Text Editors
 
-# Python/Django
+* nano
+* emaccs23-nox
+* vim-nox
 
-### Installed Interpreters
-* C
-* C++
-* Java SE
-* Perl
+### Remote Sessions
+
+* SSH
+* tmux
+* screen
+
+# Ruby/Rails Box (Additional Tools)
+
+### Development Tools
+* Node.js (version control with NVM)
+* Ruby  (version control with RVM)
+
+# Node.js Box (Additional Tools)
+
+### Development Tools
+* Node.js (version control with NVM)
+
+# Python/Django Box (Additional Tools)
+
+### Development Tools
 * Python
-* Ruby
 
-### Installed Tools
-* RVM
-* ImageMagick
+# Go Box (Additional Tools)
 
-### Possible to Install Yourself (Just examples, you can do more)
-* Clojure
-* Dart
-* Haskell
-* Erlang
-* Scala
-
-# Go
-
-### Installed Interpreters
-* C
-* C++
+### Development Tools
 * Go
-* Java SE
-* Perl
-* Python
-* Ruby
-
-### Installed Tools
-* RVM
-* NVM
-* ImageMagick
-
-### Possible to Install Yourself (Just examples, you can do more)
-* Clojure
-* Dart
-* Haskell
-* Erlang
-* Scala
+* Node.js (version control with NVM)
