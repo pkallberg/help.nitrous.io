@@ -4,3 +4,6 @@ permalink: /:title
 #category_links: change the category directory
 category_title_prefix: ''
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
+sass:
+    syntax: scss        # scss|sass
+    style:  compressed  # nested|expanded|compact|compressed
