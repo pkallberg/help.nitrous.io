@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>getting-started</title>
+  <title>Mac App Preferences</title>
   <meta content='width=device-width, initial-scale=1.0' name='viewport'>
   <meta content='Nitrous.IO is a cloud-based development environment platform with a web-based IDE and cloud VMs, and supports Ruby, Python, Node.js and more.' name='description'>
   <meta content='Nitrous.IO' name='author'>
@@ -61,18 +61,79 @@
 </div>
 <div class="white-bg">
   <div class="container">
-    <h2> getting-started </h2>
+    <h2> Mac App Preferences </h2>
     <div class='articles'>
 
-      <ul class="posts">
+      <p>Your Nitrous.IO for Mac preferences allow you to configure the connection between your computer and your boxes running on Nitrous.IO. For example, you can add/remove SSH keys, setup tunneling to preview applications you are developing, and manage shared folders for local editing.</p>
 
-    <li><h2><i class="icon-file"></i><a href="/faq-adding-project">Upload an existing application</a></h2>
-    We get a lot of emails asking how to upload applications to an Nitrous.IO box. There are many ways to do this; using SCP, installing the [Mac App](https://www.nitrous.io/mac), and in this guide SFTP and Git. ### Uploading your project via...</li>
+<h3 id='accessing_nitrousio_for_mac_preferences_on_mac_os_x'>Accessing Nitrous.IO for Mac preferences on Mac OS X</h3>
 
-    <li><h2><i class="icon-file"></i><a href="/N2O">N2O Resources</a></h2>
-    Your N2O defines the total resources available to you on the Nitrous.IO platform. Memory and storage each cost a specific number of N2O units, but you are free to decide whether you want to increase your Memory consumption or your...</li>
+<ol>
+<li>Click on the Nitrous.IO icon in your menu bar</li>
+</ol>
 
-</ul>
+<p><img alt='Mac Menu' src='/images/articles/mac-menu.png' /></p>
+
+<ol>
+<li>Select <em>Preferences…</em> from the menu</li>
+</ol>
+
+<h3 id='general'>General</h3>
+
+<p>This displays the current version of your Nitrous.IO for Mac installation. Reference this number in <a href='mailto:support@nitrous.io?subject=Mac%20Application'>support requests</a> or to see if you have the latest version of Nitrous.IO for Mac. This tab will also contain basic notification and startup settings in future releases.</p>
+
+<h3 id='account'>Account</h3>
+
+<p>The username and full name (if applicable) associated with your Nitrous.IO account are displayed here. Your username, full name and other account settings can be viewed and edited on the <a href='https://www.nitrous.io'>Nitrous.IO website</a>.</p>
+
+<p>You can also sign out of the currently associated account. Note that this will force you to sign in again.</p>
+
+<h3 id='ssh_keys'>SSH Keys</h3>
+
+<p>The application will automatically detect your SSH keys on your local computer. You will see the path to your private and public keys.</p>
+
+<p><img alt='Mac SSH Keys' src='/images/articles/mac-sshkeys.png' /></p>
+
+<p><em>Generating a new Key</em></p>
+
+<p>If you do not have a public and private key, you can click the <strong>Generate</strong> button to create one. The application will create a key on your behalf and will save it by default to</p>
+
+<pre><code>~/.ssh/id_rsa (private key)
+~/.ssh/id_rsa.pub (public key)</code></pre>
+
+<p><em>Scanning for an existing key</em></p>
+
+<p>You can also tell the application to look for your key or get a new key if you&#8217;ve regenerated one manually by clicking the <strong>Rescan</strong> button.</p>
+
+<h3 id='tunneling'>Tunneling</h3>
+
+<p>Tunneling allows you to forward ports to your</p>
+
+<p><img alt='Mac Tunneling' src='/images/articles/mac-tunneling.png' /></p>
+
+<p>To be able to tunnel to your Nitrous.IO box, you must first select the box from the list on the left of the preference pane, and check the <strong>Enable Tunneling</strong> checkbox.</p>
+
+<p>Next, click the <strong>+</strong> icon at the bottom of the pane and enter the local port, destination host, and destination port where you would like to forward.</p>
+
+<p>Repeat these steps for each of the boxes where you&#8217;d like to setup tunneling.</p>
+
+<h3 id='file_sync'>File Sync</h3>
+
+<p>File sync is the magic that allows you to edit code locally using Sublime Text, Textmate, Eclipse, etc…</p>
+
+<p>On your Nitrous.IO boxes, we automatically create a folder in your home directory called <em>workspace</em>. Anything in this folder will be earmarked to sync with your <em>Nitrous.IO</em> folder on your local machine.</p>
+
+<p><img alt='Mac Menu' src='/images/articles/mac-nitrous-folder.png' /></p>
+
+<p>Within your Nitrous.IO folder, you&#8217;ll see folders that sync the contents in <em>workspace</em> for any boxes that have File Synchronization enabled.</p>
+
+<p><em>Enabling File Synchronization</em></p>
+
+<p>In the File Sync preference pane, click the box name that you&#8217;d like to start syncing. Then click the <em>Enable File Synchronization</em> checkbox.</p>
+
+<p>Repeat this for each of your Nitrous.IO boxes that you&#8217;d like to sync.</p>
+
+<p><img alt='Mac Menu' src='/images/articles/mac-file-sync.png' /></p>
 
           </div><!--
           <div class="sidebar">

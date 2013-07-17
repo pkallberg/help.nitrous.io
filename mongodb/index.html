@@ -14,12 +14,11 @@
   <!-- Custom CSS 
   <link rel="stylesheet" href="/css/main.css">-->
   <link href="/css/style.css" media="all" rel="stylesheet" type="text/css" />
-
   <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
-
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
-
+<div class="wrapper">
  <div class='mast clearfix' id='header'>
   <div class='mast-container'>
     <ul id='topnav'>
@@ -62,7 +61,7 @@
 </div>
 <div class="white-bg">
   <div class="container">
-    <h2> Setting up mongodb </h2>
+    <h2> Setting up MongoDB </h2>
     <div class='articles'>
 
       <p>This guide walks through how you can setup a MongoDB database on your Nitrous.IO box.</p>
@@ -124,9 +123,9 @@
 <h3 id='railsruby'>Rails/Ruby</h3>
 
 <p>You can now access your database in your Rails application for e.g. by using</p>
-<pre class='prettyprint lang-ruby'>
-ENV['MONGODB_DEVELOPMENT_URI']
-</pre>
+
+<pre><code>ENV[&#39;MONGODB_DEVELOPMENT_URI&#39;]</code></pre>
+
 <p>We recommend using the mongoid gem which you can install using:</p>
 
 <pre><code>gem install mongoid</code></pre>
@@ -137,18 +136,18 @@ ENV['MONGODB_DEVELOPMENT_URI']
 
 <p><img alt='rails generate mongoid:config' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/mongodb/mongoid.png' /></p>
 
-<p>Then in your &#8220;development&#8221; environment, under the default session, set the uri to be &#8220;ENV<span>&#8216;MONGODB_DEVELOPMENT_URI&#8217;</span>&#8221;</p>
+<p>Then in your &#8220;development&#8221; environment, under the default session, set the uri to be &#8220;ENV[&#8216;MONGODB_DEVELOPMENT_URI&#8217;]&#8221;</p>
 
 <p><img alt='Rails MongoDB Settings' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/mongodb/database-ruby.png' /></p>
 
 <h3 id='nodejs'>Node.JS</h3>
 
 <p>In Node.JS, you can access each of the environment variables by using</p>
-<pre class='prettyprint lang-javascript'>
-process.env.MONGODB_DEVELOPMENT_HOST, process.env.MONGODB_DEVELOPMENT_PORT,
+
+<pre><code>process.env.MONGODB_DEVELOPMENT_HOST, process.env.MONGODB_DEVELOPMENT_PORT,
 process.env.MONGODB_DEVELOPMENT_USER, process.env.MONGODB_DEVELOPMENT_PASSWORD,
-process.env.MONGODB_DEVELOPMENT_DB, process.env.MONGODB_DEVELOPMENT_URI
-</pre>
+process.env.MONGODB_DEVELOPMENT_DB, process.env.MONGODB_DEVELOPMENT_URI</code></pre>
+
 <p>(Please note, you&#8217;ll probably need to install the <a href='https://npmjs.org/package/mongoose'>mongoose</a> NPM before you use Postgres in a Node.JS app, using the following command:</p>
 
 <pre><code>npm install mongoose</code></pre>
@@ -160,11 +159,11 @@ process.env.MONGODB_DEVELOPMENT_DB, process.env.MONGODB_DEVELOPMENT_URI
 <h3 id='djangopython'>Django/Python</h3>
 
 <p>In Python, you can access each of the environment variables by using</p>
-<pre class='prettyprint lang-python'>
-os.environ['MONGODB_DEVELOPMENT_HOST'], os.environ['MONGODB_DEVELOPMENT_PORT'],
-os.environ['MONGODB_DEVELOPMENT_USER'], os.environ['MONGODB_DEVELOPMENT_PASSWORD'],
-os.environ['MONGODB_DEVELOPMENT_DB'], os.environ['MONGODB_DEVELOPMENT_URI']
-</pre>
+
+<pre><code>os.environ[&#39;MONGODB_DEVELOPMENT_HOST&#39;], os.environ[&#39;MONGODB_DEVELOPMENT_PORT&#39;],
+os.environ[&#39;MONGODB_DEVELOPMENT_USER&#39;], os.environ[&#39;MONGODB_DEVELOPMENT_PASSWORD&#39;],
+os.environ[&#39;MONGODB_DEVELOPMENT_DB&#39;], os.environ[&#39;MONGODB_DEVELOPMENT_URI&#39;]</code></pre>
+
 <p>The instructions in the official MongoDB documentatin for Python is an excellent guide, but you can replace the settings in settings.py with the MongoLab variables, like so:</p>
 
 <p><img alt='Python MongoDB Settings' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/mongodb/database-python.png' /></p>
@@ -260,6 +259,7 @@ os.environ['MONGODB_DEVELOPMENT_DB'], os.environ['MONGODB_DEVELOPMENT_URI']
       </div>
     </div>
   </div>
+</div>
 </footer>
 <script async="async" src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js" type="text/javascript"></script>
 </div>

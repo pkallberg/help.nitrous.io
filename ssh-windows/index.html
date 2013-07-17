@@ -14,12 +14,11 @@
   <!-- Custom CSS 
   <link rel="stylesheet" href="/css/main.css">-->
   <link href="/css/style.css" media="all" rel="stylesheet" type="text/css" />
-
   <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
-
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
-
+<div class="wrapper">
  <div class='mast clearfix' id='header'>
   <div class='mast-container'>
     <ul id='topnav'>
@@ -62,12 +61,12 @@
 </div>
 <div class="white-bg">
   <div class="container">
-    <h2> Add ssh keys (windows) </h2>
+    <h2> Add SSH keys (windows) </h2>
     <div class='articles'>
 
-      <p>SSH Keys enable you to manage your Action boxes directly from your computer via your favorite SSH client. The keypair is used to identify you when interacting with your box from outside of <a href='https://www.nitrous.io'>our website</a>.</p>
+      <p>SSH Keys enable you to manage your Nitrous boxes directly from your computer via your favorite SSH client. The keypair is used to identify you when interacting with your box from outside of <a href='https://www.nitrous.io'>our website</a>.</p>
 <ul class='inline choices'>
-  <li><a href='/ssh/mac/public-keys/ssh-add.html'>Mac</a></li>
+  <li><a href='/ssh-add/'>Mac</a></li>
   <li class='selected'>Windows</li>
 </ul>
 <p>On Windows, we recommend that you use <a href='http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html'>PuttyGen</a>. Visit this link and look for the PuttyGen download:</p>
@@ -105,6 +104,10 @@
 
 <li>Paste your public key in the text area and click <strong>Add Key</strong>.</li>
 </ol>
+
+<blockquote>
+<p>Note: The Putty Key Generator may add a line similar to &#8216;the comment: &#8220;rsa-key-20130101&#8221;&#8217; to your public RSA key. You will need to remove this line before pasting it into the text area within your Nitrous.IO account.</p>
+</blockquote>
 
 <p><img alt='action key' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/win-key.png' /></p>
 
@@ -235,6 +238,7 @@
       </div>
     </div>
   </div>
+</div>
 </footer>
 <script async="async" src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js" type="text/javascript"></script>
 </div>

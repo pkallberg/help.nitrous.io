@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>getting-started</title>
+  <title>Collaborative Coding Overview</title>
   <meta content='width=device-width, initial-scale=1.0' name='viewport'>
   <meta content='Nitrous.IO is a cloud-based development environment platform with a web-based IDE and cloud VMs, and supports Ruby, Python, Node.js and more.' name='description'>
   <meta content='Nitrous.IO' name='author'>
@@ -61,18 +61,78 @@
 </div>
 <div class="white-bg">
   <div class="container">
-    <h2> getting-started </h2>
+    <h2> Collaborative Coding Overview </h2>
     <div class='articles'>
 
-      <ul class="posts">
+      <p>This post will give you a general overview of how to get started with Collaborative Code Editing on the Nitrous.IO development platform.</p>
 
-    <li><h2><i class="icon-file"></i><a href="/faq-adding-project">Upload an existing application</a></h2>
-    We get a lot of emails asking how to upload applications to an Nitrous.IO box. There are many ways to do this; using SCP, installing the [Mac App](https://www.nitrous.io/mac), and in this guide SFTP and Git. ### Uploading your project via...</li>
+<h3 id='start_the_web_ide'>Start the Web IDE</h3>
 
-    <li><h2><i class="icon-file"></i><a href="/N2O">N2O Resources</a></h2>
-    Your N2O defines the total resources available to you on the Nitrous.IO platform. Memory and storage each cost a specific number of N2O units, but you are free to decide whether you want to increase your Memory consumption or your...</li>
+<p>Create a box on Nitrous.IO, or you can use a box that you&#8217;ve already created. Collaboration works on any box template.</p>
 
-</ul>
+<p>In your list of boxes, click the IDE button to boot up the IDE for your box:</p>
+
+<p><img alt='Web IDE' src='/images/articles/ide-button.png' /></p>
+
+<h3 id='adding_collaborators'>Adding Collaborators</h3>
+
+<p>Now we&#8217;ve got to give access to our friends / colleagues so they can access our box.</p>
+
+<p>Note that with adding collaborators comes great responsibility. Notably, you <em>must trust</em> who you are adding to your box. For extra security, you should practice the following:</p>
+
+<p><em>Use SSH Key with passphrase</em></p>
+
+<p>If you&#8217;ve already added an SSH Key to Nitrous.IO without a passphrase, you&#8217;ll need to delete it and re-generate one with a passphrase.</p>
+
+<p><em>Use HTTPS authentication with Github</em></p>
+
+<p>Using HTTPS authentication with Github should prompt you for your password, thus restricting any abuse from collaborators (but they&#8217;re your friends, why would they do that?!). Better safe then sorry…my friends have done some evil things to my desktop background…and my forehead with a very, very permanent marker.</p>
+
+<p>Okay, back to business. In the IDE, Click the &#8220;Collaborate&#8221; menu item in the top navigation, and select &#8220;Manage Collaborators&#8221;:</p>
+
+<p><img alt='Collaborate Menu' src='/images/articles/collab/collab-menu.png' /></p>
+
+<p>A modal with a list of any collaborators you&#8217;ve already added will appear. Enter the <em>Nitrous.IO</em> username, or email of the person you&#8217;d like to add to your box.</p>
+
+<p><img alt='Collaborate Modal' src='/images/articles/collab/collab-modal-email.png' /></p>
+
+<h4 id='nitrousio_users__new_users'>Nitrous.IO users &amp; New Users</h4>
+
+<p>If you&#8217;re inviting a user with their username, they&#8217;ll receive an email and the box will appear in their list of boxes:</p>
+
+<p><img alt='Collaborate Modal' src='/images/articles/collab/shared-box.png' /></p>
+
+<p>If they don&#8217;t have an account yet, they&#8217;ll receive an invite to Nitrous.IO, and will be able to access only boxes to which they&#8217;ve been added as a collaborator.</p>
+
+<h3 id='collaborating_on_files'>Collaborating on Files</h3>
+
+<p>Ok, now lets get to the good part. Once you and your collaborators have opened the IDE, you can edit files simultaneously.</p>
+
+<p>First, and most importantly, you&#8217;ll need to open the same file. Luckily, we put file status notifications in the chat window on the right of the IDE.</p>
+
+<p><strong>Chat</strong></p>
+
+<p>To open the chat, just click the little &#8220;message&#8221; icon on the right of the IDE. This will toggle the chat window which has a few valuable features.</p>
+
+<p><img alt='Online Users' src='/images/articles/collab/collab-online.png' /></p>
+
+<p>You can check who else is online by hovering over the group icon. Alternatively, you could just write a message in the chat saying &#8220;what&#8217;s up&#8221;, but sometimes people are around and are just ignoring you because you&#8217;re not the most &#8220;likable guy&#8221;…bleh whatever, screw &#8216;em.</p>
+
+<p><strong>File status</strong></p>
+
+<p>Assuming someone has joined the room and opened a file, you&#8217;ll see a file status message in the chat window. This is a great shortcut to open the same file to start editing.</p>
+
+<h3 id='collaborate'>Collaborate!</h3>
+
+<p>Finally, now that we have the same file open, we can collaborate. But wait…there&#8217;s one more, incredibly important step. You&#8217;ll need to actually turn &#8220;Collab Mode&#8221; on for each file.</p>
+
+<p>To turn on Collab Mode, just click the little button on the top-right of the file:</p>
+
+<p><img alt='Collab Mode Button' src='/images/articles/collab/collab-button2.png' /></p>
+
+<p>Now, when you edit, your friend will see the changes happening live in their browser. They can type at the same time and it will show up in your browser.</p>
+
+<p>This is really amazing when conducting remote interviews, when troubleshooting something for a friend, when pairing with someone across the globe, or just to make other geeky friends!</p>
 
           </div><!--
           <div class="sidebar">
