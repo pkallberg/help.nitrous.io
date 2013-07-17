@@ -112,7 +112,7 @@ Our vulnerability management process is designed to remediate risks without cust
 
 New systems are deployed with the latest updates, security fixes, and Nitrous.IO configurations and existing systems are decommissioned as customers are migrated to the new instances. This process allows Nitrous.IO to keep the environment up-to-date. Since customer applications run in isolated environments, they are unaffected by these core system updates.
 
-To further mitigate risk, each component type is assigned to a unique network security group. These security groups are designed to only allow access to the ports and protocols required for the specific component type. For example, user applications running within an isolated dyno are denied access to the Nitrous.IO management infrastructure as each is within its own network security group and access is not allowed between the two.
+To further mitigate risk, each component type is assigned to a unique network security group. These security groups are designed to only allow access to the ports and protocols required for the specific component type. For example, user applications running within an isolated box are denied access to the Nitrous.IO management infrastructure as each is within its own network security group and access is not allowed between the two.
 
 #### Nitrous.IO Application Security
 
