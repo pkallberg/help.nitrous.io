@@ -31,3 +31,7 @@ $ git push origin master
 ```
 $ rake
 ```
+
+### Editing CSS
+
++ This project uses SASS/SCSS implementation, so you will want to only edit the *.scss files within 'css/'. Jekyll will automatically generace *.css files within the same directory, so you do not want to make changes to the CSS files.
