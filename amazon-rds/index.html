@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Creating a  Rails app with Amazon RDS</title>
+  <title>Amazon RDS</title>
   <meta content='width=device-width, initial-scale=1.0' name='viewport'>
   <meta content='Nitrous.IO is a cloud-based development environment platform with a web-based IDE and cloud VMs, and supports Ruby, Python, Node.js and more.' name='description'>
   <meta content='Nitrous.IO' name='author'>
@@ -63,61 +63,41 @@
   <div class="container">
     <div class='articles'>
       <div class="page-title">  
-        <h1> Creating a  Rails app with Amazon RDS </h1>
-        <h5 class="note">Last Updated on: 2013-06-28 00:00:00 +0000</h5>
+        <h1> Amazon RDS </h1>
+        <h5 class="note">Last Updated on: 2013-07-19 00:00:00 +0000</h5>
       </div>
-      <p>With <a href='http://aws.amazon.com/rds/'>Amazon RDS</a> you can quickly and easily provision and maintain a MySQL, Oracle, or Microsoft SQL Server instance in the cloud. Lets go over how to get started with a Rails app using the Amazon RDS MySQL engine.</p>
+      <p>With <a href='http://aws.amazon.com/rds/'>Amazon RDS</a> you can quickly and easily provision and maintain a MySQL, Oracle, or Microsoft SQL Server instance in the cloud.</p>
 
 <h3 id='prerequisites'>Prerequisites</h3>
 
-<p>Before we get started, make sure you have the following:</p>
-
-<ul>
-<li>An <a href='http://aws.amazon.com/'>Amazon Web Services Account</a></li>
-
-<li>An <a href='https://nitrous.io'>Nitrous.IO account</a></li>
-</ul>
+<p>You will need to first sign up with <a href='http://aws.amazon.com/'>Amazon Web Services</a>.</p>
 
 <h3 id='adding_a_security_group_with_amazon_rds'>Adding a Security Group with Amazon RDS</h3>
 
-<p>Lets add the Nitrous.IO box to the Amazon RDS security group. Since This EC2 box will be running in the same region as the Amazon RDS (US West) we can add the internal IP into the Security Group.</p>
+<p>Login to your <a href='https://console.aws.amazon.com/rds/home'>Amazon RDS Console</a>, navigate to Security Groups and create a new Connection Type with the following EC2 Security Group Details:</p>
 
-<p>Ping your Rails box URI within the Nitrous.IO console to find the internal IP:</p>
+<pre><code>AWS Account ID: 643018315983
+EC2 Security Group (name): box_host</code></pre>
 
-<pre><code>$ ping rails-box-3921.usw1.actionbox.io
-PING ec2-184-169-182-155.us-west-1.compute.amazonaws.com (10.168.125.111) 56(84) bytes of data.
-64 bytes from ip-10-168-125-111.us-west-1.compute.internal (10.168.125.111): icmp_req=1 ttl=64 time=0.130 ms</code></pre>
-
-<p>Login to your <a href='https://console.aws.amazon.com/rds/home'>Amazon RDS Console</a>, navigate to Security Groups and create a new security group using the internal IP as a CIDR/IP connection type.</p>
-
-<p><img alt='Security Group Details' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/amazon_rds_security_group.png' /></p>
+<p><img alt='Security Group Details' src='/images/articles/amazon_rds_security_group.png' /></p>
 
 <h3 id='setting_up_a_new_instance_with_amazon_rds'>Setting Up a New Instance with Amazon RDS</h3>
 
 <p>Within your <a href='https://console.aws.amazon.com/rds/home'>Amazon RDS Console</a> you will want to navigate to Instances and Launch a new DB Instance. When prompted, select the MySQL Database Engine.</p>
 
-<p>When setting up the database remember to select the Security Group you have just created.</p>
+<p>When setting up the database remember to select the Security Group you have just created, and also remember your password for connecting later.</p>
 
-<p><img alt='Amazon RDS Settings' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/amazon_instance_setting.png' /></p>
+<p><img alt='Amazon RDS Settings' src='/images/articles/amazon_instance_setting.png' /></p>
 
-<h3 id='create_a_rails_app_on_nitrousio'>Create a Rails app on Nitrous.IO</h3>
+<h3 id='setting_up_the_database_configuration_rubyrails'>Setting up the Database configuration (Ruby/Rails)</h3>
 
-<p>Login to Nitrious.IO and create or open up a Rails box. Within the console enter in the following commands:</p>
+<p>If you are building a Rails app, follow this step to connect your app to Amazon RDS.</p>
 
-<pre><code>$ rails new blog
-$ cd blog</code></pre>
+<p>In the Instances tab of your <a href='https://console.aws.amazon.com/rds/home'>Amazon RDS Console</a>, you will see all of the database credentials needed to login (except for your password which you created):</p>
 
-<p>At this point you can test your Rails app with the following command:</p>
+<p><img alt='Amazon RDS Instance Settings' src='/images/articles/amazon-rds-instance-details.png' /></p>
 
-<pre><code>$ rails server</code></pre>
-
-<p>Once the app is running, you can view it by navigating to <strong>Preview > Port 3000</strong> in your Nitrous.IO IDE.</p>
-
-<h3 id='setting_up_the_database_configurations'>Setting up the Database configurations</h3>
-
-<p>The next step is to configure the app to connect to Amazon RDS.</p>
-
-<p>Within config/database.yml, configure your development environment to use the following variables:</p>
+<p>Within config/database.yml, configure your development environment to use your database instance&#8217;s configuration details:</p>
 
 <pre><code>development:
  adapter: mysql2
@@ -128,52 +108,17 @@ $ cd blog</code></pre>
  host: &lt;%= ENV[&#39;RDS_HOSTNAME&#39;] %&gt;
  port: &lt;%= ENV[&#39;RDS_PORT&#39;] %&gt;</code></pre>
 
-<p>For our test and production databases, we&#8217;ll be provisioning new databases on Amazon RDS. If you want to create a test database (&#8220;blog-app-test&#8221;), just repeat these instructions.</p>
+<blockquote>
+<p>Note: If you wish to configure test and production databases, you will want to provision new databases on Amazon RDS.</p>
+</blockquote>
 
 <p>As you can see we have changed the adapter to use mysql2 which is the adapter Amazon RDS uses. You will also need to install the following gem in order to add support for this:</p>
 
-<pre><code>$ gem install mysql2
-$ bundle install</code></pre>
+<pre><code>$ gem install mysql2</code></pre>
 
-<p>Add the mysql2 gem to your Gemfile:</p>
+<p>Also, you will want to add the mysql2 gem to your Gemfile:</p>
 
 <pre><code>gem &#39;mysql2&#39;</code></pre>
-
-<h3 id='creating_the_database'>Creating the Database</h3>
-
-<p>The App should now have access to the Amazon RDS instance. Run the following commands to create a new database, create a new table, and migrate it to Amazon RDS:</p>
-
-<pre><code>$ rake db:create
-$ rails generate controller home index
-$ rails generate scaffold Post name:string title:string content:text
-$ rake db:migrate</code></pre>
-
-<h3 id='configuring_your_routes_and_adding_a_link'>Configuring your Routes and Adding a Link</h3>
-
-<p>You will first need to remove your static index file:</p>
-
-<pre><code>$ rm public/index.html</code></pre>
-
-<p>Add the following route into config/routes.rb:</p>
-
-<pre><code>Blog::Application.routes.draw do
-  root :to =&gt; &quot;home#index&quot;
-end</code></pre>
-
-<p>Open app/views/home/index.html.erb and modify it to include the following code:</p>
-
-<pre><code>&lt;h1&gt;Hello, Rails!&lt;/h1&gt;
-&lt;%= link_to &quot;My Blog&quot;, posts_path %&gt;</code></pre>
-
-<h3 id='previewing_the_app'>Previewing the App</h3>
-
-<p>Once the database is successfully migrated, run the following command:</p>
-
-<pre><code>$ rails server</code></pre>
-
-<p>You can now view the Rails App by navigating to <strong>Preview > Port 3000</strong> in your Nitrous.IO IDE.</p>
-
-<p>For our regular users: How&#8217;d it go for you? If you&#8217;re having trouble, you can always get in touch with us by visiting our <a href='https://action.io/chat'>chatroom</a> or by <a href='mailto:support@action.io'>emailing us</a>.</p>
 
     </div>
     <div class="sidebar">
