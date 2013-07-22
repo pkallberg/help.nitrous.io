@@ -97,6 +97,12 @@ EC2 Security Group (name): box_host</code></pre>
 
 <p><img alt='Amazon RDS Instance Settings' src='/images/articles/amazon-rds-instance-details.png' /></p>
 
+<p>Grab each of the values and assign them to environment variables in your &#8220;~/.bashrc&#8221; file on your Nitrous.IO box. This will ensure that every time you log into your Nitrous.IO box, your database credentials will be available as environment variables to use in any of your apps. It is good practice to namespace your environment variables with the environment that you want to use your database in (development or test), like so:</p>
+
+<p><img alt='Env Variables' src='/images/articles/rds-bashrc.png' /></p>
+
+<p>If you want the environment variables to be loaded immediately, run: source ~/.bashrc</p>
+
 <p>Within config/database.yml, configure your development environment to use your database instance&#8217;s configuration details:</p>
 
 <pre><code>development:
