@@ -41,7 +41,7 @@ If you're importing an existing application, you can [connect your Github accoun
     $ rails new hello-app --database=postgresql
     $ cd hello-app
 
-**Database Support**
+####Database Support####
 
 Nitrous.IO boxes come with Sqlite3 support by default. However, for more complex applications, you might want to use Postgres, MySQL, MongoDB, etc…
 

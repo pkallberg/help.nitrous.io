@@ -838,7 +838,7 @@ code {
 pre {
   display: block;
   padding: 8.5px;
-  margin: 0 0 9px;
+  margin: 0 0 12px 0;
   font-size: 12px;
   line-height: 18px;
   word-break: break-all;
@@ -8874,6 +8874,11 @@ h1, h2, h3, h4 {
   font-weight: 300;
 }
 
+h3, h4 {
+  padding-top: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
 h1 {
   font-size: 30px;
   line-height: 36px;
@@ -8885,7 +8890,7 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 1.4em;
 }
 
 h4, h5, h6 {
@@ -8893,7 +8898,7 @@ h4, h5, h6 {
 }
 
 h4 {
-  font-size: 14px;
+  font-size: 1em;
 }
 
 h5 {
@@ -13597,14 +13602,6 @@ html.ide {
 
 /*custom*/
 
-h3, h4 {
-  border-bottom: 1px solid #ddd;
-}
-
-h3 {
-  font-size: 1.4em;
-}
-
 .search {
   width: 80%;
   margin: 0;
@@ -13631,6 +13628,7 @@ h3 {
 
   p{
     font: 90% / 1.6 'Arimo', sans-serif;
+    margin-bottom: 1.4em;
   }
 
 }
