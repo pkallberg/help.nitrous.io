@@ -3646,8 +3646,8 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
     li > a {
       display: block;
       &:hover, &:focus {
+        margin-bottom: 1px;
         text-decoration: none;
-        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
         background-color: #CFCDCD;
       }
       > img {
