@@ -35,6 +35,18 @@ In the Instances tab of your [Amazon RDS Console](https://console.aws.amazon.com
 
 ![Amazon RDS Instance Settings](/images/articles/amazon-rds-instance-details.png)
 
+Grab each of the values and assign them to environment variables in your
+"~/.bashrc" file on your Nitrous.IO box. This will ensure that every time you log into your Nitrous.IO box, your
+database credentials will be available as environment variables to use
+in any of your apps. It is good practice to namespace your environment
+variables with the environment that you want to use your database in
+(development or test), like so:
+
+![Env Variables](/images/articles/rds-bashrc.png)
+
+If you want the environment variables to be loaded immediately, run:
+    source ~/.bashrc
+
 Within config/database.yml, configure your development environment to use your database instance's configuration details:
 
     development:
