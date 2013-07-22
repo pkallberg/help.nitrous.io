@@ -2,7 +2,7 @@
 layout: article
 title: Security on Nitrous.IO
 published: true
-categories: [admin]
+categories: [privacy and terms]
 ---
 
 ### Nitrous.IO The Platform & Web Service

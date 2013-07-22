@@ -2,7 +2,7 @@
 layout: article
 title: Contact us
 published: true
-categories: [about]
+categories: [privacy and terms]
 ---
 
 If you'd like to get in touch:

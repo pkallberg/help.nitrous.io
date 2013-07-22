@@ -2,7 +2,7 @@
 layout: article
 title: Web IDE keyboard shortcuts
 published: true
-categories: [web-ide]
+categories: [web ide]
 ---
 
 **New tab**

@@ -2,7 +2,7 @@
 layout: article
 title: Add SSH keys (windows)
 published: true
-categories: [ssh, public-keys, windows]
+categories: [ssh, public keys, windows]
 ---
 
 SSH Keys enable you to manage your Nitrous boxes directly from your computer via your favorite SSH client.  The keypair is used to identify you when interacting with your box from outside of [our website](https://www.nitrous.io).

@@ -2,7 +2,7 @@
 layout: article
 title: Beta agreement
 published: true
-categories: [admin]
+categories: [privacy and terms]
 ---
 
 This Beta Agreement (the "Agreement") contains the exclusive terms and conditions between Irrational Industries, Inc., a Delaware corporation (“Company”) and you (and the organization you represent) ("You") and it governs Your testing, evaluation and use of the beta version of the Services, any related software and website to which Company gives You access ("Services"). By accessing the Services for the evaluation purposes described herein You are consenting to be bound by and are becoming a party to the terms and conditions of this Agreement.  If You do not agree to all of the terms of this Agreement, You must not access the Services.

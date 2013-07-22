@@ -2,7 +2,7 @@
 layout: article
 title: Terms of use
 published: true
-categories: [admin]
+categories: [privacy and terms]
 ---
 
 _Effective April 1, 2013_

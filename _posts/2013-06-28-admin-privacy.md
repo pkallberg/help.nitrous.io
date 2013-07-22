@@ -2,7 +2,7 @@
 layout: article
 title: Privacy policy
 published: true
-categories: [admin]
+categories: [privacy and terms]
 ---
 
 _This Privacy Policy is effective April 1, 2013._

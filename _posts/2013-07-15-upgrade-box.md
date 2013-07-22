@@ -2,7 +2,7 @@
 layout: article
 title: Upgrade/Downgrade a Box
 published: true
-categories: [overview, boxes]
+categories: [getting started, boxes]
 ---
 
 At any point you can change the memory/storage configuration of your

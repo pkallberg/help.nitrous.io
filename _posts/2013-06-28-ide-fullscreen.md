@@ -2,7 +2,7 @@
 layout: article
 title: Making the console fullscreen
 published: true
-categories: [web-ide]
+categories: [web ide]
 ---
 
 If you want to just code in your browser using the web console (good for coding on the iPad), just click the "expand" icon at the right of the console header.

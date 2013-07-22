@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Nitrous.IO support channels
+title: Nitrous.IO Support Channels
 published: true
-categories: [overview, help]
+categories: [getting started]
 ---
 
 We provide a number of ways to get in touch with someone on the Nitrous.IO team.  If you can't find a live person in one of these channels, try another one! Our team is distributed around the globe, so odds are we're awake somewhere.  And in the rare case you can't find anybody you can always just [send us an email](mailto:support@nitrous.io) and we'll do our best to respond within 24 hrs.
