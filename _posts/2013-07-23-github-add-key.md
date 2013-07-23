@@ -17,8 +17,6 @@ In the top navigation, click your N2O meter bar which will take you to the [bonu
 
 On the Bonus page, click the "Connect to Github" button.
 
-![Connect to Github](https://raw.github.com/action-io/action-assets/master/support/screenshots/github-connect-button.png)
-
 You'll be redirected to the Github authentication page, where you can review the policies and select "Allow".
 
 You will then be redirected back to Nitrous.IO and you should see a message that you've authenticated successfully. If you're having trouble, send us an email.
