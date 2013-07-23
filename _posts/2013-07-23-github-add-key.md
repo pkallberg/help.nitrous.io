@@ -11,11 +11,11 @@ For those developers using [Github](http://github.com), Action lets you easily a
 
 First, you'll need to authenticate your Github account so we're allowed to add ssh keys to your profile on Github.
 
-In the top navigation, click the username dropdown on the right and select "Account Settings"
+In the top navigation, click your N2O meter bar which will take you to the [bonus page](https://www.nitrous.io/app#/n2o/bonus).
 
-![Account Settings Menu](https://raw.github.com/action-io/action-assets/master/support/screenshots/menu-account-settings.png)
+![N2O Bonus Page](/images/articles/n2o-bonus-page-github.png)
 
-On the Account Settings page, click the "Connect to Github" button.
+On the Bonus page, click the "Connect to Github" button.
 
 ![Connect to Github](https://raw.github.com/action-io/action-assets/master/support/screenshots/github-connect-button.png)
 
