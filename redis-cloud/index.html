@@ -80,6 +80,18 @@
 
 <p><img alt='Redis Cloud Region' src='/images/articles/redis-cloud-region.png' /></p>
 
+<h3 id='testing_connectivity_with_rediscli'>Testing Connectivity with Redis-cli</h3>
+
+<p>To ensure you have set this up to connect properly we will be testing the connection in with <a href='http://redis.io/topics/quickstart'>redis-cli</a>. This is pre-installed on your Nitrous box so there is no extra setup needed.</p>
+
+<p>Run the following command with your Redis Cloud&#8217;s db configuration. You can obtain the host (public DNS), port, and password in your Redis Cloud account in the navigation menu under ‘My Resources’ &gt; ‘Manage’ (<a href='/images/articles/redis-cloud-settings.png'>view example</a>):</p>
+
+<pre><code>redis-cli -h REDIS_CLOUD_HOST -p REDIS_CLOUD_PORT -a REDIS_CLOUD_PASSWORD</code></pre>
+
+<p>After running redis-cli, you can set and get keys. Here is an example of output which you should see when setting and getting keys:</p>
+
+<p><img alt='Redis-cli-connection' src='/images/articles/redis-cli.png' /></p>
+
 <h3 id='setting_up_the_database_configuration_rubyrails'>Setting up the Database configuration (Ruby/Rails)</h3>
 
 <p>If you are building a Rails app, follow this step to connect your app to Redis Cloud.</p>
