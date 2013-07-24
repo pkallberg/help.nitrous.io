@@ -7,18 +7,15 @@ categories: [databases]
 
 MemCachier manages and scales clusters of memcache servers so you can focus on your app.
 
-To get started, sign up with [MemCachier](http://memcachier.com/). You will need to select EC2 instance as well as a plan.
+To get started, sign up with [MemCachier](http://memcachier.com/).
 
 ### Configuring Your App
 
-Create a new app and use the following settings for AWS:
-
-    security group id: box_host
-    owner_id: 643018315983
+Navigate to the [Caches](https://www.memcachier.com/caches) page, and create a new cache:
 
 ![memcachier-ec2-config](/images/articles/memcachier-ec2-config.png)
 
->Note: If you are using a free dev tier, only the US East and EU West regions are available. You may want to create a Nitrous box in the same region to see the best performance.
+>Note: Currently the US East and EU West regions are available. You will want to create a Nitrous box in the same region to see the best performance.
 
 ### Connecting Your App to MemCachier
 
