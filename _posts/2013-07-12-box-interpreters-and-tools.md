@@ -31,6 +31,8 @@ We provide extra interpreters and tools in your Nitrous boxes to help you get ha
 
 ### System Tools
 
+* git
+* hg
 * build-essential
 * wget
 * curl
