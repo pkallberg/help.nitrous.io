@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>faq</title>
+  <title>Installing Erlang</title>
   <meta content='width=device-width, initial-scale=1.0' name='viewport'>
   <meta content='Nitrous.IO is a cloud-based development environment platform with a web-based IDE and cloud VMs, and supports Ruby, Python, Node.js and more.' name='description'>
   <meta content='Nitrous.IO' name='author'>
@@ -63,29 +63,50 @@
   <div class="container">
     <div class='articles'>
       <div class="page-title">  
-        <h1> faq </h1>
+        <h1> Installing Erlang </h1>
+        <h5 class="note">Last Updated on: 2013-08-01 </h5>
       </div>
-      <ul class="posts">
+      <p>Although the Nitrous boxes include a number of <a href='/box-interpreters-and-tools/'>interpreters and tools</a>, we don&#8217;t have everything covered. Fortunately many languages can be installed (Clojure, Dart, Haskell, Erlang, Scala, etc). This guide will cover how to setup your box to support Erlang.</p>
 
-    <li><h2><i class="icon-file"></i><a href="/faq-erlang">Installing Erlang</a></h2></li>
+<h3 id='downloading_erlang'>Downloading Erlang</h3>
 
-    <li><h2><i class="icon-file"></i><a href="/box-interpreters-and-tools">Included Interpreters and Tools</a></h2></li>
+<p>Since you can&#8217;t create folders outside your home folder, you will need to install Erlang within it. Create a hidden folder called .tools:</p>
 
-    <li><h2><i class="icon-file"></i><a href="/node-connect-server">Run a static site with NodeJS</a></h2></li>
+<pre><code>mkdir ~/.tools</code></pre>
 
-    <li><h2><i class="icon-file"></i><a href="/mac-preferences">Mac App Preferences</a></h2></li>
+<p>Navigate to this new directory and download Erlang:</p>
 
-    <li><h2><i class="icon-file"></i><a href="/ide-upload-directory">Upload a directory via the Web IDE</a></h2></li>
+<pre><code>cd ~/.tools
 
-    <li><h2><i class="icon-file"></i><a href="/faq-localhost">Problems previewing my application</a></h2></li>
+wget https://elearning.erlang-solutions.com/binaries/sources/otp_src_R16B01.tar.gz</code></pre>
 
-    <li><h2><i class="icon-file"></i><a href="/faq-disconnect">Server disconnects on browser close</a></h2></li>
+<blockquote>
+<p>Note: Other versions of Erlang may be found on <a href='https://www.erlang-solutions.com/downloads/download-erlang-otp'>erlang-solutions.com</a></p>
+</blockquote>
 
-    <li><h2><i class="icon-file"></i><a href="/faq-browser-support">Browser support</a></h2></li>
+<p>Now you will want to extract this file which will create the folder <code>otp_src_R16B01/</code> inside.</p>
 
-    <li><h2><i class="icon-file"></i><a href="/faq-adding-project">Upload an existing application</a></h2></li>
+<pre><code>gunzip -c otp_src_R16B01.tar.gz | tar xfp -</code></pre>
 
-</ul>
+<h3 id='setting_up_path'>Setting up PATH</h3>
+
+<p>Once the tar file is extracted, edit <code>~/.bashrc</code> and add the bin directory to your PATH:</p>
+
+<pre><code>PATH=$PATH:$HOME/.tools/otp_src_R16B01/bin/</code></pre>
+
+<p>Reload the ~/.bashrc file by running <code>source ~/.bashrc</code>, and verify the .tools folder was added to your PATH with <code>echo $PATH</code>.</p>
+
+<h3 id='installing'>Installing</h3>
+
+<p>Navigate to the Erlang directory <code>cd ~/.tools/otp_src_R16B01/</code> and run the following command:</p>
+
+<pre><code>./configure</code></pre>
+
+<p>Next, run make (this can take a few minutes):</p>
+
+<pre><code>make</code></pre>
+
+<p>Once finished you should have a working Erlang/OTP system. You can try this out by typing <code>bin/erl</code>.</p>
 
     </div>
     <div class="sidebar">
