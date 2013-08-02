@@ -21,7 +21,9 @@ Login to your [Amazon RDS Console](https://console.aws.amazon.com/rds/home), nav
 
 ###  Setting Up a New Instance with Amazon RDS
 
-Within your [Amazon RDS Console](https://console.aws.amazon.com/rds/home) you will want to navigate to Instances and Launch a new DB Instance. When prompted, select the MySQL Database Engine.
+Within your [Amazon RDS Console](https://console.aws.amazon.com/rds/home) you will want to navigate to Instances and Launch a new DB Instance. When prompted, select the MySQL Database Engine. 
+
+>Note: Ensure that the database is setup in the same region as your Nitrous box, as this is required in order for a connection to be made (US East with US East, etc.).
 
 When setting up the database remember to select the Security Group you have just created, and also remember your password for connecting later.
 
