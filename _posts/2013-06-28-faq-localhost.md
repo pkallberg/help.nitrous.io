@@ -37,7 +37,7 @@ When running a simple development server with [Django](https://docs.djangoprojec
 
 When running the development app server on [Google App Engine](https://developers.google.com/appengine/docs/python/gettingstarted/), we recommend:
 
-    devappserver.py --address=0.0.0.0 --port=3000
+    dev_appserver.py --host=0.0.0.0 --port=3000
 
 
 ### Previewing the application
