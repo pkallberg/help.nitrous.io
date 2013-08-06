@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Regions within AWS
+title: AWS Region Settings
 published: true
 categories: [faq]
 ---
