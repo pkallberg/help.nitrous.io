@@ -9,7 +9,7 @@ With [Amazon RDS](http://aws.amazon.com/rds/) you can quickly and easily provisi
 
 ### Prerequisites
 
-* A Nitrous Box within the same region as the database you will create. View the [Regions Settings](/faq-aws-region-settings/) guide for more information on this.
+* A Nitrous Box within the same region as the database you will create. View the [Region Settings](/faq-aws-region-settings/) guide for more information on this.
 * You will need to first sign up with [Amazon Web Services](http://aws.amazon.com/).
 
 
