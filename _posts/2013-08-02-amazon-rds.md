@@ -6,10 +6,12 @@ categories: [databases]
 ---
 
 With [Amazon RDS](http://aws.amazon.com/rds/) you can quickly and easily provision and maintain a MySQL, Oracle, or Microsoft SQL Server instance in the cloud.
+
 ### Prerequisites
 
-*A Nitrous Box within the same region as the database you will create. This is chosen when you first provision a Nitrous box.
-*You will need to first sign up with [Amazon Web Services](http://aws.amazon.com/).
+* A Nitrous Box within the same region as the database you will create. View the [Regions Settings](/faq-aws-region-settings/) guide for more information on this.
+* You will need to first sign up with [Amazon Web Services](http://aws.amazon.com/).
+
 
 ### Adding a Security Group with Amazon RDS
 
@@ -24,7 +26,7 @@ Login to your [Amazon RDS Console](https://console.aws.amazon.com/rds/home), nav
 
 Within your [Amazon RDS Console](https://console.aws.amazon.com/rds/home) you will want to navigate to Instances and Launch a new DB Instance. When prompted, select the MySQL Database Engine. 
 
-On the Additinal Configuration page, ensure the **Availability Zone** matches the region your Nitrous box. In this example, the Nitrous box is in the US West region so we will select **us-west-1a** for the Availability Zone.
+On the Additinal Configuration page, ensure the **Availability Zone** matches the region of your Nitrous box. In this example, the Nitrous box is in the US West region and we have selected **us-west-1a** for the Availability Zone.
 
 Select the DB Security Group you have just created, and also remember your password for connecting later.
 
