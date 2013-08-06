@@ -70,7 +70,11 @@
 
 <h3 id='prerequisites'>Prerequisites</h3>
 
-<p><em>A Nitrous Box within the same region as the database you will create. This is chosen when you first provision a Nitrous box.</em>You will need to first sign up with <a href='http://aws.amazon.com/'>Amazon Web Services</a>.</p>
+<ul>
+<li>A Nitrous Box within the same region as the database you will create. View the <a href='/faq-aws-region-settings/'>Regions Settings</a> guide for more information on this.</li>
+
+<li>You will need to first sign up with <a href='http://aws.amazon.com/'>Amazon Web Services</a>.</li>
+</ul>
 
 <h3 id='adding_a_security_group_with_amazon_rds'>Adding a Security Group with Amazon RDS</h3>
 
@@ -85,7 +89,7 @@ EC2 Security Group (name): box_host</code></pre>
 
 <p>Within your <a href='https://console.aws.amazon.com/rds/home'>Amazon RDS Console</a> you will want to navigate to Instances and Launch a new DB Instance. When prompted, select the MySQL Database Engine.</p>
 
-<p>On the Additinal Configuration page, ensure the <strong>Availability Zone</strong> matches the region your Nitrous box. In this example, the Nitrous box is in the US West region so we will select <strong>us-west-1a</strong> for the Availability Zone.</p>
+<p>On the Additinal Configuration page, ensure the <strong>Availability Zone</strong> matches the region of your Nitrous box. In this example, the Nitrous box is in the US West region and we have selected <strong>us-west-1a</strong> for the Availability Zone.</p>
 
 <p>Select the DB Security Group you have just created, and also remember your password for connecting later.</p>
 
