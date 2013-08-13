@@ -20,7 +20,7 @@ On Windows, we recommend that you use [PuttyGen](http://www.chiark.greenend.org.
 
 Click the **PuTTYgen.exe** link to download the application.
 
-Open PuTTYgen and select the **SSH-2** RSA within the parameter settings. The "Number of bits in a generated key" field should be **2048**. Once these settings are selected, click the **Generate** button next to "Generate a public/private keypair".
+Open PuTTYgen and select the **SSH-2 RSA** within the parameter settings. The "Number of bits in a generated key" field should be **2048**. Once these settings are selected, click the **Generate** button next to "Generate a public/private keypair".
 
 ![keygen button](https://raw.github.com/action-io/action-assets/master/support/screenshots/putty-keygen.png)
 
