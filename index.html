@@ -1,46 +1,49 @@
 <!DOCTYPE html>
-<html class="home index">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset='utf-8'>
   <title>Nitrous.IO Support</title>
-  <meta content='width=device-width, initial-scale=1.0' name='viewport'>
-  <meta content='Nitrous.IO is a cloud-based development environment platform with a web-based IDE and cloud VMs, and supports Ruby, Python, Node.js and more.' name='description'>
+  <meta name="author" content="Nitrous.IO" />
+  <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
+  <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
   <meta content='Nitrous.IO' name='author'>
 
-  <!-- syntax highlighting CSS -->
-  <link rel="stylesheet" href="/css/syntax.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 
-  <!-- Custom CSS 
-  <link rel="stylesheet" href="/css/main.css">-->
-  <link href="/css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' href='/vendor/bootstrap3/css/bootstrap.css'>
+  <link rel='stylesheet' href='/vendor/font-awesome/css/font-awesome.css'>
+  <link href="/css/action.css" media="screen, projection" rel="stylesheet">
   <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
-<div class="wrapper">
- <div class='mast clearfix' id='header'>
-  <div class='mast-container'>
-    <ul id='topnav'>
-      <li>
-        <a href="/discussions">Discussions</a>
-      </li>
-      <li>
-        <a href="https://www.nitrous.io/chat" target="_blank">Chat</a>
-      </li>
-      <li>
-        <a href="mailto:help@nitrous.io">Contact Support</a>
-      </li>
-      <li>
-        <a href="https://nitrous.io/users/sign_in" class="btn">Sign In</a>
-      </li>
-    </ul>
-    <h1 id='logo'>
-      <a href='/'>Nitrous.IO<span> Support</span></a>
-    </h1>
+  <div class="navbar">
+    <div class="container">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Nitrous.IO <span>support</span></a>
+
+      <div class="nav-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav pull-right">
+          <div class="mobile-menu">
+            <li class="signup"><a href="/" class="btn btn-success">Help Center</a></li>
+            <li class="signup"><a href="/categories/getting-started/" class="btn btn-success">Getting Started</a>
+            <li class="signup"><a href="/categories/faq/" class="btn btn-success">FAQ</a></li>
+          </div>
+
+          <li class="hidden-sm"><a href="/discussions">Discussions</a></li>
+          <li class="hidden-sm"><a href="https://www.nitrous.io/chat" target="_blank">Chat</a></li>
+          <li class="hidden-sm login"><a href="https://nitrous.io/users/sign_in">Log In</a></li>
+          <li class="hidden-sm nav-break">or</li>
+          <li class="signup"><a href="https://www.nitrous.io" class="btn btn-success">sign up</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
-<div class='clearfix' id='promo-main'>
+  <div class="container">
+  	<div class='clearfix' id='promo-main'>
   <div class="mast-container">
     <div id="search">
       <script>
@@ -59,10 +62,7 @@
     </div>
   </div>
 </div>
-<div class="white-bg">
-  <div class="container">
-    <div class='content'>
-      <div class="categories clearfix">
+    <div class="categories clearfix">
 <ul id="getting-started" class="clearfix">
     <li class="module gs">
       <a href="getting-started/">
@@ -96,15 +96,15 @@
 		<h3>Getting started</h3>
 	<ul>
 		
-		<li><i class="icon-file"></i><a href="/getting-started">Getting Started with Nitrous.IO</a></li>
+    <li><i class="icon-file"></i><a href="/getting-started">Getting Started with Nitrous.IO</a></li>
 		
-		<li><i class="icon-file"></i><a href="/upgrade-box">Upgrade/Downgrade a Box</a></li>
+    <li><i class="icon-file"></i><a href="/upgrade-box">Upgrade/Downgrade a Box</a></li>
 		
-		<li><i class="icon-file"></i><a href="/support-channels">Nitrous.IO Support Channels</a></li>
+    <li><i class="icon-file"></i><a href="/support-channels">Nitrous.IO Support Channels</a></li>
 		
-		<li><i class="icon-file"></i><a href="/preview">Previewing Your Application</a></li>
+    <li><i class="icon-file"></i><a href="/preview">Previewing Your Application</a></li>
 		
-		<li><i class="icon-file"></i><a href="/faq-adding-project">Upload an existing application</a></li>
+    <li><i class="icon-file"></i><a href="/faq-adding-project">Upload an existing application</a></li>
 		
   </ul>
   <a class="view-all btn" href="/categories/getting-started">View all »</a>
@@ -114,15 +114,15 @@
 		<h3>Privacy & terms</h3>
 	<ul>
 		
-		<li><i class="icon-file"></i><a href="/admin-security-response">Security Response</a></li>
+    <li><i class="icon-file"></i><a href="/admin-security-response">Security Response</a></li>
 		
-		<li><i class="icon-file"></i><a href="/contact-us">Contact us</a></li>
+    <li><i class="icon-file"></i><a href="/contact-us">Contact us</a></li>
 		
-		<li><i class="icon-file"></i><a href="/admin-terms">Terms of use</a></li>
+    <li><i class="icon-file"></i><a href="/admin-terms">Terms of use</a></li>
 		
-		<li><i class="icon-file"></i><a href="/admin-security">Security on Nitrous.IO</a></li>
+    <li><i class="icon-file"></i><a href="/admin-security">Security on Nitrous.IO</a></li>
 		
-		<li><i class="icon-file"></i><a href="/admin-privacy">Privacy policy</a></li>
+    <li><i class="icon-file"></i><a href="/admin-privacy">Privacy policy</a></li>
 		
   </ul>
   <a class="view-all btn" href="/categories/privacy-and-terms">View all »</a>
@@ -132,13 +132,13 @@
 		<h3>Boxes</h3>
 	<ul>
 		
-		<li><i class="icon-file"></i><a href="/upgrade-box">Upgrade/Downgrade a Box</a></li>
+    <li><i class="icon-file"></i><a href="/upgrade-box">Upgrade/Downgrade a Box</a></li>
 		
-		<li><i class="icon-file"></i><a href="/box-interpreters-and-tools">Included Interpreters and Tools</a></li>
+    <li><i class="icon-file"></i><a href="/box-interpreters-and-tools">Included Interpreters and Tools</a></li>
 		
-		<li><i class="icon-file"></i><a href="/box-templates">Box templates</a></li>
+    <li><i class="icon-file"></i><a href="/box-templates">Box templates</a></li>
 		
-		<li><i class="icon-file"></i><a href="/box-new">Create a Box</a></li>
+    <li><i class="icon-file"></i><a href="/box-new">Create a Box</a></li>
 		
   </ul>
   <a class="view-all btn" href="/categories/boxes">View all »</a>
@@ -148,7 +148,7 @@
 		<h3>Collaboration</h3>
 	<ul>
 		
-		<li><i class="icon-file"></i><a href="/collab">Collaborative Coding Overview</a></li>
+    <li><i class="icon-file"></i><a href="/collab">Collaborative Coding Overview</a></li>
 		
   </ul>
   <a class="view-all btn" href="/categories/collaboration">View all »</a>
@@ -158,15 +158,15 @@
 		<h3>Faq</h3>
 	<ul>
 		
-		<li><i class="icon-file"></i><a href="/faq-aws-region-settings">AWS Region Settings</a></li>
+    <li><i class="icon-file"></i><a href="/faq-aws-region-settings">AWS Region Settings</a></li>
 		
-		<li><i class="icon-file"></i><a href="/faq-erlang">Installing Erlang</a></li>
+    <li><i class="icon-file"></i><a href="/faq-erlang">Installing Erlang</a></li>
 		
-		<li><i class="icon-file"></i><a href="/box-interpreters-and-tools">Included Interpreters and Tools</a></li>
+    <li><i class="icon-file"></i><a href="/box-interpreters-and-tools">Included Interpreters and Tools</a></li>
 		
-		<li><i class="icon-file"></i><a href="/node-connect-server">Run a static site with NodeJS</a></li>
+    <li><i class="icon-file"></i><a href="/node-connect-server">Run a static site with NodeJS</a></li>
 		
-		<li><i class="icon-file"></i><a href="/mac-preferences">Mac App Preferences</a></li>
+    <li><i class="icon-file"></i><a href="/mac-preferences">Mac App Preferences</a></li>
 		
   </ul>
   <a class="view-all btn" href="/categories/faq">View all »</a>
@@ -176,15 +176,15 @@
 		<h3>Web ide</h3>
 	<ul>
 		
-		<li><i class="icon-file"></i><a href="/new-file">Creating a new file</a></li>
+    <li><i class="icon-file"></i><a href="/new-file">Creating a new file</a></li>
 		
-		<li><i class="icon-file"></i><a href="/ide-upload-directory">Upload a directory via the Web IDE</a></li>
+    <li><i class="icon-file"></i><a href="/ide-upload-directory">Upload a directory via the Web IDE</a></li>
 		
-		<li><i class="icon-file"></i><a href="/ide-shortcuts">Web IDE keyboard shortcuts</a></li>
+    <li><i class="icon-file"></i><a href="/ide-shortcuts">Web IDE keyboard shortcuts</a></li>
 		
-		<li><i class="icon-file"></i><a href="/ide-refresh">Refresh file tree in the web IDE</a></li>
+    <li><i class="icon-file"></i><a href="/ide-refresh">Refresh file tree in the web IDE</a></li>
 		
-		<li><i class="icon-file"></i><a href="/ide-general">Web IDE overview</a></li>
+    <li><i class="icon-file"></i><a href="/ide-general">Web IDE overview</a></li>
 		
   </ul>
   <a class="view-all btn" href="/categories/web-ide">View all »</a>
@@ -194,9 +194,9 @@
 		<h3>Previewing</h3>
 	<ul>
 		
-		<li><i class="icon-file"></i><a href="/preview">Previewing Your Application</a></li>
+    <li><i class="icon-file"></i><a href="/preview">Previewing Your Application</a></li>
 		
-		<li><i class="icon-file"></i><a href="/faq-localhost">Problems previewing my application</a></li>
+    <li><i class="icon-file"></i><a href="/faq-localhost">Problems previewing my application</a></li>
 		
   </ul>
   <a class="view-all btn" href="/categories/previewing">View all »</a>
@@ -206,11 +206,11 @@
 		<h3>Deployment</h3>
 	<ul>
 		
-		<li><i class="icon-file"></i><a href="/app-engine">Deploying to App Engine</a></li>
+    <li><i class="icon-file"></i><a href="/app-engine">Deploying to App Engine</a></li>
 		
-		<li><i class="icon-file"></i><a href="/heroku-rails">Deploying to Heroku</a></li>
+    <li><i class="icon-file"></i><a href="/heroku-rails">Deploying to Heroku</a></li>
 		
-		<li><i class="icon-file"></i><a href="/heroku">Heroku integration</a></li>
+    <li><i class="icon-file"></i><a href="/heroku">Heroku integration</a></li>
 		
   </ul>
   <a class="view-all btn" href="/categories/deployment">View all »</a>
@@ -220,7 +220,7 @@
 		<h3>File uploads</h3>
 	<ul>
 		
-		<li><i class="icon-file"></i><a href="/ide-file-uploads">Uploading files via the Web IDE</a></li>
+    <li><i class="icon-file"></i><a href="/ide-file-uploads">Uploading files via the Web IDE</a></li>
 		
   </ul>
   <a class="view-all btn" href="/categories/file-uploads">View all »</a>
@@ -230,9 +230,9 @@
 		<h3>Mac</h3>
 	<ul>
 		
-		<li><i class="icon-file"></i><a href="/ssh-add">Adding SSH Keys (mac)</a></li>
+    <li><i class="icon-file"></i><a href="/ssh-add">Adding SSH Keys (mac)</a></li>
 		
-		<li><i class="icon-file"></i><a href="/mac-preferences">Mac App Preferences</a></li>
+    <li><i class="icon-file"></i><a href="/mac-preferences">Mac App Preferences</a></li>
 		
   </ul>
   <a class="view-all btn" href="/categories/mac">View all »</a>
@@ -242,13 +242,13 @@
 		<h3>Databases</h3>
 	<ul>
 		
-		<li><i class="icon-file"></i><a href="/amazon-rds">Amazon RDS</a></li>
+    <li><i class="icon-file"></i><a href="/amazon-rds">Amazon RDS</a></li>
 		
-		<li><i class="icon-file"></i><a href="/redis-cloud">Redis Cloud</a></li>
+    <li><i class="icon-file"></i><a href="/redis-cloud">Redis Cloud</a></li>
 		
-		<li><i class="icon-file"></i><a href="/postgres">Postgres</a></li>
+    <li><i class="icon-file"></i><a href="/postgres">Postgres</a></li>
 		
-		<li><i class="icon-file"></i><a href="/mongodb">MongoDB</a></li>
+    <li><i class="icon-file"></i><a href="/mongodb">MongoDB</a></li>
 		
   </ul>
   <a class="view-all btn" href="/categories/databases">View all »</a>
@@ -258,7 +258,7 @@
 		<h3>Node</h3>
 	<ul>
 		
-		<li><i class="icon-file"></i><a href="/node-connect-server">Run a static site with NodeJS</a></li>
+    <li><i class="icon-file"></i><a href="/node-connect-server">Run a static site with NodeJS</a></li>
 		
   </ul>
   <a class="view-all btn" href="/categories/node">View all »</a>
@@ -268,11 +268,11 @@
 		<h3>Ssh</h3>
 	<ul>
 		
-		<li><i class="icon-file"></i><a href="/github-add-key">Add SSH key to github</a></li>
+    <li><i class="icon-file"></i><a href="/github-add-key">Add SSH key to github</a></li>
 		
-		<li><i class="icon-file"></i><a href="/ssh-windows">Add SSH keys (windows)</a></li>
+    <li><i class="icon-file"></i><a href="/ssh-windows">Add SSH keys (windows)</a></li>
 		
-		<li><i class="icon-file"></i><a href="/ssh-add">Adding SSH Keys (mac)</a></li>
+    <li><i class="icon-file"></i><a href="/ssh-add">Adding SSH Keys (mac)</a></li>
 		
   </ul>
   <a class="view-all btn" href="/categories/ssh">View all »</a>
@@ -282,11 +282,11 @@
 		<h3>Public keys</h3>
 	<ul>
 		
-		<li><i class="icon-file"></i><a href="/github-add-key">Add SSH key to github</a></li>
+    <li><i class="icon-file"></i><a href="/github-add-key">Add SSH key to github</a></li>
 		
-		<li><i class="icon-file"></i><a href="/ssh-windows">Add SSH keys (windows)</a></li>
+    <li><i class="icon-file"></i><a href="/ssh-windows">Add SSH keys (windows)</a></li>
 		
-		<li><i class="icon-file"></i><a href="/ssh-add">Adding SSH Keys (mac)</a></li>
+    <li><i class="icon-file"></i><a href="/ssh-add">Adding SSH Keys (mac)</a></li>
 		
   </ul>
   <a class="view-all btn" href="/categories/public-keys">View all »</a>
@@ -296,7 +296,7 @@
 		<h3>Windows</h3>
 	<ul>
 		
-		<li><i class="icon-file"></i><a href="/ssh-windows">Add SSH keys (windows)</a></li>
+    <li><i class="icon-file"></i><a href="/ssh-windows">Add SSH keys (windows)</a></li>
 		
   </ul>
   <a class="view-all btn" href="/categories/windows">View all »</a>
@@ -305,95 +305,14 @@
 	<div style="clear:both;"></div>
 </div>
 </div>
-    </div>
   </div>
-</div>
-<footer class='guest'>
-  <div class='mast'>
-    <div class='mast-container'>
-      <div class='row'>
-        <div class='span3'>
-          <ul class='nav nav-list'>
-            <li class='nav-header'>Get started</li>
-            <li>
-              <a href='https://nitrous.io/pricing'>Pricing</a>
-            </li>
-            <li>
-              <a href='http://help.nitrous.io/'>Support</a>
-            </li>
-            <li>
-              <a href='http://help.nitrous.io/admin-beta'>Beta Agreement</a>
-            </li>
-            <li>
-              <a href='http://help.nitrous.io/admin-terms'>Terms</a>
-            </li>
-            <li>
-              <a href='http://help.nitrous.io/admin-security'>Security</a>
-            </li>
-            <li>
-              <a href='http://help.nitrous.io/admin-privacy'>Privacy</a>
-            </li>
-          </ul>
-        </div>
-        <div class='span3'>
-          <ul class='nav nav-list'>
-            <li class='nav-header'>Nitrous.IO</li>
-            <li>
-              <a href='https://nitrous.io/about'>Company</a>
-            </li>
-            <li>
-              <a href='https://nitrous.io/team'>Team</a>
-            </li>
-            <li>
-              <a href='https://nitrous.io/jobs'>Jobs</a>
-            </li>
-            <li>
-              <a href='http://updates.nitrous.io' target='_blank'>Updates</a>
-            </li>
-            <li>
-              <a href='http://blog.nitrous.io' target='_blank'>Blog</a>
-            </li>
-          </ul>
-        </div>
-        <div class='span3'>
-          <ul class='nav nav-list'>
-            <li class='nav-header'>Elsewhere</li>
-            <li>
-              <a href='https://twitter.com/intent/user?screen_name=NitrousIO' target='_blank'>Twitter</a>
-            </li>
-            <li>
-              <a href='http://github.com/action-io' target='_blank'>GitHub</a>
-            </li>
-            <li>
-              <a href='http://angel.co/nitrous-io' target='_blank'>AngelList</a>
-            </li>
-            <li>
-              <a href='http://www.crunchbase.com/company/nitrous-io' target='_blank'>CrunchBase</a>
-            </li>
-          </ul>
-        </div>
-        <div class='span3'>
-          <ul class='nav nav-list'>
-            <li class='copy'>
-              &copy; 2012-2013
-              <br>
-              Irrational Industries Inc.
-              <br>
-              All rights reserved.
-            </li>
-            <li>
-              <a href='https://mixpanel.com/f/partner' target='_blank'>
-                <img alt='Mobile Analytics' src='https://cdn.mxpnl.com/site_media/images/partner/badge_light.png'>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
+  <footer>
+  <script src='/vendor/jquery/jquery-1.10.2.js'></script>
+  <script src='/vendor/bootstrap3/js/bootstrap.js'></script>
 </footer>
-<script async="async" src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js" type="text/javascript"></script>
+
+  <!--- google analytics -->
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -404,7 +323,5 @@
               ga('send', 'pageview');
 
 </script>
-</div>
-
 </body>
 </html>
