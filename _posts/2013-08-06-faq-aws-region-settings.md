@@ -11,7 +11,7 @@ When connecting to Amazon Web Services within your Nitrous box, both your Nitrou
 
 ![Nitrous Box Region](/images/articles/nitrous-regions.png)
 
-You can change regions within (Amazon Web Console)[] by logging in and clicking on your current region in the top right hand side of the toolbar:
+You can change regions within [Amazon Web Console](https://console.aws.amazon.com/) by logging in and clicking on your current region in the top right hand side of the toolbar:
 
 ![AWS Region Settings Toolbar](/images/articles/amazon-regions.png)
 
