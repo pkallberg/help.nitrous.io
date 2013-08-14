@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html class="home index">
-{% include header.html %}
-<div class="white-bg">
+{% include head.html %}
   <div class="container">
+    {% include search.html %}
     <div class="articles post-content">
       <div class="page-title">
         <h1> {{ page.title }} </h1>
-        <h5 class="note">Last Updated on: {{ page.date | replace: '00:00:00 +0000', ''}}</h5>
+        <h5 class="note">Last Updated on: {{ page.date | date: "%d %B %Y" }}</h5>
       </div>
       {{ content }}
     </div>
@@ -15,7 +15,6 @@
         {% include menu.html %}
       </div>
     </div>
-  </div>
 </div>
 {% include footer.html %}
 </body>
