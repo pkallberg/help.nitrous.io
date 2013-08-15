@@ -349,6 +349,10 @@ li {
   margin: 16px 0;
 }
 
+.categories ul {
+  padding-left: 0px;
+}
+
 .category_overview {
   margin: 16px 0;
   padding: 0;
@@ -425,10 +429,6 @@ li.module {
   }
 }
 
-ul{
-    padding-left: 0px;
-}
-
 ul li {
   color: rgb(92, 89, 89);
 }
@@ -462,5 +462,3 @@ li {
 -webkit-box-sizing: inherit;
 -moz-box-sizing: inherit;
 }
-
-
