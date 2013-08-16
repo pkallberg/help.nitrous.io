@@ -10,10 +10,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  .sidebar{
+  .index-main{
     display: none;
   }
-  .container .articles{
+  .container .articles, .container .sidebar {
     width: 91%;
   }
 }
@@ -108,6 +108,12 @@ text-transform: lowercase;
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
+}
+
+.container a.btn.btn-success:hover, .container a.btn.btn-success:hover {
+  background-color: #48c9b0;
+  border-color: #48c9b0;
+  color: #fff;
 }
 
 .navbar-nav > li.signup > a.btn.btn-success:hover, .navbar-nav > .mobile-menu > li.signup > a.btn.btn-success:hover {
@@ -270,8 +276,7 @@ border: 1px solid #dedede;
 li {
   &.module {
     a {
-      width: 154px;
-      padding: 16px;
+      padding: 12px;
       display: block;
       vertical-align: baseline;
       color: #1f252a;
@@ -326,12 +331,23 @@ li {
   speak: none;
 }
 
-.categories ul#getting-started li.module a {
-  h5 {
-    color: #777;
-    margin: 16px 0 0;
-  }
+li.module a {
   color: #5c5959;
+}
+
+.resources{
+  ul{
+    padding: 0px;
+    margin: 0px;
+    }
+  li{
+    width: 140px;
+    padding: 0 10px;
+  }
+}
+
+.topic{
+  padding-bottom: 1rem;
 }
 
 .content {
@@ -344,7 +360,7 @@ li {
 }
 
 .categories {
-  margin: 16px 0;
+  padding: 1rem 0;
 }
 
 .categories ul {

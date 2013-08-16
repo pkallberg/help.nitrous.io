@@ -1,11 +1,59 @@
 ---
+title: Nitrous.IO Support
 layout: default
-title: Nitrous.IO Support YOLO
 ---
-
-<div id="home">
-  <h1>Nitrous.IO Support</h1>
-  <ul class="posts">
-    The Support site is currently under maintenance. The site will be up shortly...
-  </ul>
+<div class="articles index-main">
+	<h4 class="topic">New to Nitrous.IO?  View our <a href="/getting-started/" class="btn btn-success">Getting started</a> guide.</h4>
+	<h4>Introduction Resources</h4>
+	<div class="category-index">
+		<ul>
+			<li><h5><i class="icon-file"></i><a href="/ssh-add/">Adding SSH Keys</a></li>
+			<li><h5><i class="icon-file"></i><a href="/ide-general/">Web IDE</a></li>
+			<li><h5><i class="icon-file"></i><a href="/github-add-key/">Connecting to Github</a></li>
+		</ul>
+	</div>
+	<div class="categories">
+		<h4>Most Frequently Asked Questions</h4>
+		<div class="category-index">
+			<ul>
+				{% for post in site.categories['faq'] limit:10 %}
+				<li><h5><i class="icon-file"></i><a href="{{ post.url }}">{{ post.title | replace: 'and', '&' | replace: 'Faq', 'FAQ' | replace: 'Ssh', 'SSH'}}</a></h5></li>
+				{% endfor %}
+			</ul>
+			<a class="view-all btn" href="/categories/faq">View all »</a>
+		</div>
+	</div>
+	<div class="categories">
+		<h4>Other Resources</h4>
+		<div class="resources">
+			<ul>
+				<li class="module">
+					<a href="https://www.nitrous.io/app#/intro/1">
+						<i class="icon-book"></i>
+						<h5>Introduction</h5>
+					</a>
+					This introduction will demonstrate some of the powerful features available to you.
+				</li>
+				<li class="module resources">
+					<a href="/discussions">
+						<i class="icon-stackexchange"></i>
+						<h5>Discussions</h5>
+					</a>
+					Ask a question on Stackoverflow for help with your projects
+				</li>
+				<li class="module resources">
+					<a href="mailto:help@nitrous.io">
+						<i class="icon-envelope"></i>
+						<h5>Submit a Request</h5>
+					</a>
+					If you have any feedback or issues on Nitrous.IO, feel free to contact us.
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="sidebar">
+	<div class="box">
+		{% include menu.html %}
+	</div>
 </div>

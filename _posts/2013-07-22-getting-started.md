@@ -7,7 +7,7 @@ categories: [getting started]
 
 Our goal is to provide you with a streamlined, beautiful and, enjoyable programming experience.
 
-If you have any problems setting things up, check out [help.nitrous.io](http://help.nitrous.io) or send us an email at support at action dot io.
+If you have any problems setting things up, check out [help.nitrous.io](http://help.nitrous.io) or send us an email at support at nitrous dot io.
 
 ### 1. Sign Up for an Account
 
@@ -19,9 +19,9 @@ If you've received the beta invite email, just click the link in the email and f
 
 Once you've signed in to the site, you'll see your dashboard. You won't have any boxes created yet, so go ahead and click "New Box". If you need help creating a box, you can follow [these instructions](/box-new).
 
-### 3. Adding SSH Keys to your Action Box
+### 3. Adding SSH Keys to your Nitrous Box
 
-Adding your local SSH keys to your remote Action box will allow you to SSH into your box from Terminal / PuTTY etc…. This is great for developers who use Vim or Emacs.
+Adding your local SSH keys to your remote Nitrous box will allow you to SSH into your box from Terminal / PuTTY etc…. This is great for developers who use Vim or Emacs.
 
 If you're not already using SSH, this article can walk you through the steps required:
 
@@ -43,7 +43,7 @@ In your terminal, you should see something like this:
   Are you sure you want to continue connecting (yes/no)? yes
 </pre>
 
-Type "yes", which will add your Action box to your known_hosts ssh file.
+Type "yes", which will add your Nitrous box to your known_hosts ssh file.
 
 <pre class="">
 Warning: Permanently added '[apse1.actionbox.io]:10253, [54.251.42.128]:10253' (RSA) to the list of known hosts. Welcome to Nitrous.IO (GNU/Linux 3.2.0-31-virtual x86_64)
@@ -51,7 +51,7 @@ Warning: Permanently added '[apse1.actionbox.io]:10253, [54.251.42.128]:10253' (
 
 Now go ahead and poke around-- you should be in your remote box on Nitrous.IO!
 
-### 4. Add Action Box SSH Keys to Github
+### 4. Add Nitrous Box SSH Keys to Github
 
 So we've got our development box built, but what if we want to get a project we've been working on into our box on Action?
 

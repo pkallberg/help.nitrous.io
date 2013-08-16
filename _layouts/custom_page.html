@@ -5,7 +5,7 @@
     {% include search.html %}
     <div class='articles'>
       <div class="page-title">  
-        <h2> {{ page.title | capitalize | replace: 'and', '&' | replace: 'Faq', 'FAQ' | replace: 'Ssh', 'SSH'}} </h2>
+        <h3> {{ page.title | capitalize | replace: 'and', '&' | replace: 'Faq', 'FAQ' | replace: 'Ssh', 'SSH'}} </h3>
       </div>
       {{ content }}
     </div>
