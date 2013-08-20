@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Memcachier
+title: MemCachier
 published: true
 categories: [databases]
 ---
