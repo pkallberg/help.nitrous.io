@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
-  <title>databases</title>
+  <title>Memcachier</title>
   <meta name="author" content="Nitrous.IO" />
   <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
   <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
@@ -64,25 +64,71 @@
     </div>
   </div>
 </div>
-    <div class='articles'>
-      <div class="page-title">  
-        <h3> Databases </h3>
+    <div class="articles post-content">
+      <div class="page-title">
+        <h2> Memcachier </h2>
+        <h5 class="note">Last Updated on: 20 August 2013</h5>
       </div>
-      <div class="category-index">
-	<ul class="posts">
-	
-	    <li><h5><i class="icon-file"></i><a href="/memcachier">Memcachier</a></h5></li>
-	
-	    <li><h5><i class="icon-file"></i><a href="/amazon-rds">Amazon RDS</a></h5></li>
-	
-	    <li><h5><i class="icon-file"></i><a href="/redis-cloud">Redis Cloud</a></h5></li>
-	
-	    <li><h5><i class="icon-file"></i><a href="/postgres">Postgres</a></h5></li>
-	
-	    <li><h5><i class="icon-file"></i><a href="/mongodb">MongoDB</a></h5></li>
-	
-	</ul>
-</div>
+      <h3 id='creating_a_cache_at_memcachier'>Creating a Cache at MemCachier</h3>
+
+<p>MemCachier manages and scales clusters of memcache servers so you can focus on your app.</p>
+
+<p>To get started, signup with <a href='http://memcachier.com/'>MemCachier</a>.</p>
+
+<p><a href='https://www.memcachier.com/caches/new'>Create a new cache</a> and select an EC2 instance, a pricing plan of your choice, and a region. This region should be close to the region of your Nitrous box to ensure a low latency.</p>
+
+<p><img alt='Creating a New Cache' src='/images/articles/memcachier-ec2-config.png' /></p>
+
+<p>Once the cache has been created, you will be provided with the cache&#8217;s credentials.</p>
+
+<p><img alt='Cache Configuration' src='/images/articles/memcachier-config.png' /></p>
+
+<p>Grab the server, username, and password, and assign them to environment variables in your <code>~/.bashrc</code> file on your Nitrous.IO box.</p>
+
+<p>It is good practice to namespace your environment variables variables with the environment that you want to use your database in (development or test), like so:</p>
+
+<p><img alt='Env Variables' src='/images/articles/memcachier-env-variables.png' /></p>
+
+<p>If you want the environment variables to be loaded immediately, run:</p>
+
+<pre><code>$ source ~/.bashrc</code></pre>
+
+<p>You can verify that your MemCachier credentials are loaded correctly by running:</p>
+
+<pre><code>$ echo $MEMCACHIER_SERVERS</code></pre>
+
+<h3 id='connecting_to_your_rails_app'>Connecting to Your Rails App</h3>
+
+<blockquote>
+<p>To learn how to connect with apps other than Rails, please visit MemCachier&#8217;s <a href='https://www.memcachier.com/documentation'>documentation</a>.</p>
+</blockquote>
+
+<p>Start by adding the dalli gem to your Gemfile.</p>
+
+<pre><code>gem &#39;dalli&#39;</code></pre>
+
+<p>Then bundle install:</p>
+
+<pre><code>$ bundle install</code></pre>
+
+<p><code>Dalli</code> is a Ruby memcache client. Once it is installed you’ll want to configure the Rails cache_store appropriately. Modify <code>config/environments/production.rb</code> with the following:</p>
+
+<pre><code>config.cache_store = :dalli_store, &lt;MEMCACHIER_SERVERS&gt;.split(&quot;,&quot;),
+                    {:username =&gt; &lt;MEMCACHIER_USERNAME&gt;,
+                     :password =&gt; &lt;MEMCACHIER_PASSWORD&gt;}</code></pre>
+
+<p>The values for <code>&lt;MEMCACHIER_SERVERS&gt;</code>, <code>&lt;MEMCACHIER_USERNAME&gt;</code>, and <code>&lt;MEMCACHIER_PASSWORD&gt;</code> should have been added to your <code>~/.bashrc</code> file in the last step.</p>
+
+<blockquote>
+<p>In your development environment, Rails.cache defaults to a simple in-memory store and so it doesn’t require a running memcached.</p>
+</blockquote>
+
+<p>From here you can use the following code examples to use the cache in your Rails app:</p>
+
+<pre><code>Rails.cache.write(&quot;foo&quot;, &quot;bar&quot;)
+puts Rails.cache.read(&quot;foo&quot;)</code></pre>
+
+<p>MemCachier has built a small Rails example here: <a href='https://github.com/memcachier/examples-rails'>MemCachier Rails sample app</a>.</p>
     </div>
     <div class="sidebar">
       <div class="box">
@@ -101,7 +147,7 @@
 </ul>
       </div>
     </div>
-  </div>
+</div>
 <footer>
   <script src='/javascripts/jquery/jquery-1.10.2.js'></script>
   <script src='/css/bootstrap3/js/bootstrap.js'></script>
