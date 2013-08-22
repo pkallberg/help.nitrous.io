@@ -5,7 +5,7 @@ published: true
 categories: [faq, mac]
 ---
 
-Your Nitrous.IO for Mac preferences allow you to configure the connection between your computer and your boxes running on Nitrous.IO. For example, you can add/remove SSH keys, setup tunneling to preview applications you are developing, and manage shared folders for local editing.
+Your [Nitrous.IO for Mac](https://nitrous.io/mac) preferences allow you to configure the connection between your computer and your boxes running on Nitrous.IO. For example, you can add/remove SSH keys, setup tunneling to preview applications you are developing, and manage shared folders for local editing.
 
 ### Accessing Nitrous.IO for Mac preferences on Mac OS X
 
