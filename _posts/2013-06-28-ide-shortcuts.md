@@ -5,10 +5,6 @@ published: true
 categories: [web ide]
 ---
 
-**New tab**
-
-    'Control + Shift + N'
-
 **Save file**
 
     'Command + S'
@@ -16,6 +12,10 @@ categories: [web ide]
 **Refresh directory tree**
 
     'Control + Shift + R'
+
+**New tab**
+
+    'Control + Shift + N'
 
 **Close tab**
 

@@ -61,4 +61,4 @@ Adding SSH Keys to Github is super easy, just check out the steps in the followi
 
 Now, you can go back to your Nitrous.IO box in your local terminal or in the Nitrous.IO Web IDE and can clone any of your Github repos.
 
-[Now you rollin'](http://www.youtube.com/watch?v=CtwJvgPJ9xw&t=0m14s).
+You can also view the [Best Practices Guide](/best-practices/) to get an idea of how you can work on Nitrous.IO.
