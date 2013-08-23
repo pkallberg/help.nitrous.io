@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
-  <title>Getting Started with Nitrous.IO</title>
+  <title>Best Practices</title>
   <meta name="author" content="Nitrous.IO" />
   <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
   <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
@@ -66,62 +66,69 @@
 </div>
     <div class="articles post-content">
       <div class="page-title">
-        <h2> Getting Started with Nitrous.IO </h2>
+        <h2> Best Practices </h2>
         <h5 class="note">Last Updated on: 23 August 2013</h5>
       </div>
-      <p>Our goal is to provide you with a streamlined, beautiful and, enjoyable programming experience.</p>
+      <p>You have gone through our <a href='/getting-started/'>Getting Started Guide</a>, and can now <a href='/ssh-add/'>SSH</a> from your computer as well as connect to Github. Now the question is, what&#8217;s the best way to use Nitrous.IO?</p>
 
-<p>If you have any problems setting things up, check out <a href='http://help.nitrous.io'>help.nitrous.io</a> or send us an email at support at nitrous dot io.</p>
+<h3 id='building_projects'>Building Projects</h3>
 
-<h3 id='1_sign_up_for_an_account'>1. Sign Up for an Account</h3>
+<p>You can create as many projects as you would like within a single Nitrous box. The only limitations to this is the amount of storage space you use, which not only counts the project files but also modules, different versions of Ruby installed, etc.</p>
 
-<p>Our beta period is invite-only, so if you haven&#8217;t received an invite, you can signup for our beta list on our <a href='https://nitrous.io'>homepage</a>.</p>
+<p>Below you will see a screenshot of how you could setup your directories within Nitrous. All projects should be places within the <code>~/workspace</code> folder, and configuration files can be placed in your home directory <code>~/</code>.</p>
 
-<p>If you&#8217;ve received the beta invite email, just click the link in the email and fill out a username and password. We&#8217;ll use the username around the site and to identify your boxes so pick something you like.</p>
+<p><img alt='Nitrous Box Directory' src='/images/articles/directory-tree.png' /></p>
 
-<h3 id='2_create_a_box'>2. Create a box</h3>
+<h3 id='previewing_an_app'>Previewing an App</h3>
 
-<p>Once you&#8217;ve signed in to the site, you&#8217;ll see your dashboard. You won&#8217;t have any boxes created yet, so go ahead and click &#8220;New Box&#8221;. If you need help creating a box, you can follow <a href='/box-new'>these instructions</a>.</p>
+<p>Once you have built an app (ex. a <a href='http://blog.nitrous.io/2013/02/21/build-meteor-apps-in-the-browser-with-actionio-and-mongolab.html'>Meteor app</a> or a <a href='http://blog.nitrous.io/2013/07/02/building-a-rails-4.0-app-on-nitrous-io.html'>Rails app</a>), you will want to run the app with the appropriate command within the console. Here is an example of running a Rails app with the command <code>rails server</code>:</p>
 
-<h3 id='3_adding_ssh_keys_to_your_nitrous_box'>3. Adding SSH Keys to your Nitrous Box</h3>
+<pre><code>	action@ruby-rails-10201:~/workspace/projects/rails-app$ rails server
+	=&gt; Booting WEBrick
+	=&gt; Rails 4.0.0 application starting in development on http://0.0.0.0:3000
+	=&gt; Run `rails server -h` for more startup options
+	=&gt; Ctrl-C to shutdown server
+	[2013-08-23 18:12:48] INFO  WEBrick 1.3.1
+	[2013-08-23 18:12:48] INFO  ruby 2.0.0 (2013-05-14) [x86_64-linux]
+	[2013-08-23 18:12:48] INFO  WEBrick::HTTPServer#start: pid=8021 port=3000</code></pre>
 
-<p>Adding your local SSH keys to your remote Nitrous box will allow you to SSH into your box from Terminal / PuTTY etc…. This is great for developers who use Vim or Emacs.</p>
+<p>Nitrous has HTTP ports 3000 - 9000 open, so you can use any of these ports when previewing your app.</p>
 
-<p>If you&#8217;re not already using SSH, this article can walk you through the steps required:</p>
+<p>Since this app is running on Port 3000 we will navigate in the web IDE to <code>Preview &gt; Port 3000</code> to view the app running in the browser.</p>
 
-<p><a href='/ssh-add'>Adding SSH Keys to your Nitrous.IO Account</a></p>
+<p><img alt='Preview App' src='/images/articles/preview-port-3000.png' /></p>
 
-<p>To test out whether you&#8217;ve added your keys directly, click your box in the dashboard to toggle its details and click the SSH URI link:</p>
+<p>If you need to switch to a different port, you can do this by editing the URL in the address bar.</p>
 
-<p><img alt='Box Details' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/box-details.png' /></p>
+<p><img alt='Changing the Port' src='/images/articles/address-bar-port.png' /></p>
 
-<p>Your browser will attempt to open a local terminal session. If there&#8217;s a prompt like this, just click &#8220;Allow&#8221;:</p>
+<h3 id='using_the_ide_console'>Using the IDE Console</h3>
 
-<p><img alt='SSH Prompt' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/ssh-confirm-prompt.png' /></p>
+<p>If you prefer to work within the console, you can make it fullscreen within the web IDE by pressing <code>Shift + Ctrl + F</code>.</p>
 
-<p>In your terminal, you should see something like this:</p>
-<pre class=''>
-  The authenticity of host '[apse1.actionbox.io]:10253 ([54.251.42.128]:10253)' cant be established.
-  RSA key fingerprint is 57:b7:dd:50:04:09:e8:f8:e5:93:e1:2d:2f:46:a5:f5.
-  Are you sure you want to continue connecting (yes/no)? yes
-</pre>
-<p>Type &#8220;yes&#8221;, which will add your Nitrous box to your known_hosts ssh file.</p>
-<pre class=''>
-Warning: Permanently added '[apse1.actionbox.io]:10253, [54.251.42.128]:10253' (RSA) to the list of known hosts. Welcome to Nitrous.IO (GNU/Linux 3.2.0-31-virtual x86_64)
-</pre>
-<p>Now go ahead and poke around&#8211; you should be in your remote box on Nitrous.IO!</p>
+<p><img alt='Fullscreen Console' src='/images/articles/web-ide-fullscreen.png' /></p>
 
-<h3 id='4_add_nitrous_box_ssh_keys_to_github'>4. Add Nitrous Box SSH Keys to Github</h3>
+<h3 id='connecting_via_ssh'>Connecting via SSH</h3>
 
-<p>So we&#8217;ve got our development box built, but what if we want to get a project we&#8217;ve been working on into our box on Action?</p>
+<p>If you want to work from your local console you can use <a href='/ssh-add/'>SSH</a>. One easy strategy for Mac users would be to use <a href='http://www.iterm2.com/'>iTerm 2</a> and setup a <code>Profile</code> with your SSH credentials. To setup a profile, navigate to your <a href='https://www.nitrous.io/app#/boxes'>boxes</a> page and copy your SSH URI:</p>
 
-<p>Adding SSH Keys to Github is super easy, just check out the steps in the following article:</p>
+<p><img alt='SSH URI' src='/images/articles/ssh-uri.png' /></p>
 
-<p><a href='/github-add-key'>Adding SSH Keys to Github</a></p>
+<p>Next, open up Iterm2 and navigate to <strong>Preferences &gt; Profiles</strong>. Create a new profile and fill in your SSH URI into the <strong>Command</strong> field. The format should be <code>ssh action@YOUR_REGION.actionbox.io -p YOUR_PORT</code></p>
 
-<p>Now, you can go back to your Nitrous.IO box in your local terminal or in the Nitrous.IO Web IDE and can clone any of your Github repos.</p>
+<p><img alt='Iterm 2 Profile' src='/images/articles/iterm2-profile.png' /></p>
 
-<p>You can also view the <a href='/best-practices/'>Best Practices Guide</a> to get an idea of how you can work on Nitrous.IO.</p>
+<blockquote>
+<p>Tip: In the iTerm2 Profile settings you can also assign a Shortcut key to launch your Nitrous SSH session.</p>
+</blockquote>
+
+<h3 id='working_locally'>Working locally</h3>
+
+<p>If you want ability to use <a href='http://www.sublimetext.com/'>Sublime Text</a> or any other editor, you will want to work locally and sync with your Nitrous box.</p>
+
+<p>Nitrous offers a <a href='http://www.nitrous.io/mac'>Mac app</a> to do this, with Windows and Linux support coming soon.</p>
+
+<p>For help using the Mac App please view the <a href='/mac-preferences/'>Mac preferences guide</a>.</p>
     </div>
     <div class="sidebar">
       <div class="box">
