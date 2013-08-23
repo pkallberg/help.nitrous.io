@@ -6,19 +6,19 @@ layout: default
 	<h4 class="topic">New to Nitrous.IO?  View our <a href="/getting-started/" class="btn btn-success">Getting started</a> guide.</h4>
 	<h4>Introduction Resources</h4>
 	<div class="category-index">
-		<ul>
-			<li><h5><i class="icon-file"></i><a href="/best-practices/">Best Practices</a></li>
-			<li><h5><i class="icon-file"></i><a href="/ssh-add/">Adding SSH Keys</a></li>
-			<li><h5><i class="icon-file"></i><a href="/ide-general/">Web IDE</a></li>
-			<li><h5><i class="icon-file"></i><a href="/github-add-key/">Connecting to Github</a></li>
+		<ul class="menu-item">
+			<li><h4><a href="/best-practices/">Best Practices</a></li>
+			<li><h4><a href="/ssh-add/">Adding SSH Keys</a></li>
+			<li><h4><a href="/ide-general/">Web IDE</a></li>
+			<li><h4><a href="/github-add-key/">Connecting to Github</a></li>
 		</ul>
 	</div>
 	<div class="categories">
 		<h4>Most Frequently Asked Questions</h4>
 		<div class="category-index">
-			<ul>
-				{% for post in site.categories['faq'] limit:10 %}
-				<li><h5><i class="icon-file"></i><a href="{{ post.url }}">{{ post.title | replace: 'and', '&' | replace: 'Faq', 'FAQ' | replace: 'Ssh', 'SSH'}}</a></h5></li>
+			<ul class="menu-item">
+				{% for post in site.categories['faq'] limit:6 %}
+				<li><h4><a href="{{ post.url }}">{{ post.title | replace: 'and', '&' | replace: 'Faq', 'FAQ' | replace: 'Ssh', 'SSH'}}</a></h4></li>
 				{% endfor %}
 			</ul>
 			<a class="view-all btn" href="/categories/faq">View all »</a>
