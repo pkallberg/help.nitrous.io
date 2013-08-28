@@ -13,11 +13,11 @@ We provide extra interpreters and tools in your Nitrous boxes to help you get ha
 
 * C
 * C++
-* Java SE
+* JVM
 * Perl
 * PhantomJS
-* Python
-* Ruby (version control with RVM)
+* Python (isolated environments with virtualenv only on Python box)
+* Ruby (version control with RVM only available on Ruby box)
 * Golang
 * automake
 * Heroku Toolbelt
