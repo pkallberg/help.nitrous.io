@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
-  <title>faq</title>
+  <title>Using WebSockets</title>
   <meta name="author" content="Nitrous.IO" />
   <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
   <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
@@ -64,39 +64,16 @@
     </div>
   </div>
 </div>
-    <div class='articles'>
-      <div class="page-title">  
-        <h3> FAQ </h3>
+    <div class="articles post-content">
+      <div class="page-title">
+        <h2> Using WebSockets </h2>
+        <h5 class="note">Last Updated on: 30 August 2013</h5>
       </div>
-      <div class="category-index">
-	<ul class="posts menu-item">
-	
-  	<li><h4><a href="/faq-websockets">Using WebSockets</a></h4></li>
-	
-  	<li><h4><a href="/faq-copy-paste">Copy/Paste within the Web IDE</a></h4></li>
-	
-  	<li><h4><a href="/faq-aws-region-settings">AWS Region Settings</a></h4></li>
-	
-  	<li><h4><a href="/faq-erlang">Installing Erlang</a></h4></li>
-	
-  	<li><h4><a href="/box-interpreters-and-tools">Included Interpreters & Tools</a></h4></li>
-	
-  	<li><h4><a href="/node-connect-server">Run a static site with NodeJS</a></h4></li>
-	
-  	<li><h4><a href="/mac-preferences">Mac App Preferences</a></h4></li>
-	
-  	<li><h4><a href="/ide-upload-directory">Upload a directory via the Web IDE</a></h4></li>
-	
-  	<li><h4><a href="/faq-localhost">Problems previewing my application</a></h4></li>
-	
-  	<li><h4><a href="/faq-disconnect">Server disconnects on browser close</a></h4></li>
-	
-  	<li><h4><a href="/faq-browser-support">Browser support</a></h4></li>
-	
-  	<li><h4><a href="/faq-adding-project">Upload an existing application</a></h4></li>
-	
-	</ul>
-</div>
+      <p>WebSockets are currently blocked on Nitrous boxes. If you are wanting to use websockets then you will want to SSH from your local machine and setup tunneling to whichever port you wish to use (we have ports 3000-9000 open).</p>
+
+<p>To setup ssh tunneling you will want to run the following command in your local terminal, replacing the necessary variables:</p>
+
+<p>ssh -N -p <code>box_port</code> action@<code>box_host</code> -L <code>local_port</code>/localhost/<code>remote_port</code></p>
     </div>
     <div class="sidebar">
       <div class="box">
@@ -115,7 +92,7 @@
 </ul>
       </div>
     </div>
-  </div>
+</div>
 <footer>
   <script src='/javascripts/jquery/jquery-1.10.2.js'></script>
   <script src='/css/bootstrap3/js/bootstrap.js'></script>
