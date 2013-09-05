@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
-  <title>faq</title>
+  <title>Changing Python versions with virtualenv</title>
   <meta name="author" content="Nitrous.IO" />
   <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
   <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
@@ -64,41 +64,24 @@
     </div>
   </div>
 </div>
-    <div class='articles'>
-      <div class="page-title">  
-        <h3> FAQ </h3>
+    <div class="articles post-content">
+      <div class="page-title">
+        <h2> Changing Python versions with virtualenv </h2>
+        <h5 class="note">Last Updated on: 04 September 2013</h5>
       </div>
-      <div class="category-index">
-	<ul class="posts menu-item">
-	
-  	<li><h4><a href="/python-versions-with-virtualenv">Changing Python versions with virtualenv</a></h4></li>
-	
-  	<li><h4><a href="/faq-websockets">Using WebSockets</a></h4></li>
-	
-  	<li><h4><a href="/faq-copy-paste">Copy/Paste within the Web IDE</a></h4></li>
-	
-  	<li><h4><a href="/faq-aws-region-settings">AWS Region Settings</a></h4></li>
-	
-  	<li><h4><a href="/faq-erlang">Installing Erlang</a></h4></li>
-	
-  	<li><h4><a href="/box-interpreters-and-tools">Included Interpreters & Tools</a></h4></li>
-	
-  	<li><h4><a href="/node-connect-server">Run a static site with NodeJS</a></h4></li>
-	
-  	<li><h4><a href="/mac-preferences">Mac App Preferences</a></h4></li>
-	
-  	<li><h4><a href="/ide-upload-directory">Upload a directory via the Web IDE</a></h4></li>
-	
-  	<li><h4><a href="/faq-localhost">Problems previewing my application</a></h4></li>
-	
-  	<li><h4><a href="/faq-disconnect">Server disconnects on browser close</a></h4></li>
-	
-  	<li><h4><a href="/faq-browser-support">Browser support</a></h4></li>
-	
-  	<li><h4><a href="/faq-adding-project">Upload an existing application</a></h4></li>
-	
-	</ul>
-</div>
+      <p>The Python/Django box template comes pre-installed with virtualenv and many versions of python.</p>
+
+<p>To see which versions of Python are available on your box, run the following command:</p>
+
+<pre><code>ls /usr/bin/python*</code></pre>
+
+<p>This will provide you with a list of python versions available. You will notice that <code>/usr/bin/python3.3</code> is listed for Python 3.3, and you can create an isolated environment with this version by running the following command:</p>
+
+<pre><code>virtualenv -p /usr/bin/python3.3 py3env</code></pre>
+
+<p>Next, type in the following command to start working in this environment:</p>
+
+<pre><code>source py3env/bin/activate</code></pre>
     </div>
     <div class="sidebar">
       <div class="box">
@@ -117,7 +100,7 @@
 </ul>
       </div>
     </div>
-  </div>
+</div>
 <footer>
   <script src='/javascripts/jquery/jquery-1.10.2.js'></script>
   <script src='/css/bootstrap3/js/bootstrap.js'></script>
