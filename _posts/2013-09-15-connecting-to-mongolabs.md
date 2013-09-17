@@ -1,12 +1,11 @@
 ---
 layout: article
-title: MongoDB
+title: Setting up a Database with Mongolabs
 published: true
-categories: [databases]
+meta-robots: "noodp, noydir, noindex, noarchive, follow"
 ---
 
-This guide walks through how you can setup a MongoDB database
-on your Nitrous.IO box.
+>This guide walks through how you can connect your Nitrous box to a MongoDB at Mongolabs. If you are looking to setup a database within your Nitrous box, take a look at the [MongoDB guide](/mongodb).
 
 In: [MongoLab](https://mongolab.com)
 
