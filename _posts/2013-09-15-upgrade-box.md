@@ -15,7 +15,7 @@ To view which version your Nitrous box is running on, navigate to the [boxes pag
 
 The screenshot below displays a `bran` box. Some packages may not work correctly in the previous box version, `arya`.
 
-~[bran box version](/images/articles/bran-box.png)
+![bran box version](/images/articles/bran-box.png)
 
 ### Upgrading the Nitrous Box
 
