@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
-  <title>MongoDB</title>
+  <title>Installing Databases and Tools with Autoparts</title>
   <meta name="author" content="Nitrous.IO" />
   <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
   <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
@@ -66,41 +66,51 @@
 </div>
     <div class="articles post-content">
       <div class="page-title">
-        <h2> MongoDB </h2>
-        <h5 class="note">Last Updated on: 15 September 2013</h5>
+        <h2> Installing Databases and Tools with Autoparts </h2>
+        <h5 class="note">Last Updated on: 16 September 2013</h5>
       </div>
-      <p>This guide walks through how you can setup a MongoDB database on your Nitrous.IO box.</p>
+      <p>Autoparts is a package manager for Nitrous.IO which allows you to install databases and other tools on your box within your home folder.</p>
 
-<h3 id='prerequisites'>Prerequisites</h3>
+<h3 id='installing_autoparts'>Installing Autoparts</h3>
 
-<ul>
-<li>Nitrous.IO box with the package manager Autoparts installed. To version <code>bran</code> or later. If using version <code>arya</code>, please refer to our <a href='/upgrade-nitrous-box'>upgrading guide</a> before proceeding.</li>
-</ul>
+<p>Autoparts is available on all boxes with version <code>bran</code> which were created after 9-17-2013.</p>
 
-<h3 id='installing_mongodb'>Installing MongoDB</h3>
+<p>Run the following command in your terminal to see if Autoparts is installed:</p>
 
-<p>To install MongoDB with the autoparts package manager, run the following command:</p>
+<pre><code>parts</code></pre>
 
-<pre><code>parts install mongodb</code></pre>
+<p>If you do not see information for the Autoparts package manager you can install it with the following two commands:</p>
 
-<h3 id='configuring_mongodb_for_a_rails_app'>Configuring MongoDB for a Rails App</h3>
+<pre><code>ruby -e &quot;$(curl -fsSL https://raw.github.com/action-io/autoparts/master/setup.rb)&quot;
+exec $SHELL -l</code></pre>
 
-<p>When building a Rails app, run the following command to skip active record and test unit:</p>
+<p>You can also check the <a href='https://www.nitrous.io/app#/boxes'>boxes page</a> to see which version you are running on. The screenshot below shows version <code>bran</code> under the stack information:</p>
 
-<pre><code>rails new myapp --skip-active-record --skip-test-unit</code></pre>
+<p><img alt='Bran version Nitrous Box' src='/images/articles/bran-box.png' /></p>
 
-<p>Rails 4 requires the latest version of <code>mongoid</code>, which also includs <code>bson_ext</code> as a dependency. Add the following lines to your <code>Gemfile</code>:</p>
+<h3 id='updating_autoparts'>Updating Autoparts</h3>
 
-<pre><code>gem &#39;mongoid&#39;, git: &#39;https://github.com/mongoid/mongoid.git&#39;
-gem &#39;bson_ext&#39;</code></pre>
+<p>New tools, interpreters, and databases are always being added to Autoparts. To update Autoparts with the latest changes, run the following command:</p>
 
-<p>Run <code>bundle install</code> after you have updated your Gemfile, and generate the configuration.</p>
+<pre><code>parts update</code></pre>
 
-<pre><code>rails g mongoid:config</code></pre>
+<h3 id='installing_a_package'>Installing a Package</h3>
 
-<blockquote>
-<p>If you are wanting to connect to an external database, please view the guide on <a href='/connecting-to-mongolabs'>Connecting to MongoLabs</a>.</p>
-</blockquote>
+<p>To view all of the packages available to install, run the following command:</p>
+
+<pre><code>parts search</code></pre>
+
+<p>This will bring up a list including the following tools:</p>
+
+<pre><code>memcached (1.4.15)         Memcached: An open-source, high-performance...
+meteor (0.6.5.1)           Meteor: A real-time web development platform
+mongodb (2.4.6)            MongoDB: A cross-platform document-oriented...
+mysql (5.6.13)             MySQL: The world&#39;s most popular open-source...
+phantomjs (1.9.1)          PhantomJS: A headless WebKit scriptable wit...</code></pre>
+
+<p>Ex: To install MySQL, run the following command:</p>
+
+<pre><code>parts install mysql</code></pre>
     </div>
     <div class="sidebar">
       <div class="box">

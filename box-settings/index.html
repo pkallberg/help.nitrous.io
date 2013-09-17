@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
-  <title>MongoDB</title>
+  <title>Configuring Box Memory & Storage</title>
   <meta name="author" content="Nitrous.IO" />
   <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
   <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
@@ -66,41 +66,34 @@
 </div>
     <div class="articles post-content">
       <div class="page-title">
-        <h2> MongoDB </h2>
-        <h5 class="note">Last Updated on: 15 September 2013</h5>
+        <h2> Configuring Box Memory & Storage </h2>
+        <h5 class="note">Last Updated on: 15 July 2013</h5>
       </div>
-      <p>This guide walks through how you can setup a MongoDB database on your Nitrous.IO box.</p>
+      <p>At any point you can change the memory/storage configuration of your boxes. After creating a box with 384MB of memory and you realize that you need more memory for your (say) Java application, then you can upgrade the memory configuration of your box without having to create a new box.</p>
 
-<h3 id='prerequisites'>Prerequisites</h3>
+<h2 id='upgrading_a_box'>Upgrading a Box</h2>
 
-<ul>
-<li>Nitrous.IO box with the package manager Autoparts installed. To version <code>bran</code> or later. If using version <code>arya</code>, please refer to our <a href='/upgrade-nitrous-box'>upgrading guide</a> before proceeding.</li>
-</ul>
+<p>Look for the &#8216;Settings&#8217; button (after clicking on your box name) in your <a href='https://www.nitrous.io/app'>box dashboard</a>.</p>
 
-<h3 id='installing_mongodb'>Installing MongoDB</h3>
+<p><img alt='Settings Button' src='/images/articles/box-settings-button.png' /></p>
 
-<p>To install MongoDB with the autoparts package manager, run the following command:</p>
+<p>Clicking on that link will take you to your Box Settings page, where you can move the memory and storage sliders to the right to increase the memory and storage configurations your box.</p>
 
-<pre><code>parts install mongodb</code></pre>
+<p><img alt='Settings Screen' src='/images/articles/box-settings-screen.png' /></p>
 
-<h3 id='configuring_mongodb_for_a_rails_app'>Configuring MongoDB for a Rails App</h3>
+<p>This screen will also give you your current memory and storage usage as well.</p>
 
-<p>When building a Rails app, run the following command to skip active record and test unit:</p>
+<p>Hit <em>Save Changes</em> to apply your changes to the box.</p>
 
-<pre><code>rails new myapp --skip-active-record --skip-test-unit</code></pre>
+<p>Your box will undergo a reboot, so please remember to save your work before you upgrade your box.</p>
 
-<p>Rails 4 requires the latest version of <code>mongoid</code>, which also includs <code>bson_ext</code> as a dependency. Add the following lines to your <code>Gemfile</code>:</p>
+<h2 id='downgrading_a_box'>Downgrading a Box</h2>
 
-<pre><code>gem &#39;mongoid&#39;, git: &#39;https://github.com/mongoid/mongoid.git&#39;
-gem &#39;bson_ext&#39;</code></pre>
+<p>Follow the same instructions to get to the Settings page for your box.</p>
 
-<p>Run <code>bundle install</code> after you have updated your Gemfile, and generate the configuration.</p>
+<p>Move the memory/storage sliders to the left to reduce the memory/storage configurations on your box.</p>
 
-<pre><code>rails g mongoid:config</code></pre>
-
-<blockquote>
-<p>If you are wanting to connect to an external database, please view the guide on <a href='/connecting-to-mongolabs'>Connecting to MongoLabs</a>.</p>
-</blockquote>
+<p>If you have used up more storage than your target storage, then please note that you will not be able to reduce your storage allocation.</p>
     </div>
     <div class="sidebar">
       <div class="box">

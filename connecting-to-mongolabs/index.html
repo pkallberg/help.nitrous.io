@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="home index">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <title>Setting up a Database with Mongolabs</title>
+  <meta name="author" content="Nitrous.IO" />
+  <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
+  <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
+  <meta content='Nitrous.IO' name='author'>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+  <link rel='stylesheet' href='/css/bootstrap3/css/bootstrap.css'>
+  <link rel='stylesheet' href='/css/font-awesome/css/font-awesome.css'>
+  <link href="/css/action.css" media="screen, projection" rel="stylesheet">
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+</head>
+<body>
+  <div class="navbar">
+    <div class="container">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Nitrous.IO <span>support</span></a>
+
+      <div class="nav-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav pull-right">
+          <div class="mobile-menu">
+            <li class="signup"><a href="/" class="btn btn-success">Help center</a></li>
+            <li class="signup"><a href="/getting-started/" class="btn btn-success">Getting started</a>
+            <li class="signup"><a href="mailto:help@nitrous.io" class="btn btn-success">Email us</a></li>
+          </div>
+
+          <li class="hidden-sm"><a href="/discussions">Discussions</a></li>
+          <li class="hidden-sm"><a href="https://www.nitrous.io/chat" target="_blank">Chat</a></li>
+          <li class="hidden-sm login"><a href="https://nitrous.io/users/sign_in">Log in</a></li>
+          <li class="hidden-sm nav-break">or</li>
+          <li class="signup"><a href="https://www.nitrous.io" class="btn btn-success">Sign up</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class='clearfix' id='promo-main'>
+  <div class="mast-container">
+    <div id="search">
+      <script>
+      (function() {
+        var cx = '009198278762462778395:pwuaikni4bs';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+      </script>
+      <gcse:search></gcse:search>
+    </div>
+  </div>
+</div>
+    <div class="articles post-content">
+      <div class="page-title">
+        <h2> Setting up a Database with Mongolabs </h2>
+        <h5 class="note">Last Updated on: 15 September 2013</h5>
+      </div>
+      <blockquote>
+<p>This guide walks through how you can connect your Nitrous box to a MongoDB at Mongolabs. If you are looking to setup a database within your Nitrous box, take a look at the <a href='/mongodb'>MongoDB guide</a>.</p>
+</blockquote>
+
+<p>In: <a href='https://mongolab.com'>MongoLab</a></p>
+
+<p><img alt='MongoLab' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/mongodb/mongolab.png' /></p>
+
+<p>Go ahead and sign into MongoLab. Once in the dashboard, you&#8217;ll see a list of any databases you&#8217;ve already created. Click the <strong>Create New</strong> button in the <strong>Databases</strong> section.</p>
+
+<p>You&#8217;ll see a bunch of professional plans appear below. You can ignore these until you&#8217;ve deployed your new world-changing application to production and you have millions of customers and can afford them.</p>
+
+<p>MongoLab knows we need something lightweight to get our feet wet, so for now we&#8217;ll just pick the <strong>Free (0.5GB)</strong> plan.</p>
+
+<p>Pick your Cloud Provider to be <strong>Amazon Web Services</strong> and choose either the <strong>EU-West-1 (Ireland)</strong> or <strong>US-East-1 (Virginia)</strong> - whichever is geographically close to the Nitrous.IO box that you created.</p>
+
+<p>Pick a name for your database, say <strong>my-awesome-apps-mongodb</strong> as well as a username and password (which you will use later to connect to your MongoDB database).</p>
+
+<p><img alt='Pick Plan Button' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/mongodb/pick-plan.png' /></p>
+
+<p>You&#8217;ll see your new database at the top of your list of databases (or just one if you just created an account).</p>
+
+<p><img alt='Create Database' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/mongodb/create-database.png' /></p>
+
+<h3 id='mongolab_database_connection_settings'>MongoLab Database Connection Settings</h3>
+
+<p>In the <em>MongoLab</em> website, click your database name (my-awesome-apps-mongodb) to get to the database dashboard. You will see your database connection URL listed. The username/password combination is the one you set earlier while creating your database.</p>
+
+<p><img alt='MongoLab Settings' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/mongodb/mongodb-settings.png' /></p>
+
+<p>As seen in the screenshot, <strong>ds043447.mongolab.com</strong> is the host, <strong>43447</strong> is the port, <strong>my-awesome-apps-mongodb</strong> is the database name, <strong>dbuser</strong>, <strong>dbpassword</strong> is the username/password combination that you set earlier.</p>
+
+<p>Grab each of the values and assign them to environment variables in your <strong>~/.bash_profile</strong> file on your Nitrous.IO box. It is good practice to namespace your environment variables variables with the environment that you want to use your database in (development or test), like so:</p>
+
+<p><img alt='Env Variables' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/mongodb/env-variables.png' /></p>
+
+<p>(Note: Some libraries for e.g. Ruby&#8217;s Mongoid gem prefers to use the URI format, so &#8220;MONGODB_DEVELOPMENT_URI&#8221; is also included as part of your environment variables).</p>
+
+<p>This will ensure that every time you log into your Nitrous.IO box, your database credentials will be available as environment variables to use in any of your apps.</p>
+
+<p>If you want the environment variables to be loaded immediately, run</p>
+
+<pre><code>source ~/.bash_profile</code></pre>
+
+<p>You can verify that your MongoDB credentials are loaded correctly by running</p>
+
+<pre><code>echo $MONGODB_DEVELOPMENT_HOST</code></pre>
+
+<p>This should return <strong>ds043447.mongolab.com</strong></p>
+
+<h3 id='connecting_with_the_official_mongodb_client'>Connecting with the Official MongoDB Client</h3>
+
+<p>All Nitrous.IO boxes come bundled with the official &#8220;mongo&#8221; client which can be used to connect to the database. You can connect to the MongoLab MongoDB database that you just created, by using the command</p>
+
+<pre><code>mongo --shell --host $MONGODB_DEVELOPMENT_HOST --port $MONGODB_DEVELOPMENT_PORT -u $MONGODB_DEVELOPMENT_USERNAME -p $MONGODB_DEVELOPMENT_PASSWORD $MONGODB_DEVELOPMENT_DB</code></pre>
+
+<p><img alt='MongoDB Shell' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/mongodb/shell.png' /></p>
+
+<h3 id='railsruby'>Rails/Ruby</h3>
+
+<p>You can now access your database in your Rails application for e.g. by using</p>
+
+<pre><code>ENV[&#39;MONGODB_DEVELOPMENT_URI&#39;]</code></pre>
+
+<p>We recommend using the mongoid gem which you can install using:</p>
+
+<pre><code>gem install mongoid</code></pre>
+
+<p>If you are running a Rails app, remember to include mongoid as part of your Gemfile and run</p>
+
+<pre><code>rails generate mongoid:config</code></pre>
+
+<p><img alt='rails generate mongoid:config' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/mongodb/mongoid.png' /></p>
+
+<p>Then in your &#8220;development&#8221; environment, under the default session, set the uri to be &#8220;ENV[&#8216;MONGODB_DEVELOPMENT_URI&#8217;]&#8221;</p>
+
+<p><img alt='Rails MongoDB Settings' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/mongodb/database-ruby.png' /></p>
+
+<h3 id='nodejs'>Node.JS</h3>
+
+<p>In Node.JS, you can access each of the environment variables by using</p>
+
+<pre><code>process.env.MONGODB_DEVELOPMENT_HOST, process.env.MONGODB_DEVELOPMENT_PORT,
+process.env.MONGODB_DEVELOPMENT_USER, process.env.MONGODB_DEVELOPMENT_PASSWORD,
+process.env.MONGODB_DEVELOPMENT_DB, process.env.MONGODB_DEVELOPMENT_URI</code></pre>
+
+<p>(Please note, you&#8217;ll probably need to install the <a href='https://npmjs.org/package/mongoose'>mongoose</a> NPM before you use MongoDB in a Node.JS app, using the following command:</p>
+
+<pre><code>npm install mongoose</code></pre>
+
+<p>Here&#8217;s an example of how you can connect to your MongoLab database using mongoose</p>
+
+<p><img alt='Node.JS MongoDB Settings' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/mongodb/database-nodejs.png' /></p>
+
+<h3 id='djangopython'>Django/Python</h3>
+
+<p>In Python, you can access each of the environment variables by using</p>
+
+<pre><code>os.environ[&#39;MONGODB_DEVELOPMENT_HOST&#39;], os.environ[&#39;MONGODB_DEVELOPMENT_PORT&#39;],
+os.environ[&#39;MONGODB_DEVELOPMENT_USER&#39;], os.environ[&#39;MONGODB_DEVELOPMENT_PASSWORD&#39;],
+os.environ[&#39;MONGODB_DEVELOPMENT_DB&#39;], os.environ[&#39;MONGODB_DEVELOPMENT_URI&#39;]</code></pre>
+
+<p>The instructions in the official MongoDB documentatin for Python is an excellent guide, but you can replace the settings in settings.py with the MongoLab variables, like so:</p>
+
+<p><img alt='Python MongoDB Settings' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/mongodb/database-python.png' /></p>
+    </div>
+    <div class="sidebar">
+      <div class="box">
+        <ul class="nav nav-list">
+  <li><i class="icon-home"></i><a href="/">Help Center</a></li>
+  <li><i class="icon-signin"></i><a href="/categories/getting-started/">Getting Started</a></li>
+  <li><i class="icon-th-large"></i><a href="/categories/boxes/">Boxes</a></li>
+  <li><i class="icon-comments"></i><a href="/categories/collaboration/">Collaboration</a></li>
+  <li><i class="icon-tasks"></i><a href="/categories/databases/">Databases</a></li>
+  <li><i class="icon-share-alt"></i><a href="/categories/deployment/">Deployment</a></li>
+  <li><i class="icon-play"></i><a href="/categories/previewing/">Previewing</a></li>
+  <li><i class="icon-list-alt"></i><a href="/categories/web-ide/">Web IDE</a></li>
+  <li><i class="icon-sitemap"></i><a href="/categories/ssh/">SSH</a></li>
+  <li><i class="icon-question"></i><a href="/categories/faq/"></i>FAQ</a></li>
+  <li><i class="icon-file"></i><a href="/categories/privacy-and-terms/">Privacy & Terms</a></li>
+</ul>
+      </div>
+    </div>
+</div>
+<footer>
+  <script src='/javascripts/jquery/jquery-1.10.2.js'></script>
+  <script src='/css/bootstrap3/js/bootstrap.js'></script>
+</footer>
+</body>
+</html>
