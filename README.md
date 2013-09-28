@@ -1,9 +1,7 @@
 Nitrous-Help
 ============
 
-Nitrous Support Site (proposed)
-
-This is a proposed Support Site for Nitrous.IO. It is similar to the other site except for it uses Jekyll to simplify the process of posting a new article a bit.
+Nitrous Support Site at http://help.nitrous.io/ built with [Jekyll](http://jekyllrb.com/).
 
 ### Getting Started
 
@@ -34,4 +32,4 @@ $ rake
 
 ### Editing CSS
 
-+ This project uses SASS/SCSS implementation, so you will want to only edit the *.scss files within 'css/'. Jekyll will automatically generace *.css files within the same directory, so you do not want to make changes to the CSS files.
++ This project uses SASS/SCSS implementation, so you will want to only edit the *.scss files within 'css/'. Jekyll will automatically generate *.css files within the same directory, so you do not want to make changes to the CSS files.
