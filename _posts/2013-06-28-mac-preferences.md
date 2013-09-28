@@ -5,7 +5,7 @@ published: true
 categories: [faq, mac]
 ---
 
-Your [Nitrous.IO for Mac](https://nitrous.io/mac) preferences allow you to configure the connection between your computer and your boxes running on Nitrous.IO. For example, you can add/remove SSH keys, setup tunneling to preview applications you are developing, and manage shared folders for local editing.
+Your [Nitrous.IO for Mac](https://nitrous.io/mac) preferences allow you to configure the connection between your computer and your boxes running on Nitrous.IO. For example, you can add/remove SSH keys, setup port forwarding to preview applications you are developing, and manage shared folders for local editing.
 
 ### Accessing Nitrous.IO for Mac preferences on Mac OS X
 
@@ -42,17 +42,17 @@ If you do not have a public and private key, you can click the **Generate** butt
 
 You can also tell the application to look for your key or get a new key if you've regenerated one manually by clicking the **Rescan** button.
 
-### Tunneling
+### Port Forwarding
 
-Tunneling allows you to forward ports to your
+Port forwarding allows you to forward ports to your Nitrous.IO box from localhost. This allows you, for example, to map your application server running on port 4000 on your Nitrous.IO box to port 4000 on localhost.
 
-![Mac Tunneling](/images/articles/mac-tunneling.png)
+![Mac Port Forwarding](/images/articles/mac-tunneling.png)
 
-To be able to tunnel to your Nitrous.IO box, you must first select the box from the list on the left of the preference pane, and check the **Enable Tunneling** checkbox.
+To enable port forwarding to your Nitrous.IO box, first select it from the list on the left of the preference pane, and check the **Enable Port Forwarding** checkbox.
 
-Next, click the **+** icon at the bottom of the pane and enter the local port, destination host, and destination port where you would like to forward.
+Next, click the **+** icon at the bottom of the pane and enter port you'd like to forward.
 
-Repeat these steps for each of the boxes where you'd like to setup tunneling.
+Repeat these steps for each of the boxes where you'd like to setup port forwarding.
 
 ### File Sync
 
