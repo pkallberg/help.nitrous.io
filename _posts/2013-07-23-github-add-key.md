@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Add SSH key to github
+title: Add SSH key to GitHub
 published: true
 categories: [ssh, public keys]
 ---
