@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
-  <title>Adding SSH Keys (mac)</title>
+  <title>Adding SSH keys (Mac)</title>
   <meta name="author" content="Nitrous.IO" />
   <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
   <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
@@ -66,17 +66,17 @@
 </div>
     <div class="articles post-content">
       <div class="page-title">
-        <h2> Adding SSH Keys (mac) </h2>
+        <h2> Adding SSH keys (Mac) </h2>
         <h5 class="note">Last Updated on: 28 June 2013</h5>
       </div>
-      <p>SSH Keys enable you to manage your Nitrous boxes directly from your computer. The keypair is used to identify you when interacting with your box from outside of the website.</p>
+      <p>SSH keys enable you to manage your Nitrous boxes directly from your computer. The keypair is used to identify you when interacting with your box from outside of the website.</p>
 <ul class='inline choices'>
   <li class='selected'>Mac</li>
   <li><a href='/ssh-windows/'>Windows</a></li>
 </ul>
-<h3 id='1_generate_a_public_key'>1: Generate a public key</h3>
+<h3 id='1_generate_a_new_ssh_key'>1: Generate a new SSH key</h3>
 
-<p>On your <strong>personal computer</strong> enter the code below. We want the default settings so when asked to enter a file in which to save the key, just press enter.</p>
+<p>On your personal computer (<em>i.e. not on your Nitrous box</em>) enter the code below. We want the default settings so when asked to enter a file in which to save the key, just press enter.</p>
 
 <pre><code>ssh-keygen -t rsa -C &quot;your_email@youremail.com&quot;
 # Creates a new ssh key using the provided email
@@ -84,7 +84,7 @@
 # Generating public/private rsa key pair.
 # Enter file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]</code></pre>
 
-<p>Now you enter a passphrase (passphrases make things more secure).</p>
+<p>Enter a passphrase (passphrases make things more secure).</p>
 
 <pre><code># Enter passphrase (empty for no passphrase): [Type a passphrase]
 # Enter same passphrase again: [Type passphrase again]
@@ -95,20 +95,20 @@ Which should give you something like this:
 # The key fingerprint is:
 # 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@youremail.com</code></pre>
 
-<h3 id='2_adding_keys_to_nitrousio'>2: Adding keys to Nitrous.IO</h3>
+<h3 id='2_add_your_ssh_key_to_nitrousio'>2: Add your SSH key to Nitrous.IO</h3>
 
 <p>Run the following code to copy the key to your clipboard.</p>
 
 <pre><code>pbcopy &lt; ~/.ssh/id_rsa.pub
 # Copies the contents of the id_rsa.pub file to your clipboard</code></pre>
 
-<p>Make sure you copy the key <em>exactly</em> without newlines or whitespace. The pbcopy command helps copy just the contents with no extraneous characters.</p>
+<p>Make sure you copy the key <em>exactly</em> without newlines or whitespace. The <code>pbcopy</code> command helps copy just the contents with no extraneous characters.</p>
 
-<p>If you don&#8217;t have the pbcopy command, copy the output of the following command:</p>
+<p>If you don&#8217;t have the <code>pbcopy</code> command, copy the output of the following command:</p>
 
 <pre><code>cat ~/.ssh/id_rsa.pub</code></pre>
 
-<p>Next, Login to your Nitrous.IO account and click &#8220;Public Keys&#8221; in the top right navigation. You shouldn&#8217;t have any keys listed if this is the first key you are adding. Click the &#8220;Add Public key&#8221; button:</p>
+<p>Next, <a href='https://www.nitrous.io/users/sign_in'>Login</a> to your Nitrous.IO account and click &#8221;<a href='https://www.nitrous.io/app#/public_keys'>Public Keys</a>&#8221; in the top right navigation. You shouldn&#8217;t have any keys listed if this is the first key you are adding. Click the &#8220;Add Public key&#8221; button:</p>
 
 <p><img alt='Public Key Button' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/add-public-key-button.png' /></p>
 
@@ -122,7 +122,7 @@ Which should give you something like this:
 
 <p>To make sure everything works we&#8217;ll now SSH into your box. You&#8217;ll be asked to authenticate this action using your password, which is the passphrase you created earlier.</p>
 
-<p>Click the &#8220;boxes&#8221; link in the top navigation. Then click any box you&#8217;ve created to expand its details:</p>
+<p>Click the &#8221;<a href='https://www.nitrous.io/app#/boxes'>boxes</a>&#8221; link in the top navigation. Then click any box you&#8217;ve created to expand its details:</p>
 
 <p><img alt='Box Details' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/box-details.png' /></p>
 
@@ -143,7 +143,7 @@ Are you sure you want to continue connecting (yes/no)? yes</code></pre>
 <pre><code>Warning: Permanently added &#39;[apse1.actionbox.io]:10253, [54.251.42.128]:10253&#39; (RSA) to the list of known hosts.
 Welcome to Nitrous.IO (GNU/Linux 3.2.0-31-virtual x86_64)</code></pre>
 
-<p>Now you&#8217;ve got your SSH keys setup so you can connect via Terminal / PuTTY and use Vim or Emacs to code!</p>
+<p>Now you&#8217;ve got your SSH keys setup so you can connect via Terminal and use Vim or Emacs to code!</p>
     </div>
     <div class="sidebar">
       <div class="box">
