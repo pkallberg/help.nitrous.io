@@ -11,7 +11,7 @@ Keeping your application code, data, and infrastructure safe is our top priority
 
 ## Reporting a Security Vulnerability
 
-If you discovered a security vulnerability with the system, please [email us](mailto:security@nitrous.io) immediately using our public key to encrypt the message. We will diligently investigate the details of the issue and will work with you to understand the scope of the issue presented. Security is one of our highest priorities and we will always immediately address any security concerns sent to us.
+If you discovered a security vulnerability with the system, please [email us](mailto:security@nitrous.io) ([PGP Key](https://www.dropbox.com/s/vycjhk2k6fvfamu/Nitrous.IO_pub.asc)) immediately using our public key to encrypt the message. We will diligently investigate the details of the issue and will work with you to understand the scope of the issue presented. Security is one of our highest priorities and we will always immediately address any security concerns sent to us.
 
 Because the security vulnerability may affect other users, we ask that you please do not share the issue publicly.
 

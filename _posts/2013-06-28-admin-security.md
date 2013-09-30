@@ -13,9 +13,9 @@ We are dedicated to protecting the security of the development resources that we
 
 ### Reporting a Security Vulnerability
 
-If you discovered a security vulnerability with the system, please [email us immediately](mailto:security@nitrous.io). We will diligently investigate the details of the issue and will work with you to understand the scope of the issue presented. Security is one of our highest priorities and we will always immediately address any security concerns [sent to us](mailto:security@nitrous.io).
+If you discovered a security vulnerability with the system, please [email us immediately](mailto:security@nitrous.io) ([PGP Key](https://www.dropbox.com/s/vycjhk2k6fvfamu/Nitrous.IO_pub.asc)). We will diligently investigate the details of the issue and will work with you to understand the scope of the issue presented. Security is one of our highest priorities and we will always immediately address any security concerns [sent to us](mailto:security@nitrous.io).
 
-Because the security vulernability may affect other users, we ask that you please do not share the issue publicly. We will avoid taking legal action against you or action against your account if you act in the benefit of the privacy of our community.  We appreciate your research for the improvement of the system.
+Because the security vulernability may affect other users, we ask that you please do not share the issue publicly. We will avoid taking legal action against you or action against your account if you act in the benefit of the privacy of our community. We appreciate your research for the improvement of the system.
 
 ### Security Assessments and Compliance
 
