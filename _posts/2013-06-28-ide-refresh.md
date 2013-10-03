@@ -2,7 +2,7 @@
 layout: article
 title: Refresh file tree in the web IDE
 published: true
-categories: [web ide]
+categories: [usage]
 ---
 
 *Help! My file browser is not loading the directory tree in my project!*

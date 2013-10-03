@@ -3,16 +3,16 @@
 {% include head.html %}
   <div class="container">
     {% include search.html %}
+    <div class="sidebar menu">
+      <div class="box">
+        {% include menu.html %}
+      </div>
+    </div>
     <div class='articles'>
       <div class="page-title">  
         <h3> {{ page.title | capitalize | replace: 'and', '&' | replace: 'Faq', 'FAQ' | replace: 'Ssh', 'SSH'}} </h3>
       </div>
       {{ content }}
-    </div>
-    <div class="sidebar">
-      <div class="box">
-        {% include menu.html %}
-      </div>
     </div>
   </div>
 {% include footer.html %}

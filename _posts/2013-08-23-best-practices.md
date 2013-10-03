@@ -2,7 +2,7 @@
 layout: article
 title: "Best Practices"
 published: true
-categories: [getting started, web ide]
+categories: [getting started]
 ---
 
 You have gone through our [Getting Started Guide](/getting-started/), and can now [SSH](/ssh-add/) from your computer as well as connect to Github. Now the question is, what's the best way to use Nitrous.IO?

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Upgrading Your Nitrous.IO box
+title: Updating Your Nitrous.IO box
 published: true
 categories: [boxes]
 ---

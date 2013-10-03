@@ -2,7 +2,7 @@
 layout: article
 title: Web IDE keyboard shortcuts
 published: true
-categories: [web ide]
+categories: [usage]
 ---
 
 **Save file**
@@ -36,3 +36,15 @@ categories: [web ide]
 **Toggle full-screen console**
 
     'Control + Shift + F'
+
+#### Copy/Paste (Windows Users)
+
+**Copy**: `Shift + Ctrl + c`
+
+**Paste**:`Shift + Ctrl + v`
+
+#### Copy/Paste (Mac Users)
+
+**Copy**: `Command + c`
+
+**Paste**:`Command + v`

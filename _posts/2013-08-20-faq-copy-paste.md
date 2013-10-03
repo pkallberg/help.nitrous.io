@@ -5,7 +5,7 @@ published: true
 categories: [faq,web ide]
 ---
 
-Depending on the your setup, you may need to hold down the `Shift` key along with the usual keys you use to copy and paste. 
+If you are running Windows then you will need to hold down the `Shift` key along with the usual keys you use to copy and paste. 
 
 #### Windows Users
 

@@ -2,7 +2,7 @@
 layout: article
 title: Upload a directory via the Web IDE
 published: true
-categories: [faq, web ide]
+categories: [usage]
 ---
 
 The File Upload/ide-file-uploads feature on the Web IDE is intended for individual files.
