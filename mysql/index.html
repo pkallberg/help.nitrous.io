@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
-  <title>AWS Region Settings</title>
+  <title>Setting up MySQL with Autoparts</title>
   <meta name="author" content="Nitrous.IO" />
   <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
   <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
@@ -127,47 +127,12 @@
     </div>
     <div class="articles post-content">
       <div class="page-title">
-        <h2> AWS Region Settings </h2>
-        <h5 class="note">Last Updated on: 06 August 2013</h5>
+        <h2> Setting up MySQL with Autoparts </h2>
+        <h5 class="note">Last Updated on: 03 October 2013</h5>
       </div>
-      <h3 id='setting_up_regions_within_amazon_web_services'>Setting Up Regions Within Amazon Web Services</h3>
-
-<p>When connecting to Amazon Web Services within your Nitrous box, both your Nitrous box and the AWS region will need to be the same. When provisioning a new Nitrous box you will be prompted to connect to a specific region:</p>
-
-<p><img alt='Nitrous Box Region' src='/images/articles/nitrous-regions.png' /></p>
-
-<p>You can change regions within <a href='https://console.aws.amazon.com/'>Amazon Web Console</a> by logging in and clicking on your current region in the top right hand side of the toolbar:</p>
-
-<p><img alt='AWS Region Settings Toolbar' src='/images/articles/amazon-regions.png' /></p>
-
-<p>Once this has been setup to match the same region as your Nitrous box, future databases you create within AWS will provide you with the option to select an Availability Zone within that region.</p>
-
-<h3 id='creating_a_security_zone'>Creating a Security Zone</h3>
-
-<p>Along with creating a database within the same region as your Nitrous box, you will also need to add a <strong>Security Zone</strong>.</p>
-
-<p>To Utilize a database within AWS, you will need to setup the following Security Group Details. For example, to setup an RDS database, login to your <a href='https://console.aws.amazon.com/rds/home'>Amazon RDS Console</a>, navigate to Security Groups, and create a new Connection Type with the following EC2 Security Group Details:</p>
-
-<pre><code>AWS Account ID: 643018315983
-EC2 Security Group (name): box_host</code></pre>
-
-<blockquote>
-<p>Note: These settings are the same for all regions.</p>
+      <blockquote>
+<p>For information on connecting to an external MySQL database, please view our <a href='/amazon-rds/'>Amazon RDS guide</a>.</p>
 </blockquote>
-
-<h3 id='connecting_to_a_database'>Connecting to a Database</h3>
-
-<p>You will need to ensure the following steps are completed before creating a database:</p>
-
-<p><em>Your Nitrous box and AWS account are set for the same region</em>You have created a <strong>Security Group</strong></p>
-
-<p>In the <a href='https://console.aws.amazon.com/rds/home'>Amazon RDS Console</a>, click <strong>Launch DB Instance</strong>. From here you will be prompted to configure your new database.</p>
-
-<p>On the <strong>Additinal Configuration</strong> page, ensure the <strong>Availability Zone</strong> belongs to the region of your Nitrous box. In this example, the Nitrous box is in the US West region and we have selected <strong>us-west-1a</strong> for the Availability Zone. Notice that the DB Security Group has been selected as well.</p>
-
-<p><img alt='Amazon RDS Settings' src='/images/articles/amazon_instance_setting.png' /></p>
-
-<p>For a full guide on connecting to Amazon RDS, please view the <a href='/amazon-rds'>Amazon RDS guide</a>.</p>
     </div>
 </div>
 <footer>
