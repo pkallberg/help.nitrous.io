@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
-  <title>public keys</title>
+  <title>Setting up Memcached with Autoparts</title>
   <meta name="author" content="Nitrous.IO" />
   <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
   <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
@@ -70,8 +70,8 @@
     </div>
   </div>
 </div>
-    <div class="sidebar menu">
-      <div class="box">
+    <div class="sidebar">
+      <div class="box menu">
         <ul class="nav nav-list">
   <li><i class="icon-signin"></i><a href="/categories/getting-started/">Getting Started</a></li>
     <ul>
@@ -125,23 +125,55 @@
 </ul>
       </div>
     </div>
-    <div class='articles'>
-      <div class="page-title">  
-        <h3> Public keys </h3>
+    <div class="articles post-content">
+      <div class="page-title">
+        <h2> Setting up Memcached with Autoparts </h2>
+        <h5 class="note">Last Updated on: 04 October 2013</h5>
       </div>
-      <div class="category-index">
-	<ul class="posts menu-item">
-	
-  	<li><h4><a href="/github-add-key">Add SSH key to GitHub</a></h4></li>
-	
-  	<li><h4><a href="/ssh-windows">Adding SSH keys (Windows)</a></h4></li>
-	
-  	<li><h4><a href="/ssh-add">Adding SSH keys (Mac)</a></h4></li>
-	
-	</ul>
-</div>
+      <h3 id='prerequisites'>Prerequisites</h3>
+
+<ul>
+<li>Nitrous.IO box with the package manager Autoparts installed. To ensure Autoparts is installed, run the command <code>parts</code> within the terminal. Take a look at the <a href='/autoparts/'>Autoparts guide</a> for installation instructions.</li>
+</ul>
+
+<h3 id='install_memcached'>Install Memcached</h3>
+
+<p>You can quickly install Memcached using Autoparts. Within the terminal, run the following command to install:</p>
+
+<pre><code>parts install memcached</code></pre>
+
+<h3 id='connecting_to_your_rails_app'>Connecting to Your Rails App</h3>
+
+<p>Start by adding the dalli gem to your Gemfile.</p>
+
+<pre><code>gem &#39;dalli&#39;</code></pre>
+
+<p>Then bundle install:</p>
+
+<pre><code>$ bundle install</code></pre>
+
+<p><code>Dalli</code> is a Ruby memcache client. Once it is installed you’ll want to configure the Rails cache_store appropriately. Modify <code>config/environments/production.rb</code> with the following:</p>
+
+<pre><code>config.cache_store = :dalli_store, &lt;MEMCACHIER_SERVERS&gt;.split(&quot;,&quot;),
+                    {:username =&gt; &lt;MEMCACHIER_USERNAME&gt;,
+                     :password =&gt; &lt;MEMCACHIER_PASSWORD&gt;}</code></pre>
+
+<p>The values for <code>&lt;MEMCACHIER_SERVERS&gt;</code>, <code>&lt;MEMCACHIER_USERNAME&gt;</code>, and <code>&lt;MEMCACHIER_PASSWORD&gt;</code> should have been added to your <code>~/.bashrc</code> file in the last step.</p>
+
+<blockquote>
+<p>In your development environment, Rails.cache defaults to a simple in-memory store and so it doesn’t require a running memcached.</p>
+</blockquote>
+
+<p>From here you can use the following code examples to use the cache in your Rails app:</p>
+
+<pre><code>Rails.cache.write(&quot;foo&quot;, &quot;bar&quot;)
+puts Rails.cache.read(&quot;foo&quot;)</code></pre>
+
+<blockquote>
+<p>For information on connecting to an external MySQL database, please view our <a href='/memcachier/'>MemCachier guide</a>.</p>
+</blockquote>
     </div>
-  </div>
+</div>
 <footer>
   <script src='/javascripts/jquery/jquery-1.10.2.js'></script>
   <script src='/css/bootstrap3/js/bootstrap.js'></script>
