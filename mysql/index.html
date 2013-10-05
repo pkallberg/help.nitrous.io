@@ -101,8 +101,8 @@
     <ul>
       <li><a href="/memcachier">Memcached</a>
       <li><a href="/mongodb">MongoDB</a>
-      <li><a href="/amazon-rds">MySQL</a>
-      <li><a href="/postgres">Postgres</a>
+      <li><a href="/mysql">MySQL</a>
+      <li><a href="/postgres">PostgreSQL</a>
       <li><a href="/redis-cloud">Redis</a>
     </ul>
   <li><i class="icon-play"></i><a href="/categories/previewing/">Preview</a></li>
@@ -130,7 +130,45 @@
         <h2> Setting up MySQL with Autoparts </h2>
         <h5 class="note">Last Updated on: 03 October 2013</h5>
       </div>
-      <blockquote>
+      <h3 id='prerequisites'>Prerequisites</h3>
+
+<ul>
+<li>Nitrous.IO box with the package manager Autoparts installed. To ensure Autoparts is installed, run the command <code>parts</code> within the terminal. Take a look at the <a href='/autoparts/'>Autoparts guide</a> for installation instructions.</li>
+</ul>
+
+<h3 id='install_mysql'>Install MySQL</h3>
+
+<p>You can quickly install MySQL using Autoparts. Within the terminal, run the following command to install:</p>
+
+<pre><code>parts install mysql</code></pre>
+
+<h3 id='connecting_via_rails'>Connecting via Rails</h3>
+
+<p>Once MySQL is installed, Rails will automatically create a database when creating a new app. View our <a href='http://blog.nitrous.io/2013/07/02/building-a-rails-4.0-app-on-nitrous-io.html'>Rails 4 guide</a> for information on building an app.</p>
+
+<p>Here is the configuration necessary to connect to your local MySQL database:</p>
+
+<p>In <code>app/config/database.yml</code>:</p>
+
+<pre><code>development:
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
+
+test:
+  adapter: sqlite3
+  database: db/test.sqlite3
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: sqlite3
+  database: db/production.sqlite3
+  pool: 5
+  timeout: 5000</code></pre>
+
+<blockquote>
 <p>For information on connecting to an external MySQL database, please view our <a href='/amazon-rds/'>Amazon RDS guide</a>.</p>
 </blockquote>
     </div>
