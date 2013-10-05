@@ -41,4 +41,4 @@ From here you can use the following code examples to use the cache in your Rails
     puts Rails.cache.read("foo")
 
 
->For information on connecting to an external MySQL database, please view our [MemCachier guide](/memcachier/).
+>For information on connecting to an external Memcached database, please view our [MemCachier guide](/memcachier/).
