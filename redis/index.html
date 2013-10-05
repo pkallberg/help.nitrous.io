@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
-  <title>Previewing Your Application</title>
+  <title>Setting up Redis with Autoparts</title>
   <meta name="author" content="Nitrous.IO" />
   <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
   <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
@@ -127,50 +127,49 @@
     </div>
     <div class="articles post-content">
       <div class="page-title">
-        <h2> Previewing Your Application </h2>
-        <h5 class="note">Last Updated on: 27 September 2013</h5>
+        <h2> Setting up Redis with Autoparts </h2>
+        <h5 class="note">Last Updated on: 04 October 2013</h5>
       </div>
-      <p>Nitrous.IO provides a range of ports (3000 - 9999) for you to run services on your development box.</p>
-
-<p>Previewing your application simply involves taking an automatically generated preview url, pasting it into your browser, and appending the appropriate port where your service is running.</p>
-
-<p>You can find the preview url from the following two locations:</p>
+      <h3 id='prerequisites'>Prerequisites</h3>
 
 <ul>
-<li><a href='#preview-webide'>Getting the Preview URL from the Web IDE</a></li>
-
-<li><a href='#preview-boxindex'>Getting the Preview URL from the Boxes Dashboard</a></li>
+<li>Nitrous.IO box with the package manager Autoparts installed. To ensure Autoparts is installed, run the command <code>parts</code> within the terminal. Take a look at the <a href='/autoparts/'>Autoparts guide</a> for installation instructions.</li>
 </ul>
 
-<h3 id='from_the_web_ide'>From the Web IDE</h3>
+<h3 id='install_redis'>Install Redis</h3>
 
-<p>The &#8220;Preview&#8221; menu in the <a href='/categories/web-ide'>Action Web IDE</a> displays links to some common default ports, which you can click to open a new window in your browser.</p>
+<p>You can quickly install Redis using Autoparts. Within the terminal, run the following command to install:</p>
 
-<p><img alt='Preview Menu' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/preview-menu.png' /></p>
+<pre><code>parts install redis</code></pre>
 
-<p>You can easily edit the urls from any of those links to preview other services you&#8217;re running by substituting your desired port.</p>
+<h3 id='connecting_via_rails'>Connecting via Rails</h3>
 
-<h3 id='from_the_boxes_dashboard'>From the Boxes Dashboard</h3>
+<p>Within your Rails app, update your Gemfile to include the <a href='http://github.com/redis/redis-rb'>redis-rb</a> client:</p>
 
-<p>You&#8217;ll also find your preview url in your boxes dashboard in the box-details.</p>
+<pre><code>gem &#39;redis&#39;</code></pre>
 
-<p><img alt='Box Dashboard Preview URL' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/box-preview-url.png' /></p>
+<p>From here you will want to install the gem via Bundler:</p>
 
-<p>If you&#8217;re really smart, you&#8217;ll notice we use some sensible naming conventions for your box preview url. The box regions are probably tough to memorize, but regular users will remember it.</p>
+<pre><code>bundle install</code></pre>
 
-<pre><code>https://*[box-name]*.*[box-region]*.nitrous.io:*[port]*</code></pre>
+<p>Next, create an initializer in <code>config/initializers/redis.rb</code> and add the following:</p>
 
-<h3 id='ruby_on_rails_example'>Ruby On Rails Example</h3>
+<pre><code>$redis = Redis.new(:host =&gt; &#39;localhost&#39;, :port =&gt; 6379)</code></pre>
 
-<p>If you&#8217;re developing a Ruby on Rails project and using the default WEBrick web server, simply move into the Rails project directory in your console and run:</p>
+<p>This will create a new instance of the Redis client, which is stored as the global variable $redis.</p>
 
-<pre><code>rails server</code></pre>
+<p>You can now test Redis by setting and getting keys. Run <code>rails console</code> followed by these commands:</p>
 
-<p>This will fire up an instance of the WEBrick web server by default (Rails can also use several other web servers). To see your application in action, click the &#8220;Preview&#8221; menu and select &#8220;Port 3000&#8221;. You should see your Rails development project in the new window that is opened.</p>
+<pre><code>&gt; $redis
+=&gt; #&lt;Redis client v2.1.1 connected to redis://localhost:6379/0 (Redis v2.6.16)&gt;
+&gt; $redis.set(&#39;christopher&#39;, &#39;walken&#39;)
+=&gt; &quot;OK&quot; 
+&gt; $redis.get(&#39;christopher&#39;)
+=&gt; &quot;walken&quot;</code></pre>
 
-<h3 id='other_frameworks'>Other Frameworks</h3>
-
-<p>For help on previewing applications written in other languages and frameworks, check the following <a href='/faq-localhost'>support article</a>.</p>
+<blockquote>
+<p>For information on connecting to an external Redis database, please view our <a href='/redis-cloud/'>Redis Cloud guide</a>.</p>
+</blockquote>
     </div>
 </div>
 <footer>
