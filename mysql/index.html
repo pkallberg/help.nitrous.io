@@ -144,29 +144,44 @@
 
 <h3 id='connecting_via_rails'>Connecting via Rails</h3>
 
-<p>Once MySQL is installed, Rails will automatically create a database when creating a new app. View our <a href='http://blog.nitrous.io/2013/07/02/building-a-rails-4.0-app-on-nitrous-io.html'>Rails 4 guide</a> for information on building an app.</p>
+<p>By default, sqlite3 will be setup on Rails and will automatically setup as the configuration is. If you want to create a MySQL database using the mysql2 gem, you will first need to add this line to your <code>Gemfile</code>:</p>
 
-<p>Here is the configuration necessary to connect to your local MySQL database:</p>
+<pre><code>gem &#39;mysql2&#39; </code></pre>
+
+<p>Once this has been added, run the following within the terminal:</p>
+
+<pre><code>bundle install</code></pre>
+
+<p>Next, ensure that mysql is running with the following command:</p>
+
+<pre><code>parts start mysql</code></pre>
+
+<p>Here is the configuration necessary to connect to MySQL locally:</p>
 
 <p>In <code>config/database.yml</code>:</p>
 
 <pre><code>development:
-  adapter: sqlite3
-  database: db/development.sqlite3
+  adapter: mysql2
+  encoding: utf8
+  database: dev-db
   pool: 5
   timeout: 5000
 
 test:
-  adapter: sqlite3
-  database: db/test.sqlite3
+  adapter: mysql2
+  encoding: utf8
+  database: test-db
   pool: 5
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: mysql2
+  encoding: utf8
+  database: prod-db
   pool: 5
   timeout: 5000</code></pre>
+
+<p>View our <a href='http://blog.nitrous.io/2013/07/02/building-a-rails-4.0-app-on-nitrous-io.html'>Rails 4 guide</a> for information on building an app.</p>
 
 <blockquote>
 <p>For information on connecting to an external MySQL database, please view our <a href='/amazon-rds/'>Amazon RDS guide</a>.</p>

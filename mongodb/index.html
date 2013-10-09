@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
-  <title>MongoDB</title>
+  <title>Setting up MongoDB with Autoparts</title>
   <meta name="author" content="Nitrous.IO" />
   <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
   <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
@@ -127,7 +127,7 @@
     </div>
     <div class="articles post-content">
       <div class="page-title">
-        <h2> MongoDB </h2>
+        <h2> Setting up MongoDB with Autoparts </h2>
         <h5 class="note">Last Updated on: 15 September 2013</h5>
       </div>
       <p>This guide walks through how you can setup a MongoDB database on your Nitrous.IO box.</p>
@@ -155,7 +155,11 @@
 <pre><code>gem &#39;mongoid&#39;, git: &#39;https://github.com/mongoid/mongoid.git&#39;
 gem &#39;bson_ext&#39;</code></pre>
 
-<p>Run <code>bundle install</code> after you have updated your Gemfile, and generate the configuration.</p>
+<p>Once the <code>Gemfile</code> has been updated, run the following:</p>
+
+<pre><code>bundle install</code></pre>
+
+<p>Next, generate the configuration:</p>
 
 <pre><code>rails g mongoid:config</code></pre>
 
