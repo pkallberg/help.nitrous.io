@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
-  <title>getting started</title>
+  <title>Deploying Node.js App to Azure Sites</title>
   <meta name="author" content="Nitrous.IO" />
   <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
   <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
@@ -70,8 +70,8 @@
     </div>
   </div>
 </div>
-    <div class="sidebar menu">
-      <div class="box">
+    <div class="sidebar">
+      <div class="box menu">
         <ul class="nav nav-list">
   <li><i class="icon-signin"></i><a href="/categories/getting-started/">Getting Started</a></li>
     <ul>
@@ -127,35 +127,107 @@
 </ul>
       </div>
     </div>
-    <div class='articles'>
-      <div class="page-title">  
-        <h3> Getting started </h3>
+    <div class="articles post-content">
+      <div class="page-title">
+        <h2> Deploying Node.js App to Azure Sites </h2>
+        <h5 class="note">Last Updated on: 11 October 2013</h5>
       </div>
-      <div class="category-index">
-	<ul class="posts menu-item">
-	
-  	<li><h4><a href="/preview">Previewing Your Application</a></h4></li>
-	
-  	<li><h4><a href="/getting-started">Getting Started with Nitrous.IO</a></h4></li>
-	
-  	<li><h4><a href="/best-practices">Best Practices</a></h4></li>
-	
-  	<li><h4><a href="/box-settings">Configuring Box Memory & Storage</a></h4></li>
-	
-  	<li><h4><a href="/support-channels">Nitrous.IO Support Channels</a></h4></li>
-	
-  	<li><h4><a href="/faq-adding-project">Upload an existing application</a></h4></li>
-	
-  	<li><h4><a href="/box-new">Create a Box</a></h4></li>
-	
-  	<li><h4><a href="/account-new">Create an account</a></h4></li>
-	
-  	<li><h4><a href="/N2O">N2O Resources</a></h4></li>
-	
-	</ul>
-</div>
+      <p>These instructions will help you deploy your <a href='http://nodejs.org/'>node.js</a> application to <a href='http://www.windowsazure.com/en-us/develop/nodejs/'>Azure</a>.</p>
+
+<h3 id='things_you_should_know'>Things you should know</h3>
+
+<ul>
+<li>Node.js basic concepts. Your Nitrous.IO box will come preinstalled with Node.js.</li>
+</ul>
+
+<h3 id='prerequisites'>Prerequisites</h3>
+
+<ul>
+<li>An <a href='https://www.nitrous.io'>Nitrous.IO Account</a></li>
+
+<li>A <a href='http://www.windowsazure.com/en-us/pricing/free-trial/?ref=nitrous.io'>Windows Azure Subscription</a></li>
+
+<li>A <a href='https://www.nitrous.io/app#/boxes'>Node.js box</a> on Nitrous.IO</li>
+
+<li>Any Node.js project with a git repo. We will use the snippet below for this excercise.</li>
+</ul>
+
+<h3 id='example_nodejs_app'>Example Node.js App</h3>
+
+<pre><code>//Example Node.js App
+//Save this to server.js in your project directory.
+var http = require(&#39;http&#39;)
+var port = process.env.PORT || 3000;
+var host = process.env.HOST || &#39;0.0.0.0&#39;;
+http.createServer(function(req, res) {
+  res.writeHead(200, { &#39;Content-Type&#39;: &#39;text/plain&#39; });
+  res.end(&#39;Hello World from Nitrous.IO\n&#39;);
+}).listen(port, host);
+console.log(&quot;Server running at &quot;+host+&quot;:&quot;+port);</code></pre>
+
+<p>If you don&#8217;t have a project ready to go save the code above into your project directory into a file called <em>server.js</em></p>
+
+<p>If you&#8217;re not already using git, you need to configure git, setup a new repo and make an initial commit by running the follwing commands in your project directory:</p>
+
+<pre><code>git config --global user.email “(your git email)”
+git config --global user.name “(your git username)”
+git init
+git add . 
+git commit -am &quot;initial commit&quot;</code></pre>
+
+<h3 id='testing_your_nodejs_app'>Testing your Node.js App</h3>
+
+<p>You can test your app out locally by running the following command in the console, replacing &#8216;your_app/server.js&#8217; with your app:</p>
+
+<pre><code>node  your_app/server.js</code></pre>
+
+<p>The app is now running and you will be able to preview it by navigating in the toolbar to <strong>Preview &gt; Port 3000</strong>.</p>
+
+<h3 id='install_azure_command_line_interface_cli'>Install Azure Command Line Interface (CLI)</h3>
+
+<p>The <a href='http://www.windowsazure.com/en-us/manage/install-and-configure-cli/'>Azure CLI</a> allows you to maniupulate your Azure Sites right from Nitrous.io</p>
+
+<p>Install it by running the following command in the Nitrous.io IDE console:</p>
+
+<pre><code>npm -g install azure-cli </code></pre>
+
+<h3 id='connect_to_your_azure_subscription'>Connect to your Azure Subscription</h3>
+
+<p>Now let&#8217;s connect this CLI to your Azure Subscription.</p>
+
+<p>Run the following command in the console to download your credentials from Azure:</p>
+
+<pre><code>azure account download</code></pre>
+
+<p>Open a new browser window and go to the link that is returned by the previous command. After you login, a <code>.publishsettings</code> credentials file will be downloaded to your machine.</p>
+
+<p>Upload this file to you Nitrous IDE using the <a href='http://help.nitrous.io/ide-file-uploads/'>Upload Files button</a> and run the following command replacing <strong>pathto/mysubscription.pubishsettings</strong> with the appropriate path to the credentials file:</p>
+
+<pre><code>azure account import pathto/mysubscription.pubishsettings</code></pre>
+
+<h3 id='create_a_new_azure_site'>Create a New Azure Site</h3>
+
+<p>To create a new Azure Site change to your <strong>project directory</strong> and run the following command:</p>
+
+<pre><code>azure site create my_project_name --git</code></pre>
+
+<p>This will create a basic site with a git repository on the host and add the Azure Site repo as a remote to your local <strong>project directory</strong> repo.</p>
+
+<p>You can confirm that this worked by going to the hostname returned by the command.</p>
+
+<p><img alt='New Azure App' src='/images/articles/azure-new-app.png' /></p>
+
+<h3 id='deploying_from_nitrous'>Deploying From Nitrous</h3>
+
+<p>To deploy simply push your commited code to Azure Sites with the following command:</p>
+
+<pre><code>git push azure master</code></pre>
+
+<p>You will now be prompted to enter in your Azure Account password.</p>
+
+<p>Once the upload has finished you should see the message &#8220;Deployment Successful&#8221;. Then browse directly to your live application at http://appname.azurewebsites.net.</p>
     </div>
-  </div>
+</div>
 <footer>
   <script src='/javascripts/jquery/jquery-1.10.2.js'></script>
   <script src='/css/bootstrap3/js/bootstrap.js'></script>

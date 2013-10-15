@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
-  <title>getting started</title>
+  <title>Deploying to Nodejitsu</title>
   <meta name="author" content="Nitrous.IO" />
   <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
   <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
@@ -70,8 +70,8 @@
     </div>
   </div>
 </div>
-    <div class="sidebar menu">
-      <div class="box">
+    <div class="sidebar">
+      <div class="box menu">
         <ul class="nav nav-list">
   <li><i class="icon-signin"></i><a href="/categories/getting-started/">Getting Started</a></li>
     <ul>
@@ -127,35 +127,62 @@
 </ul>
       </div>
     </div>
-    <div class='articles'>
-      <div class="page-title">  
-        <h3> Getting started </h3>
+    <div class="articles post-content">
+      <div class="page-title">
+        <h2> Deploying to Nodejitsu </h2>
+        <h5 class="note">Last Updated on: 14 October 2013</h5>
       </div>
-      <div class="category-index">
-	<ul class="posts menu-item">
-	
-  	<li><h4><a href="/preview">Previewing Your Application</a></h4></li>
-	
-  	<li><h4><a href="/getting-started">Getting Started with Nitrous.IO</a></h4></li>
-	
-  	<li><h4><a href="/best-practices">Best Practices</a></h4></li>
-	
-  	<li><h4><a href="/box-settings">Configuring Box Memory & Storage</a></h4></li>
-	
-  	<li><h4><a href="/support-channels">Nitrous.IO Support Channels</a></h4></li>
-	
-  	<li><h4><a href="/faq-adding-project">Upload an existing application</a></h4></li>
-	
-  	<li><h4><a href="/box-new">Create a Box</a></h4></li>
-	
-  	<li><h4><a href="/account-new">Create an account</a></h4></li>
-	
-  	<li><h4><a href="/N2O">N2O Resources</a></h4></li>
-	
-	</ul>
-</div>
+      <p>These instructions will help you deploy your <a href='http://nodejs.org/'>node.js</a> application to <a href='http://www.nodejitsu.com/?ref=nitrous.io'>Nodejistu</a>.</p>
+
+<h3 id='things_you_should_know'>Things you should know</h3>
+
+<ul>
+<li>Node.js basic concepts. Your Nitrous.IO box will come preinstalled with Node.js.</li>
+</ul>
+
+<h3 id='prerequisites'>Prerequisites</h3>
+
+<ul>
+<li>An <a href='https://www.nitrous.io'>Nitrous.IO Account</a></li>
+
+<li>A <a href='https://www.nodejitsu.com/signup/?ref=nitrous.io'>Nodejitsu Account</a> or sign up below.</li>
+
+<li>A <a href='https://www.nitrous.io/app#/boxes'>Node.js box</a> on Nitrous.IO</li>
+
+<li>Any Node.js project. <a href='/azure-sites/'>See an Example here</a></li>
+</ul>
+
+<h3 id='install_jitsu_command_line_interface_cli'>Install jitsu Command Line Interface (CLI)</h3>
+
+<p>The <a href='https://www.nodejitsu.com/documentation/jitsu/'>jitsu CLI</a> allows you to connect to the nodejitsu platform right from Nitrous.io<br />Install it by running the following command in the Nitrous.io console:</p>
+
+<pre><code>npm -g install jitsu</code></pre>
+
+<h3 id='sign_up_for_nodejitsu_optional'>Sign up for nodejitsu (Optional)</h3>
+
+<p>If you don&#8217;t already have a nodejitsu account, run the following command to signup:</p>
+
+<pre><code>jitsu signup</code></pre>
+
+<h3 id='login_to_nodejistu'>Login to nodejistu</h3>
+
+<p>Login with following command and enter your nodejitsu username and password:</p>
+
+<pre><code>jitsu login</code></pre>
+
+<h3 id='deploying_rom_nitrous'>Deploying rom Nitrous</h3>
+
+<p>To deploy simply issue the following command:</p>
+
+<pre><code>jitsu deploy</code></pre>
+
+<p>This will prompt you for your project name, the subdomain you wish use, and the project start script.<br />Once your configuration is set and prjoect files are uploaded to nodejistu the command will return &#8216;Nodejitsu ok&#8217;</p>
+
+<p>At this point your can browse to <strong>http://your-app-subdomain.nodejitsu.com</strong> to see your app.</p>
+
+<p>Happy coding.</p>
     </div>
-  </div>
+</div>
 <footer>
   <script src='/javascripts/jquery/jquery-1.10.2.js'></script>
   <script src='/css/bootstrap3/js/bootstrap.js'></script>

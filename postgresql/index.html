@@ -116,8 +116,10 @@
     <ul>
       <li><a href="/heroku/">Heroku</a>
       <li><a href="/app-engine">App Engine</a>
+      <li><a href="/azure-sites">Azure Sites</a>
+      <li><a href="/nodejitsu">Nodejitsu</a>
     </ul>
-  <li><i class="icon-book"></i><a href="#"></i>Additional Resources</a></li>
+  <li><i class="icon-book"></i><a href="#">Additional Resources</a></li>
     <ul>
       <li><a href="/categories/faq">FAQ</a>
       <li><a href="/categories/privacy-and-terms/">Privacy & Terms</a>    
@@ -144,6 +146,10 @@
 
 <h3 id='connecting_via_rails'>Connecting via Rails</h3>
 
+<p>First, start PostgreSQL with the following command:</p>
+
+<pre><code>parts start postgresql</code></pre>
+
 <p>To create a Rails app with PostgreSQL configured, run the following command:</p>
 
 <pre><code>rails new appname -d postgresql</code></pre>
@@ -159,22 +165,17 @@
   encoding: unicode
   database: appname-dev
   pool: 5
-  username: appname-dev
+  username: action
   password:
 
 test:
   adapter: postgresql
   database: appname-test
   pool: 5
-  username: appname-test
-  password:
-
-production:
-  adapter: postgresql
-  database: appname-prod
-  pool: 5
-  username: appname-prod
+  username: action
   password:</code></pre>
+
+<p>To create the databases one the configuration has been made, run <code>rake db:create</code>.</p>
 
 <blockquote>
 <p>For information on connecting to an external PostgreSQL database, please view our <a href='/postgres/'>Heroku Postgres guide</a>.</p>
