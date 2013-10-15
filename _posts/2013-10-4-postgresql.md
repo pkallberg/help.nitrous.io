@@ -20,7 +20,7 @@ You can quickly install PostgreSQL using Autoparts. Within the terminal, run the
 First, start PostgreSQL with the following command:
 
     parts start postgresql
-    
+
 To create a Rails app with PostgreSQL configured, run the following command:
 
     rails new appname -d postgresql
@@ -36,21 +36,16 @@ In `config/database.yml`:
       encoding: unicode
       database: appname-dev
       pool: 5
-      username: appname-dev
+      username: action
       password:
 
     test:
       adapter: postgresql
       database: appname-test
       pool: 5
-      username: appname-test
+      username: action
       password:
 
-    production:
-      adapter: postgresql
-      database: appname-prod
-      pool: 5
-      username: appname-prod
-      password:
+To create the databases one the configuration has been made, run `rake db:create`.
 
 >For information on connecting to an external PostgreSQL database, please view our [Heroku Postgres guide](/postgres/).
