@@ -17,6 +17,10 @@ You can quickly install PostgreSQL using Autoparts. Within the terminal, run the
 
 ### Connecting via Rails
 
+First, start PostgreSQL with the following command:
+
+    parts start postgresql
+    
 To create a Rails app with PostgreSQL configured, run the following command:
 
     rails new appname -d postgresql
