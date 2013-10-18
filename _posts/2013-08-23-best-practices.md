@@ -28,7 +28,7 @@ Once you have built an app (ex. a [Meteor app](http://blog.nitrous.io/2013/02/21
 		[2013-08-23 18:12:48] INFO  ruby 2.0.0 (2013-05-14) [x86_64-linux]
 		[2013-08-23 18:12:48] INFO  WEBrick::HTTPServer#start: pid=8021 port=3000
 
-Nitrous has HTTP ports 3000 - 9000 open, so you can use any of these ports when previewing your app.
+Nitrous has HTTP ports 1024 - 9999 open, so you can use any of these ports when previewing your app.
 
 Since this app is running on Port 3000 we will navigate in the web IDE to `Preview > Port 3000` to view the app running in the browser.
 
