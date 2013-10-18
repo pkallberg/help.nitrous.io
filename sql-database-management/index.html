@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
-  <title>databases</title>
+  <title>Connecting to MySQL with a SQL Database Management App</title>
   <meta name="author" content="Nitrous.IO" />
   <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
   <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
@@ -70,8 +70,8 @@
     </div>
   </div>
 </div>
-    <div class="sidebar menu">
-      <div class="box">
+    <div class="sidebar">
+      <div class="box menu">
         <ul class="nav nav-list">
   <li><i class="icon-signin"></i><a href="/categories/getting-started/">Getting Started</a></li>
     <ul>
@@ -127,39 +127,56 @@
 </ul>
       </div>
     </div>
-    <div class='articles'>
-      <div class="page-title">  
-        <h3> Databases </h3>
+    <div class="articles post-content">
+      <div class="page-title">
+        <h2> Connecting to MySQL with a SQL Database Management App </h2>
+        <h5 class="note">Last Updated on: 18 October 2013</h5>
       </div>
-      <div class="category-index">
-	<ul class="posts menu-item">
-	
-  	<li><h4><a href="/sql-database-management">Connecting to MySQL with a SQL Database Management App</a></h4></li>
-	
-  	<li><h4><a href="/redis">Setting up Redis with Autoparts</a></h4></li>
-	
-  	<li><h4><a href="/postgresql">Setting up PostgreSQL with Autoparts</a></h4></li>
-	
-  	<li><h4><a href="/memcached">Setting up Memcached with Autoparts</a></h4></li>
-	
-  	<li><h4><a href="/mysql">Setting up MySQL with Autoparts</a></h4></li>
-	
-  	<li><h4><a href="/autoparts">Installing Databases & Tools with Autoparts</a></h4></li>
-	
-  	<li><h4><a href="/mongodb">Setting up MongoDB with Autoparts</a></h4></li>
-	
-  	<li><h4><a href="/memcachier">MemCachier</a></h4></li>
-	
-  	<li><h4><a href="/amazon-rds">Amazon RDS</a></h4></li>
-	
-  	<li><h4><a href="/redis-cloud">Redis Cloud</a></h4></li>
-	
-  	<li><h4><a href="/postgres">Postgres</a></h4></li>
-	
-	</ul>
-</div>
+      <p>This guide will walk you through the steps to connect <a href='http://www.sequelpro.com/'>Sequel Pro</a> to your MySQL database created via <a href='/autoparts/'>Autoparts</a>.</p>
+
+<h3 id='prerequisites'>Prerequisites</h3>
+
+<ul>
+<li>A Nitrous.IO box with a MySQL database created. View the <a href='/mysql/'>MySQL Guide</a> if you have not done this already.</li>
+
+<li>A Database Management App. <a href='http://www.sequelpro.com/'>Sequel Pro</a> is a great tool for Mac users.</li>
+</ul>
+
+<h3 id='setting_up_port_forwarding'>Setting up Port Forwarding</h3>
+
+<h4 id='if_you_are_using_the_nitrous_mac_app'>If you are using the Nitrous <a href='http://www.nitrous.io/mac'>Mac App</a>:</h4>
+
+<p>Within the Menu Bar, open up the App Preferences, navigate to <code>Port Forwarding</code>, and check the box <code>Enable Port Forwarding</code>.</p>
+
+<p>From here, add port 3306 to the list of forwarded ports as this is the default port for MySQL.</p>
+
+<p><img alt='Enable Port Forwarding' src='/images/articles/port-forwarding-port-3306.png' /></p>
+
+<h4 id='if_you_are_not_using_the_nitrous_app'>If you are not using the Nitrous App:</h4>
+
+<p>Within your local console, run the following command to establish SSH tunneling between your local port and the remote port:</p>
+
+<pre><code>ssh -N -p &lt;box_port&gt; action@&lt;box_host&gt; -L &lt;local_port&gt;/localhost/&lt;remote_port&gt;</code></pre>
+
+<p>When running this command, replace the variables with the actual values found on your boxes page. This is an example command which would be used for the box information seen in the image below:</p>
+
+<pre><code>ssh -N -p 71717 action@usw1.actionbox.io -L 3306/localhost/3306</code></pre>
+
+<p><img alt='Nitrous Box Connection Info' src='/images/articles/nitrous-box-connection-info.png' /></p>
+
+<blockquote>
+<p>Tip: You can check which port your database is running on by running <code>netstat -anp | grep -i mysql</code> within your Nitrous console.</p>
+</blockquote>
+
+<h3 id='connecting_with_sequel_pro'>Connecting with Sequel Pro</h3>
+
+<p>Once you have installed <a href='http://www.sequelpro.com/'>Sequel Pro</a>, open up the app and connect to host <code>127.0.0.1</code> on port <code>3306</code>.</p>
+
+<p><img alt='Sequel Pro Connection Details' src='/images/articles/sequel-pro.png' /></p>
+
+<p>You should now be connected to the database hosted on Nitrous.IO.</p>
     </div>
-  </div>
+</div>
 <footer>
   <script src='/javascripts/jquery/jquery-1.10.2.js'></script>
   <script src='/css/bootstrap3/js/bootstrap.js'></script>
