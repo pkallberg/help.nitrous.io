@@ -91,4 +91,3 @@ We provide extra interpreters and tools in your Nitrous boxes to help you get ha
 
 ### Development Tools
 * Go
-* Node.js (version control with NVM)
