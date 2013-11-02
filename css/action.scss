@@ -56,7 +56,7 @@
       line-height: 2.1rem !important;
     }
   }
-  
+
 }
 
 @media screen and (max-width: 545px) {
@@ -505,8 +505,6 @@ li.module a {
   }
 }
 
-
-
 .clearfix {
   &:before, &:after {
     content: " ";
@@ -608,5 +606,14 @@ display: block;
   background-image: -moz-linear-gradient(#2387C7, #2692d7);
   background-image: -webkit-linear-gradient(#2387C7, #2692d7);
   background-image: linear-gradient(#2387C7, #2692d7);
+  }
+}
+
+.articles pre {
+  padding: 0;
+  border: 0;
+
+  code {
+    padding: 9.5px;
   }
 }
