@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
-  <title>Using WebSockets</title>
+  <title>WebSockets</title>
   <meta name="author" content="Nitrous.IO" />
   <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
   <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
@@ -108,7 +108,7 @@
   <li><i class="icon-play"></i><a href="/categories/previewing/">Preview</a></li>
     <ul>
       <li><a href="/preview">Previewing Your App</a>
-      <li><a href="/faq-websockets">Websockets</a>
+      <li><a href="/websockets">WebSockets</a>
       <li><a href="/faq-disconnect">Run App Continuously</a>
       <li><a href="/faq-localhost">Preview Issues</a>
     </ul>
@@ -129,14 +129,26 @@
     </div>
     <div class="articles post-content">
       <div class="page-title">
-        <h2> Using WebSockets </h2>
-        <h5 class="note">Last Updated on: 30 August 2013</h5>
+        <h2> WebSockets </h2>
+        <h5 class="note">Last Updated on: 03 November 2013</h5>
       </div>
-      <p>WebSockets are currently blocked on Nitrous boxes. If you are wanting to use websockets then you will want to SSH from your local machine and setup tunneling to whichever port you wish to use (we have ports 3000-9000 open).</p>
+      <h3 id='introduction'>Introduction</h3>
 
-<p>To setup ssh tunneling you will want to run the following command in your local terminal, replacing the necessary variables:</p>
+<p>WebSockets allow bi-directional communication over HTTP between the client and server. This allows you to create multiplayer games, chat rooms, and other collaborative apps.</p>
 
-<p>ssh -N -p <code>box_port</code> action@<code>box_host</code> -L <code>local_port</code>/localhost/<code>remote_port</code></p>
+<h3 id='implementation'>Implementation</h3>
+
+<p>The WebSockets functionality is supported by default on all Nitrous boxes. You do not need to make any special configurations when <a href='/preview/'>previewing</a> the app.</p>
+
+<h3 id='examples'>Examples</h3>
+
+<p>The following examples utilize minimal code to show you how to use WebSockets.</p>
+
+<ul>
+<li><a href='https://github.com/nitrous-examples/node-websockets'>Node.JS</a></li>
+
+<li><a href='https://github.com/nitrous-examples/ruby-websockets'>Ruby</a></li>
+</ul>
     </div>
 </div>
 <footer>
