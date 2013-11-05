@@ -4,7 +4,8 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
-  <title>Deploying Node.js App to Azure Sites</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Deploying a Node.js App to Azure Sites</title>
   <meta name="author" content="Nitrous.IO" />
   <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
   <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
@@ -108,7 +109,7 @@
   <li><i class="icon-play"></i><a href="/categories/previewing/">Preview</a></li>
     <ul>
       <li><a href="/preview">Previewing Your App</a>
-      <li><a href="/websockets">WebSockets</a>
+      <li><a href="/faq-websockets">Websockets</a>
       <li><a href="/faq-disconnect">Run App Continuously</a>
       <li><a href="/faq-localhost">Preview Issues</a>
     </ul>
@@ -129,7 +130,7 @@
     </div>
     <div class="articles post-content">
       <div class="page-title">
-        <h2> Deploying Node.js App to Azure Sites </h2>
+        <h2> Deploying a Node.js App to Azure Sites </h2>
         <h5 class="note">Last Updated on: 11 October 2013</h5>
       </div>
       <p>These instructions will help you deploy your <a href='http://nodejs.org/'>node.js</a> application to <a href='http://www.windowsazure.com/en-us/develop/nodejs/'>Azure</a>.</p>
@@ -143,7 +144,7 @@
 <h3 id='prerequisites'>Prerequisites</h3>
 
 <ul>
-<li>An <a href='https://www.nitrous.io'>Nitrous.IO Account</a></li>
+<li>A <a href='https://www.nitrous.io'>Nitrous.IO Account</a></li>
 
 <li>A <a href='http://www.windowsazure.com/en-us/pricing/free-trial/?ref=nitrous.io'>Windows Azure Subscription</a></li>
 
@@ -154,8 +155,8 @@
 
 <h3 id='example_nodejs_app'>Example Node.js App</h3>
 
-<pre><code>//Example Node.js App
-//Save this to server.js in your project directory.
+<pre><code>// Example Node.js App
+// Save this to server.js in your project directory.
 var http = require(&#39;http&#39;)
 var port = process.env.PORT || 3000;
 var host = process.env.HOST || &#39;0.0.0.0&#39;;
@@ -165,31 +166,31 @@ http.createServer(function(req, res) {
 }).listen(port, host);
 console.log(&quot;Server running at &quot;+host+&quot;:&quot;+port);</code></pre>
 
-<p>If you don&#8217;t have a project ready to go save the code above into your project directory into a file called <em>server.js</em></p>
+<p>If you don&#8217;t have a project ready to go, save the code above into your project directory into a file called <code>server.js</code>.</p>
 
-<p>If you&#8217;re not already using git, you need to configure git, setup a new repo and make an initial commit by running the follwing commands in your project directory:</p>
+<p>If you&#8217;re not already using git, you need to configure git, setup a new repo and make an initial commit by running the following commands in your project directory:</p>
 
-<pre><code>git config --global user.email “(your git email)”
-git config --global user.name “(your git username)”
+<pre><code>git config --global user.email &quot;your git email&quot;
+git config --global user.name &quot;your git username&quot;
 git init
-git add . 
+git add .
 git commit -am &quot;initial commit&quot;</code></pre>
 
 <h3 id='testing_your_nodejs_app'>Testing your Node.js App</h3>
 
 <p>You can test your app out locally by running the following command in the console, replacing &#8216;your_app/server.js&#8217; with your app:</p>
 
-<pre><code>node  your_app/server.js</code></pre>
+<pre><code>node your_app/server.js</code></pre>
 
 <p>The app is now running and you will be able to preview it by navigating in the toolbar to <strong>Preview &gt; Port 3000</strong>.</p>
 
 <h3 id='install_azure_command_line_interface_cli'>Install Azure Command Line Interface (CLI)</h3>
 
-<p>The <a href='http://www.windowsazure.com/en-us/manage/install-and-configure-cli/'>Azure CLI</a> allows you to maniupulate your Azure Sites right from Nitrous.io</p>
+<p>The <a href='http://www.windowsazure.com/en-us/manage/install-and-configure-cli/'>Azure CLI</a> allows you to manipulate your Azure Sites right from Nitrous.IO.</p>
 
-<p>Install it by running the following command in the Nitrous.io IDE console:</p>
+<p>Install it by running the following command in the Nitrous.IO IDE console:</p>
 
-<pre><code>npm -g install azure-cli </code></pre>
+<pre><code>npm -g install azure-cli</code></pre>
 
 <h3 id='connect_to_your_azure_subscription'>Connect to your Azure Subscription</h3>
 
@@ -201,7 +202,7 @@ git commit -am &quot;initial commit&quot;</code></pre>
 
 <p>Open a new browser window and go to the link that is returned by the previous command. After you login, a <code>.publishsettings</code> credentials file will be downloaded to your machine.</p>
 
-<p>Upload this file to you Nitrous IDE using the <a href='http://help.nitrous.io/ide-file-uploads/'>Upload Files button</a> and run the following command replacing <strong>pathto/mysubscription.pubishsettings</strong> with the appropriate path to the credentials file:</p>
+<p>Upload this file to you Nitrous.IO IDE using the <a href='http://help.nitrous.io/ide-file-uploads/'>Upload Files button</a> and run the following command replacing <code>pathto/mysubscription.pubishsettings</code> with the appropriate path to the credentials file:</p>
 
 <pre><code>azure account import pathto/mysubscription.pubishsettings</code></pre>
 
@@ -217,15 +218,15 @@ git commit -am &quot;initial commit&quot;</code></pre>
 
 <p><img alt='New Azure App' src='/images/articles/azure-new-app.png' /></p>
 
-<h3 id='deploying_from_nitrous'>Deploying From Nitrous</h3>
+<h3 id='deploying_from_nitrousio'>Deploying From Nitrous.IO</h3>
 
-<p>To deploy simply push your commited code to Azure Sites with the following command:</p>
+<p>To deploy simply push your committed code to Azure Sites with the following command:</p>
 
 <pre><code>git push azure master</code></pre>
 
 <p>You will now be prompted to enter in your Azure Account password.</p>
 
-<p>Once the upload has finished you should see the message &#8220;Deployment Successful&#8221;. Then browse directly to your live application at http://appname.azurewebsites.net.</p>
+<p>Once the upload has finished you should see the message &#8220;Deployment Successful&#8221;. You can now check out your live application at http://appname.azurewebsites.net!</p>
     </div>
 </div>
 <footer>

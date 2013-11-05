@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class="home index">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Start hacking on discourse in 60 seconds</title>
+  <meta name="author" content="Nitrous.IO" />
+  <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
+  <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
+  <meta content='Nitrous.IO' name='author'>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+  <link rel='stylesheet' href='/css/bootstrap3/css/bootstrap.css'>
+  <link rel='stylesheet' href='/css/font-awesome/css/font-awesome.css'>
+  <link href="/css/action.css" media="screen, projection" rel="stylesheet">
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+</head>
+<body>
+  <div class="navbar">
+    <div class="container">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Nitrous.IO <span>support</span></a>
+
+      <div class="nav-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav pull-right">
+          <div class="mobile-menu">
+            <li class="signup"><a href="/" class="btn btn-success">Help center</a></li>
+            <li class="signup"><a href="/getting-started/" class="btn btn-success">Getting Started</a>
+            <li class="signup"><a href="/categories/boxes/" class="btn btn-success">Boxes</a>
+            <li class="signup"><a href="/categories/usage/" class="btn btn-success">Usage</a>
+            <li class="signup"><a href="/categories/databases/" class="btn btn-success">Databases</a>
+            <li class="signup"><a href="/categories/previewing/" class="btn btn-success">Preview</a>
+            <li class="signup"><a href="/categories/deployment/" class="btn btn-success">Deploy</a>
+            <li class="signup"><a href="/categories/faq" class="btn btn-success">FAQ</a>
+            <li class="signup"><a href="mailto:help@nitrous.io" class="btn btn-success">Email us</a></li>
+          </div>
+
+          <li class="hidden-sm"><a href="/discussions">Discussions</a></li>
+          <li class="hidden-sm"><a href="https://www.nitrous.io/chat" target="_blank">Chat</a></li>
+          <li class="hidden-sm login"><a href="https://nitrous.io/users/sign_in">Log in</a></li>
+          <li class="hidden-sm nav-break">or</li>
+          <li class="signup"><a href="https://www.nitrous.io" class="btn btn-success">Sign up</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class='clearfix' id='promo-main'>
+  <div class="mast-container">
+    <div id="search">
+      <script>
+      (function() {
+        var cx = '009198278762462778395:pwuaikni4bs';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+      </script>
+      <gcse:search></gcse:search>
+    </div>
+  </div>
+</div>
+    <div class="sidebar">
+      <div class="box menu">
+        <ul class="nav nav-list">
+  <li><i class="icon-signin"></i><a href="/categories/getting-started/">Getting Started</a></li>
+    <ul>
+      <li><a href="/categories/ssh/">Adding SSH Keys</a>
+      <li><a href="/github-add-key/">Connecting to Github</a>
+      <li><a href="/ide-general/">Web IDE Overview</a>
+      <li><a href="/best-practices">Best Practices</a>
+    </ul>
+  <li><i class="icon-th-large"></i><a href="/categories/boxes/">Boxes</a></li>
+    <ul>
+      <li><a href="/box-new">Create a Box</a>
+      <li><a href="/box-settings/">Box Memory & Storage</a>
+      <li><a href="/box-templates/">Box Templates</a>
+      <li><a href="/box-interpreters-and-tools/">Included Tools</a>
+      <li><a href="/upgrade-box">Update Box</a>
+    </ul>
+  <li><i class="icon-laptop"></i><a href="/categories/usage/">Usage</a></li>
+    <ul>
+      <li><a href="/autoparts/">Package Manager</a>
+      <li><a href="/mac-preferences/">Mac Preferences</a>
+      <li><a href="/ide-shortcuts/">Keyboard Shortcuts</a>
+      <li><a href="/new-file/">Create New File</a>
+      <li><a href="/ide-file-uploads/">Uploading via Web IDE</a>
+      <li><a href="/collab">Collaboration</a>
+    </ul>
+  <li><i class="icon-tasks"></i><a href="/categories/databases/">Databases</a></li>
+    <ul>
+      <li><a href="/memcached/">Memcached</a>
+      <li><a href="/mongodb/">MongoDB</a>
+      <li><a href="/mysql/">MySQL</a>
+      <li><a href="/postgresql/">PostgreSQL</a>
+      <li><a href="/redis/">Redis</a>
+    </ul>
+  <li><i class="icon-play"></i><a href="/categories/previewing/">Preview</a></li>
+    <ul>
+      <li><a href="/preview">Previewing Your App</a>
+      <li><a href="/faq-websockets">Websockets</a>
+      <li><a href="/faq-disconnect">Run App Continuously</a>
+      <li><a href="/faq-localhost">Preview Issues</a>
+    </ul>
+  <li><i class="icon-share-alt"></i><a href="/categories/deployment/">Deploy</a></li>
+    <ul>
+      <li><a href="/heroku/">Heroku</a>
+      <li><a href="/app-engine">App Engine</a>
+      <li><a href="/azure-sites">Azure Sites</a>
+      <li><a href="/nodejitsu">Nodejitsu</a>
+    </ul>
+  <li><i class="icon-book"></i><a href="#">Additional Resources</a></li>
+    <ul>
+      <li><a href="/categories/faq">FAQ</a>
+      <li><a href="/categories/privacy-and-terms/">Privacy & Terms</a>    
+    </ul>
+</ul>
+      </div>
+    </div>
+    <div class="articles post-content">
+      <div class="page-title">
+        <h2> Start hacking on discourse in 60 seconds </h2>
+        <h5 class="note">Last Updated on: 23 October 2013</h5>
+      </div>
+      <p><a href='https://www.discourse.org'>Discourse</a> is a powerful, open source forum application built on top of <a href='https://www.rubyonrails.org'>ruby on rails</a> &amp; <a href='https://www.emberjs.com'>ember.js</a>.</p>
+
+<p>After playing around with <a href='https://discussion.heroku.com/'>some sites</a> <a href='http://discuss.howtogeek.com/'>already running</a> the <a href='http://bbs.boingboing.net/'>software</a>, I decided to migrate a forum that I host to Discourse.</p>
+
+<h2 id='setting_up_the_development_environment'>Setting up the Development Environment</h2>
+
+<p>Discourse is a robust application with a lot of moving parts. Vagrant seems like overkill as I don&#8217;t want to have to install VirtualBox and Vagrant on my machine. Vagrant is a great tool, but the separate images take up too much space on my SSD and running vagrant takes too long.</p>
+
+<h3 id='1_create_a_new_box'>1. Create a new box</h3>
+
+<p>Discourse runs multiple services and consumes a fair bit of RAM and storage. I&#8217;m going to boot up a box on <a href='https://www.nitrous.io'>Nitrous.IO</a> with 768MB of RAM and 1.5GB of storage to get me started. Discourse recommends <a href='https://github.com/ajhit406/discourse/blob/master/docs/INSTALL-ubuntu.md'>2 GB of RAM</a> but I&#8217;ll try this out for development. I can always allocate additional resources later.</p>
+
+<p><img alt='New Box' src='/images/articles/discourse/new-box.png' /></p>
+
+<h3 id='2_fork_discourse'>2. Fork Discourse</h3>
+
+<p>If you want to do any customizing of discourse (why wouldn&#8217;t you?), you&#8217;ll want to fork the discourse repo.</p>
+
+<p><a href='https://github.com/discourse/discourse/fork'>Click here to Fork Discourse</a></p>
+
+<p>Once you&#8217;ve forked the repo, you can jump into the Nitrous.IO IDE and clone it to your box.</p>
+
+<p><img alt='Clone Discourse' src='/images/articles/discourse/cloned.png' /></p>
+
+<h3 id='3_install_dependencies'>3. Install Dependencies</h3>
+
+<p>Next we&#8217;ll use the Nitrous.IO <a href='http://blog.nitrous.io/2013/09/18/introducing-autoparts-for-nitrous-io.html'>Autoparts</a> package manager to install redis &amp; postgres. This is as easy as running:</p>
+
+<pre><code>parts install redis
+parts start redis
+
+parts install postgresql
+parts start postgresql</code></pre>
+
+<h3 id='4_configure_rails_app'>4. Configure Rails App</h3>
+
+<p>First, we&#8217;ll need to move into the <code>discourse</code> folder and run bundle install:</p>
+
+<pre><code>cd workspace/discourse
+bundle install </code></pre>
+
+<p>This is probably going to be the most time consuming task of the entire post since discourse uses about 10,000 gems. Of course, we&#8217;re not complaining…</p>
+
+<pre><code>cp config/database.yml.development-sample config/database.yml
+cp config/redis.yml.sample config/redis.yml</code></pre>
+
+<h3 id='5_configure_postgres_and_install_seed_data'>5. Configure Postgres and Install Seed Data</h3>
+
+<p>Next, we&#8217;ll create the development and test databases. We&#8217;re going to just keep the legacy <code>vagrant</code> user, even though we&#8217;re not using vagrant. You can just copy and paste the following commands one-by-one into the terminal on your Nitrous.IO box:</p>
+
+<pre><code>createuser --createdb --superuser -Uaction vagrant
+psql -c &quot;ALTER USER vagrant WITH PASSWORD &#39;password&#39;;&quot;
+psql -c &quot;create database discourse_development owner vagrant encoding &#39;UTF8&#39; TEMPLATE template0;&quot;
+psql -c &quot;create database discourse_test        owner vagrant encoding &#39;UTF8&#39; TEMPLATE template0;&quot;
+psql -d discourse_development -c &quot;CREATE EXTENSION hstore;&quot;
+psql -d discourse_development -c &quot;CREATE EXTENSION pg_trgm;&quot;</code></pre>
+
+<p>When you&#8217;re done, load the seed data:</p>
+
+<pre><code>psql -d discourse_development &lt; pg_dumps/development-image.sql</code></pre>
+
+<p>Finally, we&#8217;ll want to load the database migration in rails:</p>
+
+<pre><code>bundle exec rake db:migrate db:test:prepare db:seed_fu</code></pre>
+
+<h3 id='6_starting_up_discourse'>6. Starting up Discourse</h3>
+
+<p>Now we&#8217;ve got our app cloned, gems installed, database created and seed data imported, we&#8217;re ready to run the app and check out the preview. In the app&#8217;s root directory, run:</p>
+
+<pre><code>rails s</code></pre>
+
+<p>Then, in the preview menu at the top of the web IDE, click <code>preview &gt; Port 3000</code></p>
+
+<p><img alt='Preview Menu' src='/images/articles/discourse/preview-menu.png' /></p>
+
+<p>And you&#8217;ll see that we&#8217;re up and running! w00t!</p>
+
+<p><img alt='Discourse Home' src='/images/articles/discourse/main.png' /></p>
+
+<p>(Note that the first time the app loads, it might take anywhere from 10-20 seconds. This is because discourse has a large amount of client-side code that needs to be downloaded before the app can run)</p>
+
+<h3 id='7_customizing_discourse'>7. Customizing Discourse</h3>
+
+<p>This is a fully functional development environment, and you have your own fork of discourse running so you can customize it as you please, then merge upstream changes as the discourse team continues to improve the system.</p>
+
+<p>Let&#8217;s go ahead and kill those rounded corners on the tables, they&#8217;re so not web flat.0:</p>
+
+<p>Change line 43 of <code>app/assets/stylesheets/desktop/topic-list.scss</code>:</p>
+
+<pre><code>	@include border-radius-all(0 0 0 0);</code></pre>
+
+<p>Line 85:</p>
+
+<pre><code>	@include border-radius-all(0 0 0 0);</code></pre>
+
+<p>Line 88:</p>
+
+<pre><code>	@include border-radius-all(0 0 0 0);</code></pre>
+
+<p>And we have square corners on all the topic lists. Very web 3.0, if I don&#8217;t say so myself&#8230;</p>
+
+<p><img alt='Sharp edges' src='/images/articles/discourse/new-icon.png' /></p>
+
+<p>That was easy. Stay tuned to <a href='https://www.twitter.com/nitrousio'>@nitrousio</a>, we&#8217;ve got an even easier way to install discourse that is going to blow your mind.</p>
+    </div>
+</div>
+<footer>
+  <script src='/javascripts/jquery/jquery-1.10.2.js'></script>
+  <script src='/css/bootstrap3/js/bootstrap.js'></script>
+</footer>
+</body>
+</html>

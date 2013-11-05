@@ -4,6 +4,7 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>Previewing Your Application</title>
   <meta name="author" content="Nitrous.IO" />
   <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
@@ -108,7 +109,7 @@
   <li><i class="icon-play"></i><a href="/categories/previewing/">Preview</a></li>
     <ul>
       <li><a href="/preview">Previewing Your App</a>
-      <li><a href="/websockets">WebSockets</a>
+      <li><a href="/faq-websockets">Websockets</a>
       <li><a href="/faq-disconnect">Run App Continuously</a>
       <li><a href="/faq-localhost">Preview Issues</a>
     </ul>
@@ -132,7 +133,7 @@
         <h2> Previewing Your Application </h2>
         <h5 class="note">Last Updated on: 27 September 2013</h5>
       </div>
-      <p>Nitrous.IO provides a range of ports (3000 - 9999) for you to run services on your development box.</p>
+      <p>Nitrous.IO provides a range of ports (1024 - 9999) for you to run services on your development box.</p>
 
 <p>Previewing your application simply involves taking an automatically generated preview url, pasting it into your browser, and appending the appropriate port where your service is running.</p>
 
@@ -151,6 +152,10 @@
 <p><img alt='Preview Menu' src='https://raw.github.com/action-io/action-assets/master/support/screenshots/preview-menu.png' /></p>
 
 <p>You can easily edit the urls from any of those links to preview other services you&#8217;re running by substituting your desired port.</p>
+
+<blockquote>
+<p>Note: Port 3000 is automatically forwarded to port 80. This means if your app is running on port 3000 then you will not need to include a port in the address bar.</p>
+</blockquote>
 
 <h3 id='from_the_boxes_dashboard'>From the Boxes Dashboard</h3>
 
