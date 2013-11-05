@@ -8,13 +8,13 @@ Nitrous Support Site at http://help.nitrous.io/ built with [Jekyll](http://jekyl
 + Clone the master branch of the repo, and from there run bundler.
 
 ```
-$ git clone REPO_ADDRESS
+$ git clone git@github.com:action-io/help.nitrous.io.git
 $ bundle
 ```
 
-+ Create or edit a post within the _posts folder. If you add a Category tag then the document you create will display within the help site's main page under that category.
++ Create or edit a post within the `_posts` folder. If you add a Category tag then the document you create will display within the help site's main page under that category.
 
-> Note: You can preview your site by running 'jekyll serve'. You could also use 'jekyll serve --watch' if you are still editing and want to see the changes by refreshing the page.
++ Preview your site by running `jekyll serve`. You could also use `jekyll serve --watch` if you are still editing and want to see the changes by refreshing the page.
 
 + Once finished, push your changes back to the master branch
 
@@ -24,7 +24,7 @@ $ git commit -m "blah"
 $ git push origin master
 ```
 
-+ From there you will simply need to run Rake in order to publish the static site to the gh-pages branch. There is no need for you to switch to this branch on your own.
++ Run Rake in order to publish the static site to the `gh-pages` branch. There is no need for you to switch to this branch on your own.
 
 ```
 $ rake

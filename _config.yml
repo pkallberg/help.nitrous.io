@@ -3,7 +3,7 @@ pygments: true
 permalink: /:title
 #category_links: change the category directory
 category_title_prefix: ''
-exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', 'vendor']
 sass:
     syntax: scss        # scss|sass
     style:  compressed  # nested|expanded|compact|compressed

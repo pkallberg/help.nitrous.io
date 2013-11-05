@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
   font-family: 'EurostileLTPro-BoldEx2';
   src: url('/webfonts/2650DC_0_0.eot');src: url('/webfonts/2650DC_0_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/2650DC_0_0.woff') format('woff'),url('/webfonts/2650DC_0_0.ttf') format('truetype');
 }
@@ -15,16 +15,55 @@
   }
   .container {
     .articles {
-      max-width: 91%;
-      width: 91%;
+      max-width: 100%;
+      width: 100%;
+      margin: 0px auto;
+      padding: 0px;
     }
   }
+  .navbar-brand {
+    text-align: left;
+    margin-left: -30px;
+  }
+  .navbar-toggle {
+    margin: 15px -14px;
+  }
+  #search {
+    width: 100%;
+    margin: -17px auto -15px;
+  }
+  .topic {
+    text-align: center;
+    line-height: 30px;
+    margin: -6px auto 0px;
+    width: 100%;
+    font-size: 17px;
+  }
+  .btn-success {
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    font-size: 15px;
+    padding: 6px 6px;
+  }
+  .resources li {
+    width: 100% !important;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+  .menu-item li{
+    a {
+      padding: 7px 10px !important;
+      line-height: 2.1rem !important;
+    }
+  }
+  
 }
+
 @media screen and (max-width: 545px) {
   .resources {
     li{
-      font-size: 12px !important;
-      width: 100px !important;
+      font-size: 12px;
+      width: 100px;
     }
   }
 }
@@ -98,6 +137,7 @@ img {
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
 }
+
 
 .navbar-brand span {
 color: #9CB6EB;
@@ -288,6 +328,10 @@ color: #333333;
   }
   width: 90%;
   margin: auto auto;
+}
+
+#gsc-i-id1 {
+    margin: -2px auto !important;
 }
 
 .show-grid [class*="span"] {
