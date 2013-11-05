@@ -36,6 +36,7 @@ In `config/database.yml`:
       encoding: unicode
       database: appname-dev
       pool: 5
+      host: localhost
       username: action
       password:
 
@@ -43,6 +44,7 @@ In `config/database.yml`:
       adapter: postgresql
       database: appname-test
       pool: 5
+      host: localhost
       username: action
       password:
 
