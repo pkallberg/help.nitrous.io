@@ -5,7 +5,7 @@
 <head>
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>tutorials</title>
+  <title>Basic Access Authentication</title>
   <meta name="author" content="Nitrous.IO" />
   <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
   <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
@@ -71,8 +71,8 @@
     </div>
   </div>
 </div>
-    <div class="sidebar menu">
-      <div class="box">
+    <div class="sidebar">
+      <div class="box menu">
         <ul class="nav nav-list">
   <li><i class="icon-signin"></i><a href="/categories/getting-started/">Getting Started</a></li>
     <ul>
@@ -129,23 +129,60 @@
 
       </div>
     </div>
-    <div class='articles'>
-      <div class="page-title">  
-        <h3> Tutorials </h3>
+    <div class="articles post-content">
+      <div class="page-title">
+        <h2> Basic Access Authentication </h2>
+        <h5 class="note">Last Updated on: 05 November 2013</h5>
       </div>
-      <div class="category-index">
-	<ul class="posts menu-item">
-	
-  	<li><h4><a href="/rails-app">Building a Rails 4.0 App</a></h4></li>
-	
-  	<li><h4><a href="/basic-auth">Basic Access Authentication</a></h4></li>
-	
-  	<li><h4><a href="/websockets">WebSockets</a></h4></li>
-	
-	</ul>
-</div>
+      <h3 id='introduction'>Introduction</h3>
+
+<p>Basic access authentication (Basic Auth) is supported on all Nitrous boxes by default. Basic Auth is a simple technique which uses static, standard HTTP headers in order to enforce access controls. This will allow you to prompt users for a username and password when making a request.</p>
+
+<h3 id='implementation'>Implementation</h3>
+
+<p>Basic Auth is supported by default on all Nitrous boxes. You do not need to make any special configurations when <a href='/preview/'>previewing</a> the app.</p>
+
+<h3 id='rails_example'>Rails Example</h3>
+
+<p>Within your Rails 4 app you can add authentication by including the following code in your controller:</p>
+
+<pre><code>class PostsController &lt; ApplicationController
+   http_basic_authenticate_with name: &quot;foo&quot;, password: &quot;bar&quot;, except: :index
+
+   def index
+     render text: &quot;This text can be seen by everyone.&quot;
+   end
+
+   def edit
+     render text: &quot;You can only view this if you know the username and password.&quot;
+   end
+end</code></pre>
+
+<p>More documentation can be found at <a href='http://api.rubyonrails.org/classes/ActionController/HttpAuthentication/Basic.html'>http://api.rubyonrails.org/classes/ActionController/HttpAuthentication/Basic.html</a></p>
+
+<h3 id='django_example'>Django Example</h3>
+
+<p>Django bundles authentication within djange.contrib.auth.</p>
+
+<ol>
+<li>
+<p>Place <code>django.contrib.auth</code> and <code>django.contrib.contenttypes</code> within your INSTALLED_APPS setting.</p>
+</li>
+
+<li>
+<p>Run the following command within the console to create the necessary database tables:</p>
+
+<p>manage.py syncdb.</p>
+</li>
+</ol>
+
+<blockquote>
+<p>The default settings.py file may already include &#8216;django.contrib.auth&#8217; and &#8216;django.contrib.contenttypes&#8217; in INSTALLED_APPS already. If your app already has this installed then running <code>manage.py syncdb</code> may not be necessary, although it won&#8217;t hurt to run the command again.</p>
+</blockquote>
+
+<p>More documentation can be found at <a href='https://docs.djangoproject.com/en/1.1/topics/auth/'>https://docs.djangoproject.com/en/1.1/topics/auth/</a></p>
     </div>
-  </div>
+</div>
 <footer>
   <script src='/javascripts/jquery/jquery-1.10.2.js'></script>
   <script src='/css/bootstrap3/js/bootstrap.js'></script>

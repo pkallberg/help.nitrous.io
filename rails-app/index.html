@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html class="home index">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Building a Rails 4.0 App</title>
+  <meta name="author" content="Nitrous.IO" />
+  <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
+  <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
+  <meta content='Nitrous.IO' name='author'>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+  <link rel='stylesheet' href='/css/bootstrap3/css/bootstrap.css'>
+  <link rel='stylesheet' href='/css/font-awesome/css/font-awesome.css'>
+  <link href="/css/action.css" media="screen, projection" rel="stylesheet">
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+</head>
+<body>
+  <div class="navbar">
+    <div class="container">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Nitrous.IO <span>support</span></a>
+
+      <div class="nav-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav pull-right">
+          <div class="mobile-menu">
+            <li class="signup"><a href="/" class="btn btn-success">Help center</a></li>
+            <li class="signup"><a href="/getting-started/" class="btn btn-success">Getting Started</a>
+            <li class="signup"><a href="/categories/boxes/" class="btn btn-success">Boxes</a>
+            <li class="signup"><a href="/categories/usage/" class="btn btn-success">Usage</a>
+            <li class="signup"><a href="/categories/databases/" class="btn btn-success">Databases</a>
+            <li class="signup"><a href="/categories/previewing/" class="btn btn-success">Preview</a>
+            <li class="signup"><a href="/categories/deployment/" class="btn btn-success">Deploy</a>
+            <li class="signup"><a href="/categories/faq" class="btn btn-success">FAQ</a>
+            <li class="signup"><a href="mailto:help@nitrous.io" class="btn btn-success">Email us</a></li>
+          </div>
+
+          <li class="hidden-sm"><a href="/discussions">Discussions</a></li>
+          <li class="hidden-sm"><a href="https://www.nitrous.io/chat" target="_blank">Chat</a></li>
+          <li class="hidden-sm login"><a href="https://nitrous.io/users/sign_in">Log in</a></li>
+          <li class="hidden-sm nav-break">or</li>
+          <li class="signup"><a href="https://www.nitrous.io" class="btn btn-success">Sign up</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class='clearfix' id='promo-main'>
+  <div class="mast-container">
+    <div id="search">
+      <script>
+      (function() {
+        var cx = '009198278762462778395:pwuaikni4bs';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+      </script>
+      <gcse:search></gcse:search>
+    </div>
+  </div>
+</div>
+    <div class="sidebar">
+      <div class="box menu">
+        <ul class="nav nav-list">
+  <li><i class="icon-signin"></i><a href="/categories/getting-started/">Getting Started</a></li>
+    <ul>
+      <li><a href="/categories/ssh/">Adding SSH Keys</a>
+      <li><a href="/github-add-key/">Connecting to Github</a>
+      <li><a href="/ide-general/">Web IDE Overview</a>
+      <li><a href="/best-practices">Best Practices</a>
+    </ul>
+  <li><i class="icon-th-large"></i><a href="/categories/boxes/">Boxes</a></li>
+    <ul>
+      <li><a href="/box-new">Create a Box</a>
+      <li><a href="/box-settings/">Box Memory & Storage</a>
+      <li><a href="/box-templates/">Box Templates</a>
+      <li><a href="/box-interpreters-and-tools/">Included Tools</a>
+      <li><a href="/upgrade-box">Update Box</a>
+    </ul>
+  <li><i class="icon-laptop"></i><a href="/categories/usage/">Usage</a></li>
+    <ul>
+      <li><a href="/autoparts/">Package Manager</a>
+      <li><a href="/mac-preferences/">Mac Preferences</a>
+      <li><a href="/ide-shortcuts/">Keyboard Shortcuts</a>
+      <li><a href="/new-file/">Create New File</a>
+      <li><a href="/ide-file-uploads/">Uploading via Web IDE</a>
+      <li><a href="/collab">Collaboration</a>
+    </ul>
+  <li><i class="icon-tasks"></i><a href="/categories/databases/">Databases</a></li>
+    <ul>
+      <li><a href="/memcached/">Memcached</a>
+      <li><a href="/mongodb/">MongoDB</a>
+      <li><a href="/mysql/">MySQL</a>
+      <li><a href="/postgresql/">PostgreSQL</a>
+      <li><a href="/redis/">Redis</a>
+    </ul>
+  <li><i class="icon-play"></i><a href="/categories/previewing/">Preview</a></li>
+    <ul>
+      <li><a href="/preview">Previewing Your App</a>
+      <li><a href="/websockets">WebSockets</a>
+      <li><a href="/faq-disconnect">Run App Continuously</a>
+      <li><a href="/faq-localhost">Preview Issues</a>
+    </ul>
+  <li><i class="icon-share-alt"></i><a href="/categories/deployment/">Deploy</a></li>
+    <ul>
+      <li><a href="/heroku/">Heroku</a>
+      <li><a href="/app-engine">App Engine</a>
+      <li><a href="/azure-sites">Azure Sites</a>
+      <li><a href="/nodejitsu">Nodejitsu</a>
+    </ul>
+  <li><i class="icon-book"></i><a href="#">Additional Resources</a></li>
+    <ul>
+      <li><a href="/categories/faq">FAQ</a>
+      <li><a href="/categories/privacy-and-terms/">Privacy & Terms</a>
+    </ul>
+</ul>
+
+      </div>
+    </div>
+    <div class="articles post-content">
+      <div class="page-title">
+        <h2> Building a Rails 4.0 App </h2>
+        <h5 class="note">Last Updated on: 05 November 2013</h5>
+      </div>
+      <p>This article covers building a Rails application on <a href='http://nitrous.io'>Nitrous.IO</a>, while using some of features introduced with Rails 4.0.</p>
+
+<h3 id='prerequisites'>Prerequisites</h3>
+
+<ul>
+<li>A <a href='https://nitrous.io'>Nitrous.IO account</a></li>
+
+<li>A <a href='http://help.action.io/customer/portal/articles/802603-create-a-box'>Box</a> on Nitrous.IO. The Ruby box template will include ruby 2.0 and Rails 4.</li>
+</ul>
+
+<h3 id='creating_an_application_on_your_nitrousio_box'>Creating an application on your Nitrous.IO box</h3>
+
+<p>First we&#8217;ll create a simple blog application. This creates an app that connects to SQLite. If you&#8217;d like to use <a href='http://help.nitrous.io/postgres'>PostgreSQL</a> instead, append &#8216;-d postgresql&#8217; to the following command.</p>
+
+<pre><code>$ rails new blog</code></pre>
+<!--break-->
+<p>Now, let&#8217;s switch to the blog directory to continue working on the app:</p>
+
+<pre><code>$ cd blog</code></pre>
+
+<h3 id='create_a_development_database'>Create a Development Database</h3>
+
+<p>Nitrous offers a package manager, <a href='/autoparts'>Autoparts</a>, which will allow you to install <a href='http://help.nitrous.io/postgresql/'>PostgreSQL</a> directly on your Nitrous box.</p>
+
+<p>Run the following command to install PostgreSQL:</p>
+
+<pre><code>parts install postgresql</code></pre>
+
+<p>Read the &#8220;Connecting Via Rails&#8221; section within the <a href='http://help.nitrous.io/postgresql/'>PostgreSQL documentation</a> for information on configuring the database.</p>
+
+<h3 id='create_controllers_and_routes'>Create Controllers and Routes</h3>
+
+<p>Ok now that we have our database setup and configured the connection settings in config/database.yml, we can test out the app to ensure it is running. You can run a rails server with the following command:</p>
+
+<pre><code>$ rails server</code></pre>
+
+<p>Once the app is running, you can view it by navigating to Preview &gt; Port 3000 in the Nitrous.IO IDE. Ctrl + C will stop your server if pressed in the terminal.</p>
+
+<p>Now we&#8217;re ready to create a controller:</p>
+
+<pre><code>$ rails generate controller welcome index</code></pre>
+
+<p>This will create the welcome controller with an index action defined. Next lets edit app/views/welcome/index.html.erb, and delete all of the code and replace it with the following:</p>
+
+<pre><code>&lt;h1&gt;Hello, Rails!&lt;/h1&gt;
+&lt;%= link_to &quot;My Blog&quot;, controller: &quot;posts&quot; %&gt;</code></pre>
+
+<p>Let&#8217;s setup the route to the homepage, and add the posts resource. Open the file config/routes.rb and replace the text with the following:</p>
+
+<pre><code>Blog::Application.routes.draw do
+  resources :posts
+  root &quot;welcome#index&quot;
+end</code></pre>
+
+<p>At this point, we can test the index page by running &#8216;rails server&#8217; in your console, and in your IDE menu bar navigating to Preview &gt; Port 3000. The &#8220;My Blog&#8221; link isn&#8217;t configured at this point, but we will set this up in the following steps.</p>
+
+<p>Next, create a controller called PostsController with the following command:</p>
+
+<pre><code>$ rails g controller posts</code></pre>
+
+<p>This builds a post controller, but we will need to include a template for our app. Right click the app/views/posts folder in the directory tree and create the file app/views/posts/new.html.erb and insert the following:</p>
+
+<pre><code>&lt;%= form_for :post, url: posts_path do |f| %&gt;
+    &lt;p&gt;
+      &lt;%= f.label :title %&gt;&lt;br&gt;
+      &lt;%= f.text_field :title %&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      &lt;%= f.label :text %&gt;&lt;br&gt;
+      &lt;%= f.text_area :text %&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      &lt;%= f.submit %&gt;
+      &lt;/p&gt;
+&lt;% end %&gt;
+&lt;%= link_to &#39;Back&#39;, posts_path %&gt;</code></pre>
+
+<h3 id='creating_the_post_model_with_strong_parameters'>Creating the Post Model with Strong Parameters</h3>
+
+<p>To create a new post model, run this command in your terminal:</p>
+
+<pre><code>$ rails generate model Post title:string text:text</code></pre>
+
+<p>This will setup a migration file which you can now run the rake command to initiate:</p>
+
+<pre><code>$ rake db:migrate</code></pre>
+
+<p>If you&#8217;re using SQLite, you shouldn&#8217;t have any issues with this command. If you have any issues with Postgres, make sure that you&#8217;ve setup your Heroku Postgres instance and have <a href='http://help.nitrous.io/postgres/'>your environment variables setup correctly</a>.</p>
+
+<p>Now lets check out the new <a href='http://weblog.rubyonrails.org/2012/3/21/strong-parameters/'>Strong Parameters</a> feature of Rails 4 by including a private method in the posts controller. This will prevent an attacker from setting the model&#8217;s attributes by manipulating the hash passed to the model.</p>
+
+<p>Edit the file app/controllers/posts_controller.rb to contain the following code:</p>
+
+<pre><code>class PostsController &lt; ApplicationController
+  def new
+  end
+
+  def show
+    @post = Post.find(params[:id])
+  end
+
+  def index
+    @posts = Post.all
+  end
+
+  def create
+    @post = Post.new(post_params)
+
+    @post.save
+    redirect_to @post
+  end
+
+  private
+  def post_params
+    params.require(:post).permit(:title, :text)
+  end
+end</code></pre>
+
+<p>Notice how the Strong Parameters feature includes permit in the post_params method. This allows the app to accept both title and text when making a post.</p>
+
+<p>Now create the file app/views/posts/show.html.erb with the following code. Again you&#8217;ll need to right-click the app/views/posts folder and select &#8220;New File&#8221; from the menu.</p>
+
+<pre><code>&lt;p&gt;
+  &lt;strong&gt;Title:&lt;/strong&gt;
+  &lt;%= @post.title %&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;strong&gt;Text:&lt;/strong&gt;
+  &lt;%= @post.text %&gt;
+&lt;/p&gt;
+&lt;%= link_to &#39;Back&#39;, posts_path %&gt;</code></pre>
+
+<p>Lets also create a view so we can view all of the posts. Create the file app/views/posts/index.html.erb with the following text:</p>
+
+<pre><code>&lt;h1&gt;Listing posts&lt;/h1&gt;
+
+&lt;%= link_to &#39;New post&#39;, new_post_path %&gt;
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Title&lt;/th&gt;
+    &lt;th&gt;Text&lt;/th&gt;
+  &lt;/tr&gt;
+
+  &lt;% @posts.each do |post| %&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;%= post.title %&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;%= post.text %&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;% end %&gt;
+&lt;/table&gt;</code></pre>
+
+<p>You should now be able to create a new post. In the console, make sure you still have a server running in your project folder and go back to your preview tab in the browser. Now when you click on the &#8216;My Blog&#8217; link, you should be taken to a Listing posts page which looks like the following:</p>
+
+<p><img alt='rails app new post' src='/images/articles/rails-app-new-post.png' /></p>
+
+<h3 id='using_turbolinks_in_your_app'>Using Turbolinks in Your App</h3>
+
+<p>Turbolinks is a somewhat controversial feature added in Rails 4 designed to make app navigation faster in the browser. Turbolinks keeps an instance of the currently loaded page up and running, and only replaces the page body and title in the head without reloading all the site&#8217;s assets.</p>
+
+<p>The feauture is enabled by default in Rails 4, which you can verify by ensuring the following line is included in your Gemfile:</p>
+
+<pre><code>gem &#39;turbolinks&#39;</code></pre>
+
+<p>You will also want to ensure /app/assets/javascripts/application.js contains the following line:</p>
+
+<pre><code>//= require turbolinks</code></pre>
+
+<p>The Turbolinks feature only runs on the latest browsers, so if you are using an older browser than this feature will be automatically disabled. In this example we are going to be using <a href='https://developers.google.com/chrome-developer-tools/'>Chrome Developer Tools</a> to evaluate network performance.</p>
+
+<p>Make sure your app is running in the console (or type &#8216;rails server&#8217;), and then preview the app by navigating in the <a href='https://www.nitrous.io'>Nitrous.IO</a> IDE to Preview &gt; Port 3000. From this page click the &#8220;My App&#8221; link to navigate to the posts controller. Notice in the screenshot how the pages are handled by the initiator turbolinks.js.</p>
+
+<p><img alt='turbolinks example' src='/images/articles/turbolinks.png' /></p>
+
+<p>Since our application is incredibly basic, we&#8217;re not going to see the benefits of Turbolinks. However, if you have lots of images, javascript and large stylesheets, you can see upwards of a <a href='https://github.com/steveklabnik/turbolinks_test/tree/all_the_assets'>2x speed increase</a> from using Turbolinks.</p>
+    </div>
+</div>
+<footer>
+  <script src='/javascripts/jquery/jquery-1.10.2.js'></script>
+  <script src='/css/bootstrap3/js/bootstrap.js'></script>
+</footer>
+</body>
+</html>
