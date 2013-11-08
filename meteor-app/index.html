@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html class="home index">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Building a Meteor App</title>
+  <meta name="author" content="Nitrous.IO" />
+  <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
+  <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
+  <meta content='Nitrous.IO' name='author'>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+  <link rel='stylesheet' href='/css/bootstrap3/css/bootstrap.css'>
+  <link rel='stylesheet' href='/css/font-awesome/css/font-awesome.css'>
+  <link href="/css/action.css" media="screen, projection" rel="stylesheet">
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+</head>
+<body>
+  <div class="navbar">
+    <div class="container">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Nitrous.IO <span>support</span></a>
+
+      <div class="nav-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav pull-right">
+          <div class="mobile-menu">
+            <li class="signup"><a href="/" class="btn btn-success">Help center</a></li>
+            <li class="signup"><a href="/getting-started/" class="btn btn-success">Getting Started</a>
+            <li class="signup"><a href="/categories/boxes/" class="btn btn-success">Boxes</a>
+            <li class="signup"><a href="/categories/usage/" class="btn btn-success">Usage</a>
+            <li class="signup"><a href="/categories/databases/" class="btn btn-success">Databases</a>
+            <li class="signup"><a href="/categories/previewing/" class="btn btn-success">Preview</a>
+            <li class="signup"><a href="/categories/deployment/" class="btn btn-success">Deploy</a>
+            <li class="signup"><a href="/categories/faq" class="btn btn-success">FAQ</a>
+            <li class="signup"><a href="mailto:help@nitrous.io" class="btn btn-success">Email us</a></li>
+          </div>
+
+          <li class="hidden-sm"><a href="/discussions">Discussions</a></li>
+          <li class="hidden-sm"><a href="https://www.nitrous.io/chat" target="_blank">Chat</a></li>
+          <li class="hidden-sm login"><a href="https://nitrous.io/users/sign_in">Log in</a></li>
+          <li class="hidden-sm nav-break">or</li>
+          <li class="signup"><a href="https://www.nitrous.io" class="btn btn-success">Sign up</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class='clearfix' id='promo-main'>
+  <div class="mast-container">
+    <div id="search">
+      <script>
+      (function() {
+        var cx = '009198278762462778395:pwuaikni4bs';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+      </script>
+      <gcse:search></gcse:search>
+    </div>
+  </div>
+</div>
+    <div class="sidebar">
+      <div class="box menu">
+        <ul class="nav nav-list">
+  <li><i class="icon-signin"></i><a href="/categories/getting-started/">Getting Started</a></li>
+    <ul>
+      <li><a href="/categories/ssh/">Adding SSH Keys</a>
+      <li><a href="/github-add-key/">Connecting to Github</a>
+      <li><a href="/ide-general/">Web IDE Overview</a>
+      <li><a href="/best-practices">Best Practices</a>
+    </ul>
+  <li><i class="icon-th-large"></i><a href="/categories/boxes/">Boxes</a></li>
+    <ul>
+      <li><a href="/box-new">Create a Box</a>
+      <li><a href="/box-settings/">Box Memory & Storage</a>
+      <li><a href="/box-templates/">Box Templates</a>
+      <li><a href="/box-interpreters-and-tools/">Included Tools</a>
+      <li><a href="/upgrade-box">Update Box</a>
+    </ul>
+  <li><i class="icon-laptop"></i><a href="/categories/usage/">Usage</a></li>
+    <ul>
+      <li><a href="/autoparts/">Package Manager</a>
+      <li><a href="/mac-preferences/">Mac Preferences</a>
+      <li><a href="/ide-shortcuts/">Keyboard Shortcuts</a>
+      <li><a href="/new-file/">Create New File</a>
+      <li><a href="/ide-file-uploads/">Uploading via Web IDE</a>
+      <li><a href="/collab">Collaboration</a>
+    </ul>
+  <li><i class="icon-tasks"></i><a href="/categories/databases/">Databases</a></li>
+    <ul>
+      <li><a href="/memcached/">Memcached</a>
+      <li><a href="/mongodb/">MongoDB</a>
+      <li><a href="/mysql/">MySQL</a>
+      <li><a href="/postgresql/">PostgreSQL</a>
+      <li><a href="/redis/">Redis</a>
+    </ul>
+  <li><i class="icon-play"></i><a href="/categories/previewing/">Preview</a></li>
+    <ul>
+      <li><a href="/preview">Previewing Your App</a>
+      <li><a href="/websockets">WebSockets</a>
+      <li><a href="/faq-disconnect">Run App Continuously</a>
+      <li><a href="/faq-localhost">Preview Issues</a>
+    </ul>
+  <li><i class="icon-share-alt"></i><a href="/categories/deployment/">Deploy</a></li>
+    <ul>
+      <li><a href="/heroku/">Heroku</a>
+      <li><a href="/app-engine">App Engine</a>
+      <li><a href="/azure-sites">Azure Sites</a>
+      <li><a href="/nodejitsu">Nodejitsu</a>
+    </ul>
+  <li><i class="icon-book"></i><a href="#">Additional Resources</a></li>
+    <ul>
+      <li><a href="/categories/faq">FAQ</a>
+      <li><a href="/categories/privacy-and-terms/">Privacy & Terms</a>
+    </ul>
+</ul>
+
+      </div>
+    </div>
+    <div class="articles post-content">
+      <div class="page-title">
+        <h2> Building a Meteor App </h2>
+        <h5 class="note">Last Updated on: 05 November 2013</h5>
+      </div>
+      <h3 id='prerequisites'>Prerequisites</h3>
+
+<ul>
+<li>A Node.JS box on <a href='http://www.nitrous.io'>Nitrous.IO</a></li>
+</ul>
+
+<h3 id='installation'>Installation</h3>
+
+<p>Meteor can be installed on the Nitrous box via <a href='http://help.nitrous.io/autoparts/'>Autoparts</a>. Within the console, run the following command:</p>
+
+<pre><code>parts install meteor</code></pre>
+
+<p>This will setup a Meteor installation along with MongoDB.</p>
+
+<h3 id='creating_a_new_meteor_app'>Creating a New Meteor App</h3>
+
+<p>To start a new project, run the following command:</p>
+
+<pre><code>meteor create meteorapp</code></pre>
+
+<p>Navigate into the project folder and run the app with these two commands:</p>
+
+<pre><code>cd meteorapp
+meteor</code></pre>
+
+<p>After a moment you should see that the app is running on port 3000. Navigate in the menu bar to <strong>Preview &gt; Port 3000</strong>.</p>
+
+<p><img alt='Preview Port 3000' src='/images/articles/preview-port-3000.png' /></p>
+
+<p>This will bring up a new tab with the running app. It should resemble the screenshot below:</p>
+
+<p><img alt='Preview Meteor App' src='/images/articles/meteor-preview-app.png' /></p>
+
+<p>You can keep this browser tab open as Meteor will watch for file changes, and will automatically refresh the page after changes are made.</p>
+
+<p>Within your project folder you will see a CSS, HTML, and JS file. Let&#8217;s delete these as we will create our own in a moment.</p>
+
+<pre><code>rm *.html *.css *.js</code></pre>
+
+<h3 id='client_and_server_code'>Client and Server Code</h3>
+
+<p>In order for Meteor to keep track of which JavaScript is meant only for the client or server, we will create two separate directories; the /client and /server:</p>
+
+<pre><code>mkdir client
+mkdir server</code></pre>
+
+<p>Within the <code>/client</code> folder, create a <code>index.html</code> and <code>style.css</code> file.</p>
+
+<pre><code>cd client
+touch index.html style.css</code></pre>
+
+<h3 id='add_twitter_bootstrap_to_your_project'>Add Twitter Bootstrap to Your Project</h3>
+
+<p>You can stylize your app with Bootstrap by running the following command</p>
+
+<pre><code>meteor add bootstrap</code></pre>
+
+<p>From here, edit your <code>style.css</code> file to include the following CSS:</p>
+
+<pre><code>body {
+  padding-top: 60px;
+}</code></pre>
+
+<p>Notice how there is no CSS from bootstrap in the main project directory. Meteor handles this automatically, and if you need to make any CSS changes then you can override it within the <code>style.css</code> file.</p>
+
+<p>Next, edit <code>client/index.html</code> to include only the following code:</p>
+
+<pre><code> &lt;head&gt;
+   &lt;title&gt;Meteor on Nitrous.IO&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;div class=&quot;navbar navbar-inverse navbar-fixed-top&quot;&gt;
+       &lt;div class=&quot;navbar-inner&quot;&gt;
+         &lt;div class=&quot;container&quot;&gt;
+           &lt;button type=&quot;button&quot; class=&quot;btn btn-navbar&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.nav-collapse&quot;&gt;
+             &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+             &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+             &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+           &lt;/button&gt;
+           &lt;a class=&quot;brand&quot; href=&quot;#&quot;&gt;Project name&lt;/a&gt;
+           &lt;div class=&quot;nav-collapse collapse&quot;&gt;
+             &lt;ul class=&quot;nav&quot;&gt;
+               &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+             &lt;/ul&gt;
+           &lt;/div&gt;&lt;!--/.nav-collapse --&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;container&quot;&gt;
+       &lt;h1&gt;Login to continue&lt;/h1&gt;
+       &lt;p&gt;
+         {{loginButtons}}
+       &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;</code></pre>
+
+<p>Notice the block <code>{{loginButtons}}</code> within the code. Meteor supports Handlebars templating, which allows us to many things. In this case we are going to utilize this block to call the Meteor Accounts system. Run the following commands to install the login service:</p>
+
+<pre><code>meteor add accounts-password
+meteor add accounts-ui</code></pre>
+
+<p>If you still have the browser open then you should see the page refresh to look like the screenshot below:</p>
+
+<p><img alt='Meteor Login Page' src='/images/articles/meteor-login-page.png' /></p>
+
+<p>At this point you should be able to test out the login form by clicking sign in, followed by create account. Sign up with a email and password so successfully sign in.</p>
+
+<p><img alt='Create User with Meteor' src='/images/articles/meteor-app-create-user.png' /></p>
+
+<p>To test this further, let&#8217;s add the following code to display only if a user is logged in. Update <code>client/index.html</code> to include the following code:</p>
+
+<pre><code>&lt;head&gt;
+   &lt;title&gt;Meteor on Nitrous.IO&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;div class=&quot;navbar navbar-inverse navbar-fixed-top&quot;&gt;
+       &lt;div class=&quot;navbar-inner&quot;&gt;
+         &lt;div class=&quot;container&quot;&gt;
+           &lt;button type=&quot;button&quot; class=&quot;btn btn-navbar&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.nav-collapse&quot;&gt;
+             &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+             &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+             &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+           &lt;/button&gt;
+           &lt;a class=&quot;brand&quot; href=&quot;#&quot;&gt;Project name&lt;/a&gt;
+           &lt;div class=&quot;nav-collapse collapse&quot;&gt;
+             &lt;ul class=&quot;nav&quot;&gt;
+               &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+             &lt;/ul&gt;
+           &lt;/div&gt;&lt;!--/.nav-collapse --&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;container&quot;&gt;
+       &lt;h1&gt;Login to continue&lt;/h1&gt;
+       &lt;p&gt;{{loginButtons}}&lt;/p&gt;
+       &lt;p&gt;
+         {{#if currentUser}}
+           You are now logged in.
+         {{/if}}
+       &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;</code></pre>
+
+<p>In the <code>index.html</code> file, we just added the <code>{{#if currentUser}}</code> logic to state that &#8220;you are now logged in&#8221; only when you are signed in. Once you save the file, the page will refresh with the changes.</p>
+
+<p><img alt='Meteor App Logged In' src='/images/articles/meteor-logged-in.png' /></p>
+
+<p>Test this out by signing in and out of the login form. The text will only display when logged in.</p>
+
+<h3 id='deployment'>Deployment</h3>
+
+<p>Deployment with Meteor is simple! You can use Meteor&#8217;s free service to do this with the following command:</p>
+
+<pre><code>meteor deploy myapp.meteor.com</code></pre>
+
+<p>Once this is ran, you should see the following if your subdomain is available, and everything was deployed successfully:</p>
+
+<pre><code>/meteorapp $ meteor deploy myapp.meteor.com
+Deploying to greg.meteor.com.  Bundling...
+Uploading...
+Now serving at myapp.meteor.com</code></pre>
+
+<p>Open the web browser to http://YOUR_APP_NAME.meteor.com to view your site.</p>
+    </div>
+</div>
+<footer>
+  <script src='/javascripts/jquery/jquery-1.10.2.js'></script>
+  <script src='/css/bootstrap3/js/bootstrap.js'></script>
+</footer>
+</body>
+</html>
