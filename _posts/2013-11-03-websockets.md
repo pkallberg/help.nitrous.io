@@ -1,7 +1,7 @@
 ---
 title: WebSockets
 published: true
-categories: [tutorials, previewing, node, ruby]
+categories: [tutorials, previewing, node, rails]
 layout: article
 ---
 
