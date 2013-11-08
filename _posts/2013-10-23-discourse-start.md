@@ -94,15 +94,15 @@ Let's go ahead and kill those rounded corners on the tables, they're so not web 
 
 Change line 43 of `app/assets/stylesheets/desktop/topic-list.scss`: 
 
-		@include border-radius-all(0 0 0 0);
+    @include border-radius-all(0 0 0 0);
 
 Line 85:  
 
-		@include border-radius-all(0 0 0 0);
+    @include border-radius-all(0 0 0 0);
  
 Line 88: 
 
-		@include border-radius-all(0 0 0 0);
+    @include border-radius-all(0 0 0 0);
     
 And we have square corners on all the topic lists.  Very web 3.0, if I don't say so myself...
 
