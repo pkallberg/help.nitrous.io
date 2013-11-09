@@ -160,13 +160,13 @@ Test this out by signing in and out of the login form. The text will only displa
 
 Deployment with Meteor is simple! You can use Meteor's free service to do this with the following command:
 
-    meteor deploy myapp.meteor.com
+    meteor deploy meteorapp.meteor.com
 
 Once this is ran, you should see the following if your subdomain is available, and everything was deployed successfully:
 
-    /meteorapp $ meteor deploy myapp.meteor.com
-    Deploying to greg.meteor.com.  Bundling...
+    /meteorapp $ meteor deploy meteorapp.meteor.com
+    Deploying to meteorapp.meteor.com.  Bundling...
     Uploading...
-    Now serving at myapp.meteor.com
+    Now serving at meteorapp.meteor.com
 
-Open the web browser to http://YOUR_APP_NAME.meteor.com to view your site.
+Open the web browser to `http://YOUR_APP_NAME.meteor.com` to view your site.
