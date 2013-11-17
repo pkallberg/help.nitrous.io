@@ -175,7 +175,9 @@ Once you are in the Admin section, click **Questions** within the Polls section.
 
 ![Django Poll Admin](/images/articles/django-poll-admin.png)
 
-You have now built your fist question within the app. At this point you will have learned how to configure a MySQL database with [Autoparts](/autoparts/), utilize Virtualenv to specify a specific version of Python and other dependencies, and also how to run the app on a specific port for convenient [previewing](/preview/). To learn about the next steps on creating the public interface, jump back to [part 3](https://docs.djangoproject.com/en/dev/intro/tutorial03/) of DjangoProject's guide.
+You have now built your fist question within the app. 
+
+At this point you have configured an app which utilizes [MySQL](/mysql/) and has the admin section established. You should be familiar with [Autoparts](/autoparts/), Virtualenv, and how to [preview](/preview/) your app on Nitrous. To learn about the next steps on creating the public interface, jump back to [part 3](https://docs.djangoproject.com/en/dev/intro/tutorial03/) of DjangoProject's guide.
 
 ### Deployment
 
