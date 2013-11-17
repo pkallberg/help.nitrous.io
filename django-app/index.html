@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html class="home index">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Building a Django App</title>
+  <meta name="author" content="Nitrous.IO" />
+  <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
+  <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
+  <meta content='Nitrous.IO' name='author'>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+  <link rel='stylesheet' href='/css/bootstrap3/css/bootstrap.css'>
+  <link rel='stylesheet' href='/css/font-awesome/css/font-awesome.css'>
+  <link href="/css/action.css" media="screen, projection" rel="stylesheet">
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+</head>
+<body>
+  <div class="navbar">
+    <div class="container">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Nitrous.IO <span>support</span></a>
+
+      <div class="nav-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav pull-right">
+          <div class="mobile-menu">
+            <li class="signup"><a href="/" class="btn btn-success">Help center</a></li>
+            <li class="signup"><a href="/getting-started/" class="btn btn-success">Getting Started</a>
+            <li class="signup"><a href="/categories/boxes/" class="btn btn-success">Boxes</a>
+            <li class="signup"><a href="/categories/usage/" class="btn btn-success">Usage</a>
+            <li class="signup"><a href="/categories/databases/" class="btn btn-success">Databases</a>
+            <li class="signup"><a href="/categories/previewing/" class="btn btn-success">Preview</a>
+            <li class="signup"><a href="/categories/deployment/" class="btn btn-success">Deploy</a>
+            <li class="signup"><a href="/categories/faq" class="btn btn-success">FAQ</a>
+            <li class="signup"><a href="mailto:help@nitrous.io" class="btn btn-success">Email us</a></li>
+          </div>
+
+          <li class="hidden-sm"><a href="/discussions">Discussions</a></li>
+          <li class="hidden-sm"><a href="https://www.nitrous.io/chat" target="_blank">Chat</a></li>
+          <li class="hidden-sm login"><a href="https://nitrous.io/users/sign_in">Log in</a></li>
+          <li class="hidden-sm nav-break">or</li>
+          <li class="signup"><a href="https://www.nitrous.io" class="btn btn-success">Sign up</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class='clearfix' id='promo-main'>
+  <div class="mast-container">
+    <div id="search">
+      <script>
+      (function() {
+        var cx = '009198278762462778395:pwuaikni4bs';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+      </script>
+      <gcse:search></gcse:search>
+    </div>
+  </div>
+</div>
+    <div class="sidebar">
+      <div class="box menu">
+        <ul class="nav nav-list">
+  <li><i class="icon-signin"></i><a href="/categories/getting-started/">Getting Started</a></li>
+    <ul>
+      <li><a href="/categories/ssh/">Adding SSH Keys</a>
+      <li><a href="/github-add-key/">Connecting to Github</a>
+      <li><a href="/ide-general/">Web IDE Overview</a>
+      <li><a href="/best-practices">Best Practices</a>
+    </ul>
+  <li><i class="icon-th-large"></i><a href="/categories/boxes/">Boxes</a></li>
+    <ul>
+      <li><a href="/box-new">Create a Box</a>
+      <li><a href="/box-settings/">Box Memory & Storage</a>
+      <li><a href="/box-templates/">Box Templates</a>
+      <li><a href="/box-interpreters-and-tools/">Included Tools</a>
+      <li><a href="/upgrade-box">Update Box</a>
+    </ul>
+  <li><i class="icon-laptop"></i><a href="/categories/usage/">Usage</a></li>
+    <ul>
+      <li><a href="/autoparts/">Package Manager</a>
+      <li><a href="/mac-preferences/">Mac Preferences</a>
+      <li><a href="/ide-shortcuts/">Keyboard Shortcuts</a>
+      <li><a href="/new-file/">Create New File</a>
+      <li><a href="/ide-file-uploads/">Uploading via Web IDE</a>
+      <li><a href="/collab">Collaboration</a>
+    </ul>
+  <li><i class="icon-tasks"></i><a href="/categories/databases/">Databases</a></li>
+    <ul>
+      <li><a href="/memcached/">Memcached</a>
+      <li><a href="/mongodb/">MongoDB</a>
+      <li><a href="/mysql/">MySQL</a>
+      <li><a href="/postgresql/">PostgreSQL</a>
+      <li><a href="/redis/">Redis</a>
+    </ul>
+  <li><i class="icon-play"></i><a href="/categories/previewing/">Preview</a></li>
+    <ul>
+      <li><a href="/preview">Previewing Your App</a>
+      <li><a href="/websockets">WebSockets</a>
+      <li><a href="/faq-disconnect">Run App Continuously</a>
+      <li><a href="/faq-localhost">Preview Issues</a>
+    </ul>
+  <li><i class="icon-share-alt"></i><a href="/categories/deployment/">Deploy</a></li>
+    <ul>
+      <li><a href="/heroku/">Heroku</a>
+      <li><a href="/app-engine">App Engine</a>
+      <li><a href="/azure-sites">Azure Sites</a>
+      <li><a href="/nodejitsu">Nodejitsu</a>
+    </ul>
+  <li><i class="icon-book"></i><a href="/categories/tutorials/">Tutorials</a></li>
+    <ul>
+      <li><a href="/categories/rails/">Rails</a>
+      <li><a href="/categories/node/">Node.JS</a>
+      <li><a href="/categories/django/">Django</a>
+    </ul>
+  <li><i class="icon-archive"></i><a href="#">Additional Resources</a></li>
+    <ul>
+      <li><a href="/categories/faq">FAQ</a>
+      <li><a href="/categories/privacy-and-terms/">Privacy & Terms</a>
+    </ul>
+</ul>
+
+      </div>
+    </div>
+    <div class="articles post-content">
+      <div class="page-title">
+        <h2> Building a Django App </h2>
+        <h5 class="note">Last Updated on: 15 November 2013</h5>
+      </div>
+      <p>This article covers building a Django application on <a href='http://www.nitrous.io'>Nitrous.IO</a> with Python 3.3.</p>
+
+<h3 id='prerequisites'>Prerequisites</h3>
+
+<ul>
+<li>A <a href='https://www.nitrous.io'>Nitrous.IO account</a></li>
+
+<li>A <a href='http://help.action.io/customer/portal/articles/802603-create-a-box'>Box</a> on Nitrous.IO. The Django box template will include Python 2.7 with the use of Virtualenv.</li>
+</ul>
+
+<h3 id='creating_a_isolated_environment_with_virtualenv'>Creating a isolated environment with Virtualenv</h3>
+
+<p>Virtualenv allows you to create an isolated environment in order to install specific versions and dependencies.</p>
+
+<p>To view the available versions of Python available, run <code>ls /usr/bin/python*</code>. Create a new environment with Python 3.3 by running the following 2 commands:</p>
+
+<pre><code>$ virtualenv -p /usr/bin/python2.7 py27env</code></pre>
+
+<p>You will now want to connect to this environment:</p>
+
+<pre><code>$ source py27env/bin/activate</code></pre>
+
+<p>Since you are in a isolated environment, you will need to install Django and any other dependencies that were available outside of your environment. You can check which modules are installed with <code>pip freeze</code>, and you will want to install Django if not available:</p>
+
+<pre><code>$ pip install django</code></pre>
+
+<blockquote>
+<p>If you decide you want to disconnect from this environment at any point, type <code>deactivate</code> in the console.</p>
+</blockquote>
+
+<h3 id='creating_a_new_project'>Creating a new project</h3>
+
+<p>For this example, we will first want to create a project. You can create multiple apps within the project, but we will get to that later. cd into your <code>~/workspace/</code> folder and run the following command to create a new project:</p>
+
+<pre><code>$ django-admin.py startproject mysite</code></pre>
+
+<p>This will setup a new project within the <code>mysite/</code> folder. Navigate into this folder by running <code>cd mysite/</code>. You can now test out your site by running the following command:</p>
+
+<pre><code>$ python manage.py runserver 0.0.0.0:3000</code></pre>
+
+<p>After a moment you should see that the app is running on port 3000. Navigate in the menu bar to <strong>Preview &gt; Port 3000</strong>.</p>
+
+<p><img alt='Preview Port 3000' src='/images/articles/preview-port-3000.png' /></p>
+
+<blockquote>
+<p>Note: To preview apps on Nitrous.IO, you will need to ensure it is running with the host 0.0.0.0 instead of localhost/127.0.0.1. You can also run it on any port between 1024 - 9999.</p>
+</blockquote>
+
+<h3 id='configuring_mysql_optional'>Configuring MySQL (Optional)</h3>
+
+<p>The Django project is configured to use SQLite by default, but you can change this to use other databases such as MySQL and PostgreSQL. If you you want to go the MySQL route, you will first need to install it. Nitrous offers a package manager, <a href='/autoparts/'>Autoparts</a>, which will allow you to install <a href='http://help.nitrous.io/mysql/'>MySQL</a> directly on your Nitrous box. Run the following command to install MySQL:</p>
+
+<pre><code>$ parts install mysql</code></pre>
+
+<p>Once installed, start up MySQL:</p>
+
+<pre><code>$ parts start mysql</code></pre>
+
+<p>Next, install the mysql-python library next for Python 2.7. Python 3.x is not supported for this library at the time this article was written.</p>
+
+<pre><code>$ pip install mysql-python</code></pre>
+
+<p>Open <code>mysite/settings.py</code> in the editor and adjust the database configurations as seen below:</p>
+
+<pre><code>DATABASES = {
+    &#39;default&#39;: {
+        &#39;ENGINE&#39;: &#39;django.db.backends.mysql&#39;,
+        &#39;NAME&#39;: &#39;mysite&#39;,
+        &#39;USER&#39;: &#39;root&#39;,
+    		&#39;HOST&#39;: &#39;0.0.0.0&#39;,
+    }
+}</code></pre>
+
+<p>Once the changes have been saved, run the MySQL console and create a new database:</p>
+
+<pre><code>$ mysql -u root
+mysql&gt; CREATE DATABASE mysite;
+mysql&gt; quit;</code></pre>
+
+<p>Next, create the tables for the installed apps (found in <code>mysite/settings.py</code>) by running the following command within your project folder:</p>
+
+<pre><code>$ python manage.py syncdb</code></pre>
+
+<p>If all runs smoothly you should see the following lines after running the command. When prompted to setup a superuser, select yes and remember the credentials you use. You will use these later.</p>
+
+<pre><code>Creating tables ...
+Creating table django_admin_log
+Creating table auth_permission
+Creating table auth_group_permissions
+Creating table auth_group
+Creating table auth_user_groups
+Creating table auth_user_user_permissions
+Creating table auth_user
+Creating table django_content_type
+Creating table django_session
+
+You just installed Django&#39;s auth system, which means you don&#39;t have any superusers defined.
+Would you like to create one now? (yes/no): yes</code></pre>
+
+<h3 id='creating_an_app'>Creating an App</h3>
+
+<p>You already have the project <code>mysite</code> setup, along with an established database. This section will summarize part 1 and 2 of <a href='https://docs.djangoproject.com/en/dev/intro/tutorial01/'>Djangoproject&#8217;s tutorial</a> to help you get started with it on Nitrous, but we strongly encourage you to follow that tutorial for the best learning experience.</p>
+
+<p>Let&#8217;s create a polls app by navigating into the <code>/mysite</code> folder and running the following command:</p>
+
+<pre><code>python manage.py startapp polls</code></pre>
+
+<p>Within <code>~/workspace/mysite/polls/models.py</code> define the models by replacing the existing code with the following:</p>
+
+<pre><code>from django.db import models
+
+class Question(models.Model):
+    question_text = models.CharField(max_length=200)
+    pub_date = models.DateTimeField(&#39;date published&#39;)
+
+class Choice(models.Model):
+    question = models.ForeignKey(Question)
+    choice_text = models.CharField(max_length=200)
+    votes = models.IntegerField(default=0)</code></pre>
+
+<p>You will need to add the blog app to your project. To to this, edit <code>mysite/settings.py</code> and include the string &#8216;polls&#8217; within the INSTALLED_APPS setting:</p>
+
+<pre><code>INSTALLED_APPS = (
+    &#39;django.contrib.admin&#39;,
+    &#39;django.contrib.auth&#39;,
+    &#39;django.contrib.contenttypes&#39;,
+    &#39;django.contrib.sessions&#39;,
+    &#39;django.contrib.messages&#39;,
+    &#39;django.contrib.staticfiles&#39;,
+    &#39;polls&#39;,
+)</code></pre>
+
+<p>Build the necessary tables for the polls model by running syncdb within the project folder again:</p>
+
+<pre><code>python manage.py syncdb</code></pre>
+
+<p>You will also need to add the polls app with question and choice objects to the admin page. Edit <code>polls/admin.py</code>, and replace the content with the following:</p>
+
+<pre><code>from django.contrib import admin
+from polls.models import Choice, Question
+
+
+class ChoiceInline(admin.StackedInline):
+    model = Choice
+    extra = 3
+
+
+class QuestionAdmin(admin.ModelAdmin):
+    fieldsets = [
+        (None,               {&#39;fields&#39;: [&#39;question_text&#39;]}),
+        (&#39;Date information&#39;, {&#39;fields&#39;: [&#39;pub_date&#39;],
+                              &#39;classes&#39;: [&#39;collapse&#39;]}),
+    ]
+    inlines = [ChoiceInline]
+
+admin.site.register(Question, QuestionAdmin)</code></pre>
+
+<blockquote>
+<p>If you want a more in depth explanation on how the <code>polls/admin.py</code> builds the admin form, read the tutorial at <a href='https://docs.djangoproject.com/en/dev/intro/tutorial02/'>djangoproject.com</a>.</p>
+</blockquote>
+
+<h3 id='connecting_to_the_app'>Connecting to the app</h3>
+
+<p>Run your project again with the following command:</p>
+
+<pre><code>python manage.py runserver 0.0.0.0:3000</code></pre>
+
+<p>Navigate in the menu bar to <strong>Preview &gt; Port 3000</strong>, and add <code>/admin</code> to the end of the URL within the address bar. You should see the login page below.</p>
+
+<p><img alt='Django Admin Login' src='/images/articles/django-admin-login.png' /></p>
+
+<p>Use the superuser login credentials you created earlier. If you did not select your own username then the default is <code>action</code>, and the password was created by you when running syncdb.</p>
+
+<p><img alt='Django Admin Page' src='/images/articles/django-admin-page.png' /></p>
+
+<p>Once you are in the Admin section, click <strong>Questions</strong> within the Polls section. Add a question to this section along with 3 choices, and save your changes.</p>
+
+<p><img alt='Django Poll Admin' src='/images/articles/django-poll-admin.png' /></p>
+
+<p>You have now built your fist question within the app. At this point you will have learned how to configure a MySQL database with <a href='/autoparts/'>Autoparts</a>, utilize Virtualenv to specify a specific version of Python and other dependencies, and also how to run the app on a specific port for convenient <a href='/preview/'>previewing</a>. To learn about the next steps on creating the public interface, jump back to <a href='https://docs.djangoproject.com/en/dev/intro/tutorial03/'>part 3</a> of DjangoProject&#8217;s guide.</p>
+
+<h3 id='deployment'>Deployment</h3>
+
+<p>To deploy to production, we recommend using <a href='https://developers.google.com/appengine/'>Google App Engine</a>. To learn how to deploy to App Engine, take a look at our <a href='http://help.nitrous.io/app-engine/'>deployment guide</a>.</p>
+    </div>
+</div>
+<footer>
+  <script src='/javascripts/jquery/jquery-1.10.2.js'></script>
+  <script src='/css/bootstrap3/js/bootstrap.js'></script>
+</footer>
+</body>
+</html>
