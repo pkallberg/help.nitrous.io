@@ -21,6 +21,7 @@ We provide extra interpreters and tools in your Nitrous boxes to help you get ha
 * Golang
 * automake
 * Heroku Toolbelt
+* Parse Command Line Tool
 
 ### Possible to Install Yourself (Just examples, you can do more)
 * Clojure
