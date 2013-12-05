@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+<html class="home index">
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>Nitrous.IO Support</title>
+  <title>Unable to connect to Web IDE</title>
   <meta name="author" content="Nitrous.IO" />
   <link href="http://feeds.feedburner.com/actionioblog" rel="alternate" title="Nitrous.IO Blog" type="application/atom+xml" />
   <meta content='Nitrous.IO Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous.IO' name='description'>
@@ -50,7 +52,7 @@
     </div>
   </div>
   <div class="container">
-  	<div class='clearfix' id='promo-main'>
+    <div class='clearfix' id='promo-main'>
   <div class="mast-container">
     <div id="search">
       <script>
@@ -70,8 +72,8 @@
   </div>
 </div>
     <div class="sidebar">
-	<div class="box menu">
-		<ul class="nav nav-list">
+      <div class="box menu">
+        <ul class="nav nav-list">
   <li><i class="icon-signin"></i><a href="/categories/getting-started/">Getting Started</a></li>
     <ul>
       <li><a href="/categories/ssh/">Adding SSH Keys</a>
@@ -131,87 +133,23 @@
     </ul>
 </ul>
 
-	</div>
-</div>
-<div class="articles index-main">
-	<h4 class="topic">New to Nitrous.IO?  View our <a href="/getting-started/" class="btn btn-success">Getting started</a> guide.</h4>
-	<h4>Introduction Resources</h4>
-	<div class="category-index">
-		<ul class="menu-item">
-			<li><h4><a href="/best-practices/">Best Practices</a></li>
-			<li><h4><a href="/ssh-add/">Adding SSH Keys</a></li>
-			<li><h4><a href="/ide-general/">Web IDE</a></li>
-			<li><h4><a href="/github-add-key/">Connecting to Github</a></li>
-			<li><h4><a href="/autoparts/">Installing Databases and Tools with Autoparts</a></li>
-		</ul>
-	</div>
-	<div class="categories">
-		<h4>Most Frequently Asked Questions</h4>
-		<div class="category-index">
-			<ul class="menu-item">
-				
-				<li><h4><a href="/faq-unable-to-connect-to-web-ide">Unable to connect to Web IDE</a></h4></li>
-				
-				<li><h4><a href="/box-interpreters-and-tools">Included Interpreters & Tools</a></h4></li>
-				
-				<li><h4><a href="/basic-auth">Basic Access Authentication</a></h4></li>
-				
-				<li><h4><a href="/python-versions-with-virtualenv">Changing Python versions with virtualenv</a></h4></li>
-				
-				<li><h4><a href="/faq-copy-paste">Copy/Paste within the Web IDE</a></h4></li>
-				
-				<li><h4><a href="/faq-aws-region-settings">AWS Region Settings</a></h4></li>
-				
-			</ul>
-			<a class="view-all btn" href="/categories/faq">View all »</a>
-		</div>
-	</div>
-	<div class="categories">
-		<h4>Other Resources</h4>
-		<div class="resources">
-			<ul>
-				<li class="module">
-					<a href="https://www.nitrous.io/app#/intro/1">
-						<i class="icon-book"></i>
-						<h5>Introduction</h5>
-					</a>
-					This introduction will demonstrate some of the powerful features available to you
-				</li>
-				<li class="module resources">
-					<a href="/discussions">
-						<i class="icon-stackexchange"></i>
-						<h5>Discussions</h5>
-					</a>
-					Ask a question on Stackoverflow for help with your projects
-				</li>
-				<li class="module resources">
-					<a href="mailto:help@nitrous.io">
-						<i class="icon-envelope"></i>
-						<h5>Submit a Request</h5>
-					</a>
-					If you have any feedback or issues on Nitrous.IO, feel free to contact us
-				</li>
-			</ul>
-		</div>
-	</div>
-</div>
-  </div>
+      </div>
+    </div>
+    <div class="articles post-content">
+      <div class="page-title">
+        <h2> Unable to connect to Web IDE </h2>
+        <h5 class="note">Last Updated on: 05 December 2013</h5>
+      </div>
+      <p>If you&#8217;re running into the issue where the message &#8220;connecting&#8230;&#8221; displays at the top of the web IDE, you may be experiencing a network or firewall related issue.</p>
 
-  <footer>
+<p>To be able to connect to the web IDE you will need to ensure port 443 is open, and also that your network is not blocking WebSockets. Test your browser at <a href='http://www.websocket.org/echo.html'>WebSocket.org</a> to ensure your network isn&#8217;t blocking WebSockets.</p>
+
+<p>If you do not have port 443 or WebSockets enabled then you will need to contact your network administrator in regards to making adjustments.</p>
+    </div>
+</div>
+<footer>
   <script src='/javascripts/jquery/jquery-1.10.2.js'></script>
   <script src='/css/bootstrap3/js/bootstrap.js'></script>
 </footer>
-
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-43081980-1', 'nitrous.io');
-            ga('require', 'linkid', 'linkid.js');
-            ga('send', 'pageview');
-
-</script>
 </body>
 </html>
